@@ -1,0 +1,36 @@
+.design {
+  padding-bottom: 250px;
+  &__img-banner {
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 593px;
+    padding-top: 37.5%;
+  }
+
+  .section__header {
+    min-height: 489px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 150px;
+  }
+
+  .gallery-room {
+    width: 100%;
+    max-width: 1426px;
+    margin: 0 auto;
+    .subtitle{
+      font-size: 32px;
+      line-height: 1.187;
+      margin-bottom: 60px;
+      color: #194a21;
+      text-align: center;
+    }
+  }
+  .gallery_top{
+    position: relative;
+    margin-top: -15%;
+  }
+}

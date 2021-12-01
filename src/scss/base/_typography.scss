@@ -1,0 +1,40 @@
+.heading {
+
+
+  &_lg {
+
+  }
+
+  &_md {
+
+  }
+
+  &_sm {
+  }
+}
+
+.text{
+  &_lg{
+    font-size: 48px;
+  }
+  &_md{
+
+  }
+  &_sm{
+
+  }
+  &_xs{
+
+  }
+}
+  .gradient-text {
+    background: linear-gradient(269.83deg, #EEC65F -33.35%, #A76F2A -9.64%, #E2B855 11.74%, #F9F2B7 36.15%, #E2B855 65.29%, #8F5E21 132.17%, #E2B855 165.27%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    display: inline-block;
+  }
+
+
+

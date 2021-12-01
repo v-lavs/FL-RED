@@ -1,0 +1,24 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  font-size:20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  &__item {
+    line-height: 1;
+    letter-spacing: -0.025em;
+    margin-bottom: 18px;
+  }
+  &__link {
+    position: relative;
+    display: inline-block;
+    padding: 10px 0;
+    transition: .5s;
+
+    &:hover,
+    &:focus {
+      color: #ffce5a;
+    }
+  }
+}

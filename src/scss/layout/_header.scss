@@ -1,0 +1,110 @@
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: transparent;
+  padding-top: 37px;
+  padding-bottom: 10px;
+  z-index: 999;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    display: inline-block;
+  }
+  &__link-icon{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-image: url(../assets/img/svg/phone-gold.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 292px;
+    background-color: #1b382c;
+    transition: transform .8s;
+    transform: translateX(-100%);
+    z-index: 999;
+    padding: 110px 26px;
+    overflow-y: auto;
+    height: 100vh;
+
+    &.open {
+      transform: translateX(0);
+    }
+  }
+
+  .btn_close,
+  .btn_burger {
+    border: none;
+    width: 40px;
+    height: 40px;
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 40px;
+      height: 40px;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .btn_burger {
+    position: relative;
+    &:hover,
+    &:focus{
+
+    }
+  }
+
+  .btn_burger:before {
+    background-image: url(../assets/img/svg/menu.svg);
+  }
+
+  .btn_close {
+    position: absolute;
+    right: 52px;
+    top: 44px;
+
+    &:before {
+      background-image: url(../assets/img/svg/close.svg);
+    }
+  }
+
+
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: .2;
+  z-index: 500;
+}
+
+

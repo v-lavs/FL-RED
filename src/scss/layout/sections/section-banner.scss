@@ -1,0 +1,70 @@
+.section-banner {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../assets/img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+
+  &__logo {
+    max-width: 421px;
+    display: inline-block;
+    margin: 0 auto 65px;
+  }
+
+  &__slogan {
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .decor-text {
+    font-family: $decor-font;
+    font-weight: 700;
+    font-size: 62px;
+    margin-bottom: 16px;
+  }
+
+  .btn_scroll {
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    bottom: 36px;
+    left: 50%;
+    margin-left: -37px;
+
+    z-index: 1;
+
+    &:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      display: block;
+      background-image: url(../assets/img/svg/chevron-down.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 74px;
+      height: 74px;
+    }
+  }
+  .floating {
+    animation-name: floating;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes floating {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+}
