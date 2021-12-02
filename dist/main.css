@@ -390,6 +390,7 @@ select.custom-select {
 body {
   font: 400 16px/1.2 "Avenir LT Std", sans-serif;
   background-color: #ffffff;
+  color: #194a21;
 }
 
 .wrapper {
@@ -445,6 +446,62 @@ body {
   height: 6px;
   background: linear-gradient(268.21deg, #EEC65F 7.36%, #A76F2A 18.96%, #E2B855 29.43%, #F9F2B7 41.39%, #E2B855 55.66%, #8F5E21 88.41%, #E2B855 104.63%);
   z-index: 1;
+}
+
+.summary {
+  margin-bottom: 250px;
+}
+
+.summary__wrap-logo {
+  max-width: 273px;
+}
+
+.summary__row {
+  display: flex;
+  position: relative;
+}
+
+.summary__col-left {
+  width: 35%;
+  padding-left: 18px;
+  padding-top: 51px;
+}
+
+.summary__col-right {
+  width: 65%;
+  position: relative;
+  padding-top: 42%;
+  flex-grow: 1;
+}
+
+.summary__wrap-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 65vw;
+  height: 100%;
+  width: 65vw;
+}
+
+.summary__img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.summary__caption {
+  position: absolute;
+  max-width: 622px;
+  padding: 12px 37px 4px;
+  background-color: #ffffff;
+  font-weight: 300;
+  font-size: 48px;
+  text-align: right;
+  bottom: 104px;
+  left: -23px;
 }
 
 .section__header {
@@ -558,6 +615,10 @@ body {
   margin-bottom: 65px;
 }
 
+.card-list {
+  margin-bottom: 250px;
+}
+
 .card {
   margin-bottom: 46px;
   display: flex;
@@ -570,11 +631,9 @@ body {
 .card__thumb {
   position: relative;
   max-width: 593px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: 27.25%;
+  width: 55%;
   flex-grow: 1;
+  padding-top: 27.25%;
 }
 
 .card__thumb:before,
@@ -601,9 +660,22 @@ body {
   z-index: 0;
 }
 
+.card__img {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
 .card__text-content {
   position: relative;
   max-width: 478px;
+  width: 45%;
   padding-bottom: 80px;
   padding-right: 48px;
   flex-grow: 1;
@@ -905,17 +977,161 @@ body {
   margin-top: -15%;
 }
 
-.features {
+.features .section__bg {
   padding-top: 135px;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom 50px;
 }
 
 .features .section__header {
   margin-bottom: 68px;
 }
 
-.features .card-list {
+.facilities {
+  padding-top: 150px;
   margin-bottom: 250px;
+}
+
+.facilities .section__header {
+  padding-bottom: 67px;
+}
+
+.facilities .card__thumb {
+  order: -1;
+}
+
+.facilities .card__thumb:before {
+  left: -22px;
+  right: auto;
+}
+
+.facilities .card__thumb:after {
+  right: 22px;
+  left: -100vw;
+}
+
+.facilities .card__text-content {
+  padding-left: 48px;
+  padding-right: 0;
+}
+
+.facilities .card__text-content:after {
+  left: 22px;
+  right: 100vw;
+  width: 100vw;
+}
+
+.facilities .summary__col-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.facilities .summary__col-right {
+  position: relative;
+  padding-top: 59.5%;
+}
+
+.facilities .summary__col-right:before {
+  position: absolute;
+  content: '';
+  display: block;
+  background: linear-gradient(189.85deg, #EEC65F -8.6%, #A76F2A 3.48%, #E2B855 14.37%, #F9F2B7 26.81%, #E2B855 41.66%, #8F5E21 75.74%, #E2B855 92.6%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 22px;
+  z-index: 1;
+}
+
+.facilities .summary__caption {
+  bottom: 50%;
+  z-index: 2;
+}
+
+.facilities .summary .text-list {
+  width: 100%;
+  text-align: right;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 34px;
+  padding-right: 27px;
+  padding-bottom: 78px;
+}
+
+.facilities .summary .text-list__item {
+  margin-bottom: 15px;
+}
+
+.facilities .summary .text-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.benefits__img-banner {
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.benefits .section__header {
+  min-height: 496px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 156px;
+}
+
+.benefits .section__title {
+  margin-bottom: 97px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.benefits-list .col {
+  padding: 5px;
+}
+
+.benefits-list .col-12 {
+  width: 100%;
+}
+
+.benefits-list .col-12 .benefits-list__wrap-img {
+  padding-top: 56.9%;
+}
+
+.benefits-list .col-4 {
+  width: 33.33%;
+}
+
+.benefits-list__wrap-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 67.4%;
+}
+
+.benefits-list__img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.benefits-list .benefits-caption {
+  padding: 37px 30px;
+  background-color: #ffffff;
+  font-size: 32px;
+  line-height: 104.9%;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1440px) {

@@ -1,3 +1,7 @@
+.card-list{
+  margin-bottom: 250px;
+}
+
 .card {
   margin-bottom: 46px;
   display: flex;
@@ -8,14 +12,12 @@
 
 
   &__thumb {
+
     position: relative;
     max-width: 593px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding-top: 27.25%;
+    width: 55%;
     flex-grow: 1;
-
+    padding-top: 27.25%;
     &:before,
     &:after {
       position: absolute;
@@ -41,10 +43,22 @@
       z-index: 0;
     }
   }
+&__img{
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
 
+}
   &__text-content {
     position: relative;
     max-width: 478px;
+    width: 45%;
     padding-bottom: 80px;
     padding-right: 48px;
     flex-grow: 1;
