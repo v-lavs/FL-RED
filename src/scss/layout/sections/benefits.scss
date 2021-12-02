@@ -34,9 +34,6 @@
     }
     &__wrap-img{
       position: relative;
-      width: 100%;
-      height: 100%;
-
       padding-top:67.4%;
     }
     &__img{
@@ -50,7 +47,8 @@
       object-fit: cover;
     }
     .benefits-caption{
-      padding: 37px 30px;
+      width: 100%;
+      padding: 37px 15px;
       background-color: #ffffff;
       font-size: 32px;
       line-height: 1.06;
