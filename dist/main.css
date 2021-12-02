@@ -405,6 +405,10 @@ body {
   color: #ff0000;
 }
 
+.strong {
+  font-weight: 900;
+}
+
 .hide {
   position: absolute;
   width: 1px;
@@ -446,10 +450,6 @@ body {
   height: 6px;
   background: linear-gradient(268.21deg, #EEC65F 7.36%, #A76F2A 18.96%, #E2B855 29.43%, #F9F2B7 41.39%, #E2B855 55.66%, #8F5E21 88.41%, #E2B855 104.63%);
   z-index: 1;
-}
-
-.summary {
-  margin-bottom: 250px;
 }
 
 .summary__wrap-logo {
@@ -502,6 +502,10 @@ body {
   text-align: right;
   bottom: 104px;
   left: -23px;
+}
+
+.section {
+  margin-bottom: 250px;
 }
 
 .section__header {
@@ -647,8 +651,8 @@ body {
 .card__thumb:before {
   top: 0;
   bottom: 0;
-  right: -22px;
-  width: 22px;
+  right: -16px;
+  width: 16px;
   z-index: 1;
 }
 
@@ -686,7 +690,7 @@ body {
   content: '';
   display: block;
   background: linear-gradient(189.85deg, #EEC65F -8.6%, #A76F2A 3.48%, #E2B855 14.37%, #F9F2B7 26.81%, #E2B855 41.66%, #8F5E21 75.74%, #E2B855 92.6%);
-  right: 22px;
+  right: 16px;
   height: 3px;
   bottom: 50px;
   left: -100vw;
@@ -909,6 +913,10 @@ body {
   padding: 99px 0 120px;
 }
 
+.description-residence .proposal p {
+  margin-bottom: 5px;
+}
+
 .description-residence .container {
   display: flex;
   align-items: center;
@@ -917,7 +925,6 @@ body {
 
 .description-residence__text {
   max-width: 705px;
-  font-weight: 300;
   font-size: 32px;
   text-align: center;
   color: #194A21;
@@ -929,16 +936,12 @@ body {
 }
 
 .description-residence__text .strong {
-  font-family: "Avenir LT Std Book", sans-serif;
+  font-weight: 900;
 }
 
 .description-residence__wrap-img {
   max-width: 242px;
   margin-bottom: 32px;
-}
-
-.design {
-  padding-bottom: 250px;
 }
 
 .design__img-banner {
@@ -987,12 +990,28 @@ body {
   margin-bottom: 68px;
 }
 
-.facilities {
-  padding-top: 150px;
-  margin-bottom: 250px;
+.facilities .section__bg {
+  position: relative;
+}
+
+.facilities .section__bg-inner {
+  position: absolute;
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right bottom 50px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: scale(-1, 1);
+  z-index: 0;
 }
 
 .facilities .section__header {
+  position: relative;
+  padding-top: 150px;
   padding-bottom: 67px;
 }
 
@@ -1001,7 +1020,7 @@ body {
 }
 
 .facilities .card__thumb:before {
-  left: -22px;
+  left: -15px;
   right: auto;
 }
 
@@ -1040,7 +1059,7 @@ body {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 22px;
+  width: 11px;
   z-index: 1;
 }
 
@@ -1087,8 +1106,10 @@ body {
 }
 
 .benefits-list {
+  margin-top: -11.25%;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 75px;
 }
 
 .benefits-list .col {
@@ -1101,6 +1122,30 @@ body {
 
 .benefits-list .col-12 .benefits-list__wrap-img {
   padding-top: 56.9%;
+}
+
+.benefits-list .col-12 .benefits-caption,
+.benefits-list .col-12 .label {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  max-width: 504px;
+  width: 100%;
+}
+
+.benefits-list .col-12 .label {
+  bottom: 0;
+  font-size: 32px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 24px;
+  transform: translate(-50%, 50%);
+}
+
+.benefits-list .col-12 .benefits-caption {
+  padding: 37px 15px;
+  top: 0;
+  transform: translate(-50%, -50%);
 }
 
 .benefits-list .col-4 {
@@ -1123,13 +1168,72 @@ body {
   object-fit: cover;
 }
 
-.benefits-list .benefits-caption {
+.benefits-caption {
   width: 100%;
-  padding: 37px 15px;
+  padding: 25px 15px;
   background-color: #ffffff;
   font-size: 32px;
   line-height: 1.06;
   text-align: center;
+}
+
+.benefits-location__card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.benefits-location__card:nth-child(even) .benefits-location__wrap-thumb {
+  order: 1;
+}
+
+.benefits-location__card:nth-child(even) .benefits-location__wrap-thumb:before {
+  left: auto;
+  right: 0;
+}
+
+.benefits-location__card:nth-child(even) .benefits-location__description {
+  padding-left: 0;
+  padding-right: 57px;
+}
+
+.benefits-location__wrap-thumb {
+  position: relative;
+  width: 76%;
+  padding-top: 31.2%;
+}
+
+.benefits-location__wrap-thumb:before {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 11px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(189.85deg, #EEC65F -8.6%, #A76F2A 3.48%, #E2B855 14.37%, #F9F2B7 26.81%, #E2B855 41.66%, #8F5E21 75.74%, #E2B855 92.6%);
+  z-index: 2;
+}
+
+.benefits-location__bg-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.benefits-location__description {
+  padding-left: 57px;
+  font-size: 32px;
+}
+
+.benefits-location .title {
+  margin-bottom: 7px;
 }
 
 @media only screen and (max-width: 1440px) {

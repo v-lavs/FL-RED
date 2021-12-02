@@ -30,8 +30,8 @@
     &:before {
       top: 0;
       bottom: 0;
-      right: -22px;
-      width: 22px;
+      right: -16px;
+      width: 16px;
       z-index: 1;
     }
 
@@ -68,7 +68,7 @@
       content: '';
       display: block;
       background: linear-gradient(189.85deg, #EEC65F -8.6%, #A76F2A 3.48%, #E2B855 14.37%, #F9F2B7 26.81%, #E2B855 41.66%, #8F5E21 75.74%, #E2B855 92.6%);
-      right: 22px;
+      right: 16px;
       height: 3px;
       bottom: 50px;
       left: -100vw;

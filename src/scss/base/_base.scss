@@ -15,7 +15,9 @@ body {
 .danger-text {
   color: #ff0000;
 }
-
+.strong{
+  font-weight: 900;
+}
 .hide {
   position: absolute;
   width: 1px;
@@ -60,7 +62,6 @@ body {
 }
 
 .summary {
-  margin-bottom: 250px;
   &__wrap-logo {
     max-width: 273px;
   }
@@ -114,6 +115,7 @@ body {
 }
 
 .section {
+  margin-bottom: 250px;
   &__header {
     text-align: center;
   }

@@ -17,26 +17,59 @@
   .section__title {
     margin-bottom: 97px;
   }
-  &-list{
+
+  &-list {
+    margin-top: -11.25%;
     display: flex;
     flex-wrap: wrap;
-    .col{
+    margin-bottom: 75px;
+
+    .col {
       padding: 5px;
     }
-    .col-12{
+
+    .col-12 {
       width: 100%;
-      .benefits-list__wrap-img{
+
+      .benefits-list__wrap-img {
         padding-top: 56.9%;
       }
+
+      .benefits-caption,
+      .label {
+        position: absolute;
+        left: 50%;
+        z-index: 1;
+        max-width: 504px;
+        width: 100%;
+      }
+
+      .label {
+        bottom: 0;
+        font-size: 32px;
+        background-color: #ffffff;
+        text-align: center;
+        padding: 24px;
+        transform: translate(-50%, 50%);
+      }
+
+      .benefits-caption {
+        padding: 37px 15px;
+        top: 0;
+        transform: translate(-50%, -50%);
+      }
     }
-    .col-4{
+
+    .col-4 {
       width: 33.33%;
     }
-    &__wrap-img{
+
+    &__wrap-img {
       position: relative;
-      padding-top:67.4%;
+      padding-top: 67.4%;
     }
-    &__img{
+
+    &__img {
       position: absolute;
       left: 0;
       right: 0;
@@ -46,13 +79,77 @@
       height: 100%;
       object-fit: cover;
     }
-    .benefits-caption{
-      width: 100%;
-      padding: 37px 15px;
-      background-color: #ffffff;
-      font-size: 32px;
-      line-height: 1.06;
-      text-align: center;
+  }
+
+  &-caption {
+    width: 100%;
+    padding: 25px 15px;
+    background-color: #ffffff;
+    font-size: 32px;
+    line-height: 1.06;
+    text-align: center;
+  }
+}
+
+.benefits-location {
+  &__card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+
+    &:nth-child(even) {
+      .benefits-location__wrap-thumb {
+        order: 1;
+
+        &:before {
+          left: auto;
+          right: 0;
+        }
+      }
+
+      .benefits-location__description {
+        padding-left: 0;
+        padding-right: 57px;
+      }
     }
+  }
+
+  &__wrap-thumb {
+    position: relative;
+    width: 76%;
+    padding-top: 31.2%;
+
+    &:before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 11px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(189.85deg, #EEC65F -8.6%, #A76F2A 3.48%, #E2B855 14.37%, #F9F2B7 26.81%, #E2B855 41.66%, #8F5E21 75.74%, #E2B855 92.6%);
+      z-index: 2;
+    }
+  }
+
+  &__bg-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__description {
+    padding-left: 57px;
+    font-size: 32px;
+  }
+
+  .title {
+    margin-bottom: 7px;
   }
 }

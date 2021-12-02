@@ -10,7 +10,8 @@
   font-weight: 400;
   text-align: center;
   z-index: 1;
-  &_parallax{
+
+  &_parallax {
     background-attachment: fixed;
   }
 }
@@ -20,6 +21,12 @@
   background-color: #ffffff;
   padding: 99px 0 120px;
 
+  .proposal {
+    p {
+      margin-bottom: 5px;
+    }
+  }
+
   .container {
     display: flex;
     align-items: center;
@@ -28,7 +35,6 @@
 
   &__text {
     max-width: 705px;
-    font-weight: 300;
     font-size: 32px;
     text-align: center;
     color: #194A21;
@@ -39,7 +45,7 @@
     }
 
     .strong {
-      font-family: $secondary-font;
+      font-weight: 900;
     }
   }
 
