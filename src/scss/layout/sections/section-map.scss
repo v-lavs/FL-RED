@@ -1,0 +1,51 @@
+.section-map {
+  .container {
+    position: relative;
+    padding-top: 123px;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+}
+
+.map {
+  min-height: 708px;
+
+  &__img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  &__info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(../assets/img/bg-design.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    max-width: 355px;
+    width: 100%;
+    color: #ffffff;
+    padding: 43px 52px 43px 41px;
+    .btn_main{
+      min-width: 262px;
+      text-align: center;
+      .btn-inner{
+        padding: 14px;
+      }
+    }
+  }
+
+  &__info-item {
+    line-height: 1.89;
+    font-weight: 300;
+    margin-bottom: 26px;
+    text-transform: capitalize;
+  }
+
+}

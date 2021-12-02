@@ -1236,6 +1236,57 @@ body {
   margin-bottom: 7px;
 }
 
+.section-map .container {
+  position: relative;
+  padding-top: 123px;
+}
+
+.section-map__title {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.map {
+  min-height: 708px;
+}
+
+.map__img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.map__info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url(../assets/img/bg-design.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  max-width: 355px;
+  width: 100%;
+  color: #ffffff;
+  padding: 43px 52px 43px 41px;
+}
+
+.map__info .btn_main {
+  min-width: 262px;
+  text-align: center;
+}
+
+.map__info .btn_main .btn-inner {
+  padding: 14px;
+}
+
+.map__info-item {
+  line-height: 1.89;
+  font-weight: 300;
+  margin-bottom: 26px;
+  text-transform: capitalize;
+}
+
 @media only screen and (max-width: 1440px) {
   .container {
     max-width: 1080px;
