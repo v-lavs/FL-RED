@@ -537,36 +537,51 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <section class="contacts golden-line" style="background-image: url(assets/img/main-bg.jpg);">
+    <footer class="footer golden-line" style="background-image: url(assets/img/main-bg.jpg);">
+        <section class="contacts">
             <div class="container">
                 <div class="section__header">
                     <h2 class="section__title gradient-text">Let’s get in touch</h2>
                 </div>
-                <div class="_row">
+                <div class="contacts__row">
                     <div class="contacts__left" style="background-image: url(assets/img/contact-f.jpg);"></div>
+
                     <div class="contacts__right">
                         <form action="#" class="form">
-                            <div class="form-group">
-                                <label class="hide">Name</label>
-                                <input type="text" class="form-control" required>
-                                <div class="placeholder-text">Name <strong style="color: #ffb800;">*</strong></div>
+                            <div class="form__row">
+                                <div class="form__col form__col_12">
+                                    <label class="custom-input">
+                                        <span class="custom-input__placeholder">Name <strong
+                                                style="color: #ffb800;">*</strong></span>
+                                        <input type="text" class="custom-input__field" required>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="hide">Email</label>
-                                <input type="text" class="form-control" required>
-                                <div class="placeholder-text">Email <strong style="color: #ffb800;">*</strong></div>
+
+                            <div class="form__row">
+                                <div class="form__col form__col_6">
+                                    <label class="custom-input">
+                                        <input class="custom-input__field" type="text" required>
+                                        <span class="custom-input__placeholder">Email</span>
+                                    </label>
+                                </div>
+                                <div class="form__col form__col_6">
+                                    <label class="custom-input">
+                                        <input class="custom-input__field" type="text" required>
+                                        <span class="custom-input__placeholder">Phone</span>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="hide">Phone</label>
-                                <input type="text" class="form-control" required>
-                                <div class="placeholder-text">Phone <strong style="color: #ffb800;">*</strong></div>
+
+                            <div class="form__row">
+                                <div class="form__col form__col_12">
+                                    <label class="custom-input">
+                                        <textarea class="custom-input__field" rows="3"></textarea>
+                                        <span class="custom-input__placeholder">Type your message here</span>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label class="hide">Type your message here</label>
-                                <textarea class="form-control" placeholder="Type your message here" rows="3"></textarea>
-                            </div>
-                            Type your message here
+
                             <button type="submit" class="btn btn_main">
                                 <span class="btn-inner">
                                     <span class="gradient-text">Submit</span>
@@ -574,24 +589,30 @@
                             </button>
                         </form>
                     </div>
-                    <div class="section__footer">
-                        <a href="#" class="logo">
-                            <img src="assets/img/svg/small-logo.svg" alt="Flamingo Residence">
-                        </a>
-                        <a href="tel:+971 561156272" class="link-phone"><span class="gradient-text">contact us   +971 561156272</span></a>
-                        <div class="address">
+                </div>
+
+                <div class="section__footer">
+                    <a href="#" class="logo">
+                        <img src="assets/img/svg/small-logo.svg" alt="Flamingo Residence">
+                    </a>
+                    <a href="tel:+971 561156272" class="link-phone"><span class="gradient-text">contact us   +971 561156272</span></a>
+                    <div class="address">
                             <span class="gradient-text">
                             Meydan Avenue<br>
                             Nad Al Sheba 1<br>
                             Dubai - UAE
                             </span>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="container">
 
+        <div class="footer__copyright">
+            <div class="container">
+                <span class="footer__copyright-text">Copyright &copy; 2021 All rights reserved</span>
+                <span class="footer__copyright-text">Development by <a
+                        href="#"><strong>Profi Creative</strong></a></span>
+            </div>
         </div>
     </footer>
 </div>

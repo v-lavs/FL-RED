@@ -816,6 +816,27 @@ body {
   z-index: 500;
 }
 
+.footer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.footer__copyright {
+  padding: 35px 0 45px;
+  color: #fff;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.footer__copyright .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .section-banner {
   min-height: 100vh;
   display: flex;
@@ -1287,18 +1308,112 @@ body {
   text-transform: capitalize;
 }
 
+.custom-input {
+  position: relative;
+  color: #fff;
+  background-color: #163F2F;
+  font-size: 20px;
+  line-height: 1.25;
+  display: block;
+  width: 100%;
+}
+
+.custom-input.has-value .custom-input__placeholder {
+  display: none;
+}
+
+.custom-input__field {
+  display: block;
+  width: 100%;
+  min-height: 92px;
+  padding: 35px 30px;
+  border: none;
+  background-color: transparent;
+  appearance: none;
+  border-radius: 0;
+  font-size: inherit;
+}
+
+.custom-input__field[required] + .custom-input__placeholder:after {
+  display: inline-block;
+  content: '*';
+  color: #ffb800;
+  font-weight: 700;
+  margin-left: 3px;
+}
+
+.custom-input__placeholder {
+  position: absolute;
+  top: 35px;
+  left: 30px;
+}
+
 .contacts {
+  padding-top: 85px;
   font-size: 24px;
+}
+
+.contacts .section__footer {
+  margin-top: 65px;
+}
+
+.contacts .section__header {
+  margin-bottom: 110px;
+}
+
+.contacts .form__row {
+  display: flex;
+  margin: 0 -6px 12px;
+}
+
+.contacts .form__col {
+  padding: 0 6px;
+}
+
+.contacts .form__col_12 {
+  width: 100%;
+}
+
+.contacts .form__col_6 {
+  width: 50%;
+}
+
+.contacts .form .btn_main {
+  display: block;
+  min-width: 237px;
+  margin: 36px auto 0;
+}
+
+.contacts__row {
+  display: flex;
+}
+
+.contacts__right {
+  width: 50%;
+  max-width: 460px;
+  flex-shrink: 0;
+  padding-left: 40px;
+  min-width: 0;
+}
+
+.contacts__left {
+  width: 50%;
+  flex-grow: 1;
 }
 
 .contacts .section__footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  padding-bottom: 30px;
 }
 
 .contacts .section__footer > .gradient-text {
   background: linear-gradient(268.18deg, #EEC65F -2.08%, #A76F2A 10.1%, #E2B855 21.09%, #F9F2B7 33.63%, #E2B855 48.61%, #8F5E21 82.97%, #E2B855 99.98%);
+}
+
+.contacts .address {
+  text-align: right;
 }
 
 .contacts .link-phone {

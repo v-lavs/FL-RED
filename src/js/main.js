@@ -49,6 +49,16 @@ $(document).ready(function () {
     smoothScrollToAnchor('.btn_scroll');
     smoothScrollToAnchor('.menu__link');
 
+    // Custom input
+
+    $('.custom-input__field').on('change input', function (e) {
+        if (e.target.value === '') {
+            $(this).parents('.custom-input').removeClass('has-value');
+        } else {
+            $(this).parents('.custom-input').addClass('has-value');
+        }
+    });
+
 
     //    ANIMATION
 
