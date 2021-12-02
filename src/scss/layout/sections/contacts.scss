@@ -42,7 +42,11 @@
 .contacts {
   padding-top: 85px;
   font-size: 24px;
-
+&__left{
+  background-position: 0 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
   .section__footer {
     margin-top: 65px;
   }

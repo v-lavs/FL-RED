@@ -22,25 +22,7 @@
     padding-bottom: 67px;
   }
 
-  .card-list {
-    position: relative;
-    &:after {
-      content: '';
-      position: absolute;
-      display: block;
-      left: -50vw;
-      right: -50vw;
-      height: 100px;
-      bottom: -50px;
-      background-color: #fff;
-      z-index: 2;
-    }
-  }
-
   .card {
-    position: relative;
-    z-index: 3;
-
     &__thumb {
       order: -1;
 
@@ -56,7 +38,7 @@
     }
 
     &__text-content {
-      padding-left: 48px;
+      padding-left: 45px;
       padding-right: 0;
 
       &:after {

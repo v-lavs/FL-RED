@@ -110,6 +110,7 @@
       .benefits-location__description {
         padding-left: 0;
         padding-right: 57px;
+        flex-grow: 1;
       }
     }
   }
@@ -151,5 +152,11 @@
 
   .title {
     margin-bottom: 7px;
+  }
+}
+
+@include respond-to($xl){
+  .benefits-caption{
+    font-size: 28px;
   }
 }

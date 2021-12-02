@@ -9,23 +9,4 @@
   .section__header{
     margin-bottom: 68px;
   }
-  .card-list {
-    position: relative;
-    &:after {
-      content: '';
-      position: absolute;
-      display: block;
-      left: -50vw;
-      right: -50vw;
-      height: 100px;
-      bottom: -50px;
-      background-color: #fff;
-      z-index: 2;
-    }
-
-    .card {
-      position: relative;
-      z-index: 3;
-    }
-  }
 }

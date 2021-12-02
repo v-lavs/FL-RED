@@ -1,8 +1,23 @@
-.card-list{
+.card-list {
   margin-bottom: 250px;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    left: -50vw;
+    right: -50vw;
+    height: 100px;
+    bottom: -50px;
+    background-color: #fff;
+    z-index: 2;
+  }
 }
 
 .card {
+  position: relative;
+  z-index: 3;
   margin-bottom: 46px;
   display: flex;
   align-items: flex-end;
@@ -18,6 +33,7 @@
     width: 55%;
     flex-grow: 1;
     padding-top: 27.25%;
+
     &:before,
     &:after {
       position: absolute;
@@ -43,24 +59,26 @@
       z-index: 0;
     }
   }
-&__img{
-  position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
 
-}
+  &__img {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+
+  }
+
   &__text-content {
     position: relative;
     max-width: 478px;
     width: 45%;
     padding-bottom: 80px;
-    padding-right: 48px;
+    padding-right: 45px;
     flex-grow: 1;
 
     &:after {

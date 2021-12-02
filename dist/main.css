@@ -641,9 +641,24 @@ body {
 
 .card-list {
   margin-bottom: 250px;
+  position: relative;
+}
+
+.card-list:after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: -50vw;
+  right: -50vw;
+  height: 100px;
+  bottom: -50px;
+  background-color: #fff;
+  z-index: 2;
 }
 
 .card {
+  position: relative;
+  z-index: 3;
   margin-bottom: 46px;
   display: flex;
   align-items: flex-end;
@@ -701,7 +716,7 @@ body {
   max-width: 478px;
   width: 45%;
   padding-bottom: 80px;
-  padding-right: 48px;
+  padding-right: 45px;
   flex-grow: 1;
 }
 
@@ -1039,27 +1054,6 @@ body {
   margin-bottom: 68px;
 }
 
-.features .card-list {
-  position: relative;
-}
-
-.features .card-list:after {
-  content: '';
-  position: absolute;
-  display: block;
-  left: -50vw;
-  right: -50vw;
-  height: 100px;
-  bottom: -50px;
-  background-color: #fff;
-  z-index: 2;
-}
-
-.features .card-list .card {
-  position: relative;
-  z-index: 3;
-}
-
 .facilities .section__bg {
   position: relative;
 }
@@ -1085,27 +1079,6 @@ body {
   padding-bottom: 67px;
 }
 
-.facilities .card-list {
-  position: relative;
-}
-
-.facilities .card-list:after {
-  content: '';
-  position: absolute;
-  display: block;
-  left: -50vw;
-  right: -50vw;
-  height: 100px;
-  bottom: -50px;
-  background-color: #fff;
-  z-index: 2;
-}
-
-.facilities .card {
-  position: relative;
-  z-index: 3;
-}
-
 .facilities .card__thumb {
   order: -1;
 }
@@ -1121,7 +1094,7 @@ body {
 }
 
 .facilities .card__text-content {
-  padding-left: 48px;
+  padding-left: 45px;
   padding-right: 0;
 }
 
@@ -1286,6 +1259,7 @@ body {
 .benefits-location__card:nth-child(even) .benefits-location__description {
   padding-left: 0;
   padding-right: 57px;
+  flex-grow: 1;
 }
 
 .benefits-location__wrap-thumb {
@@ -1423,6 +1397,12 @@ body {
   font-size: 24px;
 }
 
+.contacts__left {
+  background-position: 0 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .contacts .section__footer {
   margin-top: 65px;
 }
@@ -1554,39 +1534,31 @@ body {
   margin-left: 20px;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1240px) {
   .container {
-    max-width: 1080px;
+    max-width: 1140px;
+  }
+
+  .benefits-caption {
+    font-size: 28px;
   }
 }
 
-@media only screen and (max-width: 1240px) {
+@media only screen and (max-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
 
-@media only screen and (max-width: 1080px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media only screen and (max-width: 920px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .container {
-    max-width: 580px;
+    max-width: 720px;
   }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 576px) {
   .container {
-    max-width: 100%;
-    padding: 0 16px;
+    max-width: 540px;
+    padding: 0 15px;
   }
 }
