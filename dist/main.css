@@ -914,7 +914,7 @@ body {
 }
 
 .description-residence .proposal p {
-  margin-bottom: 5px;
+  margin-bottom: 0;
 }
 
 .description-residence .container {
@@ -1285,6 +1285,24 @@ body {
   font-weight: 300;
   margin-bottom: 26px;
   text-transform: capitalize;
+}
+
+.contacts {
+  font-size: 24px;
+}
+
+.contacts .section__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.contacts .section__footer > .gradient-text {
+  background: linear-gradient(268.18deg, #EEC65F -2.08%, #A76F2A 10.1%, #E2B855 21.09%, #F9F2B7 33.63%, #E2B855 48.61%, #8F5E21 82.97%, #E2B855 99.98%);
+}
+
+.contacts .link-phone {
+  margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 1440px) {

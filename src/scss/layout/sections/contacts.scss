@@ -1,0 +1,15 @@
+.contacts {
+  font-size: 24px;
+
+  .section__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  > .gradient-text {
+      background: linear-gradient(268.18deg, #EEC65F -2.08%, #A76F2A 10.1%, #E2B855 21.09%, #F9F2B7 33.63%, #E2B855 48.61%, #8F5E21 82.97%, #E2B855 99.98%)
+    }
+  }
+  .link-phone{
+    margin-bottom: 30px;
+  }
+}
