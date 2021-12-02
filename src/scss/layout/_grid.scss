@@ -5,8 +5,12 @@
   padding: 0 20px;
   margin: 0 auto;
 
-  @include respond-to($xl) {
+  @include respond-to($laptop-md) {
     max-width: 1140px;
+  }
+
+  @include respond-to($laptop) {
+    max-width: 1080px;
   }
   @include respond-to($lg) {
     max-width: 960px;

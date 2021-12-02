@@ -110,7 +110,6 @@
       .benefits-location__description {
         padding-left: 0;
         padding-right: 57px;
-        flex-grow: 1;
       }
     }
   }
@@ -148,6 +147,7 @@
   &__description {
     padding-left: 57px;
     font-size: 32px;
+    flex-grow: 1;
   }
 
   .title {
@@ -155,8 +155,22 @@
   }
 }
 
-@include respond-to($xl){
-  .benefits-caption{
+@include respond-to($laptop-md) {
+  .benefits-list .col-12 .label,
+  .benefits-caption {
     font-size: 28px;
+  }
+  .benefits-location {
+    &__card {
+      &:nth-child(even) {
+        .benefits-location__description {
+          padding-right: 40px;
+        }
+      }
+    }
+
+    &__description {
+      padding-left: 40px;
+    }
   }
 }

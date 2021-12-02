@@ -1259,7 +1259,6 @@ body {
 .benefits-location__card:nth-child(even) .benefits-location__description {
   padding-left: 0;
   padding-right: 57px;
-  flex-grow: 1;
 }
 
 .benefits-location__wrap-thumb {
@@ -1295,6 +1294,7 @@ body {
 .benefits-location__description {
   padding-left: 57px;
   font-size: 32px;
+  flex-grow: 1;
 }
 
 .benefits-location .title {
@@ -1534,13 +1534,32 @@ body {
   margin-left: 20px;
 }
 
-@media only screen and (max-width: 1240px) {
+@media only screen and (max-width: 1440px) {
+  .summary__caption {
+    font-size: 40px;
+  }
+
   .container {
     max-width: 1140px;
   }
 
+  .benefits-list .col-12 .label,
   .benefits-caption {
     font-size: 28px;
+  }
+
+  .benefits-location__card:nth-child(even) .benefits-location__description {
+    padding-right: 40px;
+  }
+
+  .benefits-location__description {
+    padding-left: 40px;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .container {
+    max-width: 1080px;
   }
 }
 
