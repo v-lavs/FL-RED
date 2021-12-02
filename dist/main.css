@@ -547,18 +547,38 @@ body {
   transition: .35s;
   background-color: transparent;
   border: none;
-}
-
-.btn_main {
   font-weight: 400;
   font-size: 20px;
   padding: 3px;
-  min-width: 366px;
+  max-width: 366px;
   color: #ffce5a;
+}
+
+.btn_main {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.btn_main.transparent .btn-inner {
+  background-image: none;
+}
+
+.btn_main:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(269.83deg, #EEC65F -33.35%, #A76F2A -9.64%, #E2B855 11.74%, #F9F2B7 36.15%, #E2B855 65.29%, #8F5E21 132.17%, #E2B855 165.27%);
+  clip-path: polygon(0% 0%, 0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%);
+  z-index: 1;
 }
 
 .btn_main .btn-inner {
+  position: relative;
   display: block;
   padding: 22px;
   width: 100%;
@@ -767,6 +787,10 @@ body {
 
 .header .btn_close,
 .header .btn_burger {
+  display: block;
+  appearance: none;
+  border-radius: 0;
+  background: transparent;
   border: none;
   width: 40px;
   height: 40px;
@@ -1000,15 +1024,40 @@ body {
   margin-top: -15%;
 }
 
+.features {
+  position: relative;
+}
+
 .features .section__bg {
   padding-top: 135px;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right bottom 50px;
+  background-size: 100% 100%;
+  background-position: center center;
 }
 
 .features .section__header {
   margin-bottom: 68px;
+}
+
+.features .card-list {
+  position: relative;
+}
+
+.features .card-list:after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: -50vw;
+  right: -50vw;
+  height: 100px;
+  bottom: -50px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.features .card-list .card {
+  position: relative;
+  z-index: 3;
 }
 
 .facilities .section__bg {
@@ -1020,8 +1069,8 @@ body {
   content: '';
   display: block;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right bottom 50px;
+  background-size: 100% 100%;
+  background-position: left top;
   left: 0;
   top: 0;
   bottom: 0;
@@ -1034,6 +1083,27 @@ body {
   position: relative;
   padding-top: 150px;
   padding-bottom: 67px;
+}
+
+.facilities .card-list {
+  position: relative;
+}
+
+.facilities .card-list:after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: -50vw;
+  right: -50vw;
+  height: 100px;
+  bottom: -50px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.facilities .card {
+  position: relative;
+  z-index: 3;
 }
 
 .facilities .card__thumb {
@@ -1381,6 +1451,8 @@ body {
 .contacts .form .btn_main {
   display: block;
   min-width: 237px;
+  max-width: none;
+  width: auto;
   margin: 36px auto 0;
 }
 
@@ -1418,6 +1490,68 @@ body {
 
 .contacts .link-phone {
   margin-bottom: 30px;
+}
+
+.residence-plan .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.residence-plan .residence-plan__content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 64px;
+  color: #194A21;
+  font-size: 32px;
+  line-height: 1.28;
+}
+
+.residence-plan .residence-plan__content,
+.residence-plan .residence-plan__wrap-img {
+  width: 50%;
+}
+
+.residence-plan .residence-plan__wrap-img {
+  padding-left: 50px;
+}
+
+.residence-plan .residence-plan__logo {
+  display: block;
+  width: 273px;
+  margin-bottom: 45px;
+}
+
+.residence-plan .residence-plan__logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.residence-plan__desc {
+  margin-bottom: 65px;
+}
+
+.residence-plan__desc li {
+  position: relative;
+  padding-left: 46px;
+}
+
+.residence-plan__desc li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: .5em;
+  left: 16px;
+  background-color: #194A21;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 11px;
+  height: 11px;
+  z-index: 1;
+}
+
+.residence-plan__btn {
+  margin-top: auto;
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 1440px) {

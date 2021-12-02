@@ -51,6 +51,10 @@
 
   .btn_close,
   .btn_burger {
+    display: block;
+    appearance: none;
+    border-radius: 0;
+    background: transparent;
     border: none;
     width: 40px;
     height: 40px;

@@ -69,6 +69,8 @@
     .btn_main {
       display: block;
       min-width: 237px;
+      max-width: none;
+      width: auto;
       margin: 36px auto 0;
     }
   }

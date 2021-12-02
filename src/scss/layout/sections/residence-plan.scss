@@ -1,0 +1,62 @@
+.residence-plan {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .residence-plan__content {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 64px;
+    color: #194A21;
+    font-size: 32px;
+    line-height: 1.28;
+  }
+
+  .residence-plan__content,
+  .residence-plan__wrap-img {
+    width: 50%;
+  }
+
+  .residence-plan__wrap-img {
+    padding-left: 50px;
+  }
+
+  .residence-plan__logo {
+    display: block;
+    width: 273px;
+    margin-bottom: 45px;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 65px;
+
+    li {
+      position: relative;
+      padding-left: 46px;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: .5em;
+        left: 16px;
+        background-color: #194A21;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 11px;
+        height: 11px;
+        z-index: 1;
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: auto;
+    margin-left: 20px;
+  }
+}
