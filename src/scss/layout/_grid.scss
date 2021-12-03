@@ -10,7 +10,7 @@
   }
 
   @include respond-to($laptop) {
-    max-width: 1080px;
+    max-width: 1040px;
   }
   @include respond-to($lg) {
     max-width: 960px;

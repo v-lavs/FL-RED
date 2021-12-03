@@ -1,11 +1,13 @@
-.gallery{
+.gallery {
   width: 100%;
   display: flex;
-  &__item{
+
+  &__item {
     width: 25%;
     padding: 0 8px;
   }
-  &__link{
+
+  &__link {
     width: 100%;
     display: inline-block;
     padding-top: 73.3%;
@@ -13,8 +15,33 @@
     background-position: center;
     background-size: cover;
   }
-  &_top{
+
+  &_top {
     margin-bottom: 65px;
 
+  }
+}
+
+@include respond-to($laptop) {
+ .design  .gallery-room {
+    width: 90%;
+  }
+  .gallery {
+    flex-wrap: wrap;
+
+    &__item {
+      width: 50%;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .gallery{
+    &__item {
+      width: 100%;
+      //max-width: 340px;
+      margin-bottom: 16px;
+    }
   }
 }

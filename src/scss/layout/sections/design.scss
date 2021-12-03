@@ -20,7 +20,8 @@
     width: 100%;
     max-width: 1426px;
     margin: 0 auto;
-    .subtitle{
+
+    .subtitle {
       font-size: 32px;
       line-height: 1.187;
       margin-bottom: 60px;
@@ -28,8 +29,22 @@
       text-align: center;
     }
   }
-  .gallery_top{
+
+  .gallery_top {
     position: relative;
     margin-top: -15%;
+  }
+}
+
+@include respond-to($sm) {
+  .design {
+    .section__header {
+      padding-top: 105px;
+    }
+
+    .gallery_top {
+      position: relative;
+      margin-top: -60%;
+    }
   }
 }

@@ -102,3 +102,9 @@
     color: #194a21;
   }
 }
+
+@include respond-to($laptop){
+  .card__title {
+    font-size: 20px;
+  }
+}

@@ -162,4 +162,12 @@ body {
   }
 }
 
+@include respond-to($sm){
+  .section{
+    &__title{
+      font-size: 32px;
+    }
+  }
+}
+
 

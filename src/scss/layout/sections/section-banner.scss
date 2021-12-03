@@ -51,11 +51,13 @@
       height: 74px;
     }
   }
+
   .floating {
     animation-name: floating;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
   }
+
   @keyframes floating {
     0% {
       transform: translateY(0%);
@@ -65,6 +67,23 @@
     }
     100% {
       transform: translateY(0%);
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .section-banner {
+    &__slogan {
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+
+    .decor-text {
+      font-size: 32px;
+    }
+    &__logo{
+      max-width: 280px;
+      margin-bottom: 75px;
     }
   }
 }
