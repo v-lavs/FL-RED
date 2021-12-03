@@ -50,6 +50,11 @@
       overflow: hidden;
     }
   }
+  @include respond-to($sm){
+    &_main{
+      max-width: 252px;
+    }
+  }
 }
 
 

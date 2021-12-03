@@ -164,6 +164,7 @@ body {
 
 @include respond-to($sm){
   .section{
+    margin-bottom: 50px;
     &__title{
       font-size: 32px;
     }

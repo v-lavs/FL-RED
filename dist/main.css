@@ -1603,8 +1603,21 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
+  .section {
+    margin-bottom: 50px;
+  }
+
   .section__title {
     font-size: 32px;
+  }
+
+  .text_lg {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .btn_main {
+    max-width: 252px;
   }
 
   .gallery__item {
@@ -1629,6 +1642,29 @@ body {
   .section-banner__logo {
     max-width: 280px;
     margin-bottom: 75px;
+  }
+
+  .facade-residence {
+    height: 328px;
+    min-height: 0;
+    background-attachment: inherit;
+  }
+
+  .description-residence {
+    padding: 50px 0;
+  }
+
+  .description-residence__text {
+    font-size: 20px;
+    margin-bottom: 74px;
+  }
+
+  .description-residence__text p {
+    margin-bottom: 18px;
+  }
+
+  .description-residence__wrap-img {
+    max-width: 188px;
   }
 
   .design .section__header {
