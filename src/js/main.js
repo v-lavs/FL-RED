@@ -33,10 +33,10 @@ $(document).ready(function () {
             let anchor = $.attr(this, 'href')
 
             if (anchor.match(/^#/) && anchor !== '#') {
-                event.preventDefault()
-                let offsetSize = $("header").innerHeight();
+                event.preventDefault();
+
                 $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top - offsetSize
+                    scrollTop: $($.attr(this, 'href')).offset().top
                 }, 2000);
                 nav.removeClass('open');
                 jQuery('.backdrop').fadeOut();
