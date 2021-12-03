@@ -103,8 +103,41 @@
   }
 }
 
-@include respond-to($laptop){
+@include respond-to($laptop) {
   .card__title {
     font-size: 20px;
+  }
+}
+
+@include respond-to($sm) {
+  .card {
+    flex-wrap: wrap;
+    max-width: 340px;
+    width: 100%;
+    margin: 0 auto 40px;
+
+    &__text-content,
+    &__thumb {
+      width: 100%;
+    }
+
+    &__text-content {
+      padding: 15px 15px 15px 0;
+
+      &:after {
+        left: 50%;
+        width: 100vw;
+        transform: translateX(-50%);
+        bottom: 0;
+      }
+    }
+
+    &__thumb {
+      padding-top: 60.5%;
+
+      &:after {
+        display: none;
+      }
+    }
   }
 }

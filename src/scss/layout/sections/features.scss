@@ -10,3 +10,16 @@
     margin-bottom: 68px;
   }
 }
+
+@include respond-to($sm){
+  .features {
+    .section__bg {
+      padding-top: 106px;
+      background-size: cover;
+      background-position: 0;
+    }
+    .card__text-content{
+      order: 1;
+    }
+  }
+}

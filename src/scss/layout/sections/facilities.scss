@@ -95,7 +95,9 @@
 }
 
 @include respond-to($laptop){
-  .facilities .summary .text-list {
-   padding-bottom: 20px;
+  .facilities {
+    .summary .text-list {
+      padding-bottom: 20px;
+    }
   }
 }

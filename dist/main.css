@@ -1629,6 +1629,37 @@ body {
     margin-bottom: 62px;
   }
 
+  .card {
+    flex-wrap: wrap;
+    max-width: 340px;
+    width: 100%;
+    margin: 0 auto 40px;
+  }
+
+  .card__text-content,
+  .card__thumb {
+    width: 100%;
+  }
+
+  .card__text-content {
+    padding: 15px 15px 15px 0;
+  }
+
+  .card__text-content:after {
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+
+  .card__thumb {
+    padding-top: 60.5%;
+  }
+
+  .card__thumb:after {
+    display: none;
+  }
+
   .container {
     max-width: 540px;
     padding: 0 15px;
@@ -1687,5 +1718,15 @@ body {
   .design .gallery-room .subtitle {
     width: 90%;
     margin: 0 auto 62px;
+  }
+
+  .features .section__bg {
+    padding-top: 106px;
+    background-size: cover;
+    background-position: 0;
+  }
+
+  .features .card__text-content {
+    order: 1;
   }
 }
