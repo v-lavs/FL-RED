@@ -41,10 +41,16 @@
     .section__header {
       padding-top: 105px;
     }
-
+    &__img-banner{
+      min-height: 312px;
+    }
     .gallery_top {
       position: relative;
       margin-top: -60%;
+    }
+    .gallery-room  .subtitle{
+      width: 90%;
+      margin:  0 auto 62px;
     }
   }
 }

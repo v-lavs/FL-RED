@@ -1625,6 +1625,10 @@ body {
     margin-bottom: 16px;
   }
 
+  .gallery_top {
+    margin-bottom: 62px;
+  }
+
   .container {
     max-width: 540px;
     padding: 0 15px;
@@ -1671,8 +1675,17 @@ body {
     padding-top: 105px;
   }
 
+  .design__img-banner {
+    min-height: 312px;
+  }
+
   .design .gallery_top {
     position: relative;
     margin-top: -60%;
+  }
+
+  .design .gallery-room .subtitle {
+    width: 90%;
+    margin: 0 auto 62px;
   }
 }
