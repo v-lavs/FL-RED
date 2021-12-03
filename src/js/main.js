@@ -73,7 +73,7 @@ $(document).ready(function () {
         const modal = $(modalID).addClass('active');
     });
 
-    $('.fl-modal__close').on('click', function (e) {
+    $('.fl-modal__close, .fl-modal__back').on('click', function (e) {
         e.preventDefault();
         $(this).parents('.fl-modal').removeClass('active');
     })

@@ -1,7 +1,8 @@
 .facilities {
-  .section__bg{
+  .section__bg {
     position: relative;
-   &-inner{
+
+    &-inner {
       position: absolute;
       content: '';
       display: block;
@@ -12,10 +13,11 @@
       top: 0;
       bottom: 0;
       right: 0;
-      transform: scale(-1,1);
+      transform: scale(-1, 1);
       z-index: 0;
     }
   }
+
   .section__header {
     position: relative;
     padding-top: 150px;
@@ -59,6 +61,7 @@
     &__col-right {
       position: relative;
       padding-top: 59.5%;
+
       &:before {
         position: absolute;
         content: '';
@@ -76,7 +79,8 @@
       bottom: 50%;
       z-index: 2;
     }
-    .text-list{
+
+    .text-list {
       width: 100%;
       text-align: right;
       font-weight: 300;
@@ -84,9 +88,11 @@
       line-height: 34px;
       padding-right: 27px;
       padding-bottom: 78px;
-      &__item{
+
+      &__item {
         margin-bottom: 15px;
-        &:last-child{
+
+        &:last-child {
           margin-bottom: 0;
         }
       }
@@ -94,7 +100,7 @@
   }
 }
 
-@include respond-to($laptop){
+@include respond-to($laptop) {
   .facilities {
     .summary .text-list {
       padding-bottom: 20px;

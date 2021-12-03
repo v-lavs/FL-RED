@@ -12,6 +12,9 @@
   max-width: 366px;
   color: #ffce5a;
 
+  &_full-width {
+    max-width: 100%;
+  }
 
   &_main {
     position: relative;

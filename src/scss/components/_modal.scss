@@ -16,25 +16,37 @@
     transform: translateY(0);
   }
 
+  &__back,
   &__close {
     text-decoration: none;
     display: block;
     position: absolute;
     top: 40px;
-    right: 65px;
     width: 54px;
     height: 54px;
-    background: url("../assets/img/svg/close-gold.svg") center center no-repeat;
     background-size: 100% auto;
     z-index: 1;
   }
+
+  &__close {
+    right: 65px;
+    background: url("../assets/img/svg/close-gold.svg") center center no-repeat;
+  }
+
+  &__back {
+    left: 65px;
+    background: url("../assets/img/svg/arrow-left-gold.svg") center center no-repeat;
+  }
 }
+
 
 .floor-modal {
   padding: 55px 0 60px;
+
   .modal-header {
     margin-bottom: 45px;
   }
+
   .modal-title {
     margin-bottom: 30px;
     font-size: 32px;
@@ -43,13 +55,46 @@
     text-align: center;
     font-weight: 400;
   }
+
+
+  .appartment-content {
+    display: flex;
+    flex-wrap: wrap;
+
+    .app-svg {
+      max-width: 260px;
+      margin: 0 auto;
+      .svg  {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .appatment-desc {
+      width: 100%;
+      max-width: 365px;
+      margin: 0 auto;
+    }
+
+    .btn-download {
+      margin-top: 65px;
+    }
+  }
+
+  .content-part {
+    width: 50%;
+  }
+
   .svg-wrap {
     width: 600px;
     margin: 0 auto;
   }
+
   .appartment-circle {
     cursor: pointer;
   }
+
   .scheme-tabs {
     display: flex;
     align-items: center;
@@ -71,6 +116,7 @@
       border: 2px solid #194A21;
       -webkit-transition: opacity .5s;
       transition: opacity .5s;
+
       &:hover,
       &.active {
         opacity: 1;

@@ -554,6 +554,10 @@ body {
   color: #ffce5a;
 }
 
+.btn_full-width {
+  max-width: 100%;
+}
+
 .btn_main {
   position: relative;
   overflow: hidden;
@@ -635,17 +639,26 @@ body {
   transform: translateY(0);
 }
 
+.fl-modal__back,
 .fl-modal__close {
   text-decoration: none;
   display: block;
   position: absolute;
   top: 40px;
-  right: 65px;
   width: 54px;
   height: 54px;
-  background: url("../assets/img/svg/close-gold.svg") center center no-repeat;
   background-size: 100% auto;
   z-index: 1;
+}
+
+.fl-modal__close {
+  right: 65px;
+  background: url("../assets/img/svg/close-gold.svg") center center no-repeat;
+}
+
+.fl-modal__back {
+  left: 65px;
+  background: url("../assets/img/svg/arrow-left-gold.svg") center center no-repeat;
 }
 
 .floor-modal {
@@ -663,6 +676,36 @@ body {
   color: #194A21;
   text-align: center;
   font-weight: 400;
+}
+
+.floor-modal .appartment-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.floor-modal .appartment-content .app-svg {
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.floor-modal .appartment-content .app-svg .svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.floor-modal .appartment-content .appatment-desc {
+  width: 100%;
+  max-width: 365px;
+  margin: 0 auto;
+}
+
+.floor-modal .appartment-content .btn-download {
+  margin-top: 65px;
+}
+
+.floor-modal .content-part {
+  width: 50%;
 }
 
 .floor-modal .svg-wrap {
