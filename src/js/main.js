@@ -60,6 +60,24 @@ $(document).ready(function () {
     });
 
 
+    // MODAL
+
+    $('.scheme-tabs__link').on('click', function (e) {
+        $('.scheme-tabs__link').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.fl-modal-toggle').on('click', function (e) {
+        e.preventDefault();
+        const modalID = $(this).data('modal');
+        const modal = $(modalID).addClass('active');
+    });
+
+    $('.fl-modal__close').on('click', function (e) {
+        e.preventDefault();
+        $(this).parents('.fl-modal').removeClass('active');
+    })
+
     //    ANIMATION
 
     // setTimeout(function () {

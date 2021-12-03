@@ -1,0 +1,80 @@
+.fl-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  transition: transform 1s;
+  max-height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  &__close {
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 65px;
+    width: 54px;
+    height: 54px;
+    background: url("../assets/img/svg/close-gold.svg") center center no-repeat;
+    background-size: 100% auto;
+    z-index: 1;
+  }
+}
+
+.floor-modal {
+  padding: 55px 0 60px;
+  .modal-header {
+    margin-bottom: 45px;
+  }
+  .modal-title {
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 1.2;
+    color: #194A21;
+    text-align: center;
+    font-weight: 400;
+  }
+  .svg-wrap {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .appartment-circle {
+    cursor: pointer;
+  }
+  .scheme-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__link {
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      margin: 0 23px;
+      color: #194A21;
+      opacity: .5;
+      border: 2px solid #194A21;
+      -webkit-transition: opacity .5s;
+      transition: opacity .5s;
+      &:hover,
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+}
