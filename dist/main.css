@@ -746,6 +746,57 @@ body {
   opacity: 1;
 }
 
+.appartment-desc {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.appartment-desc__props {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.appartment-desc__props .text-lg {
+  margin-top: 7px;
+  font-size: 32px;
+}
+
+.appartment-desc__separator {
+  margin: 0 25px;
+  height: 57px;
+  width: 1px;
+  background-color: #194A21;
+}
+
+.manager-info {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.manager-info__tel-btn {
+  width: 48px;
+  height: 48px;
+  display: block;
+  background: url("../assets/img/svg/phone-gold.svg") center center no-repeat;
+  background-size: 100% auto;
+  margin-left: auto;
+}
+
+.manager-info__thumb {
+  overflow: hidden;
+  border-radius: 50%;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  margin-right: 25px;
+}
+
 .gallery {
   width: 100%;
   display: flex;
