@@ -52,6 +52,9 @@
   }
 
   .summary {
+    &__wrap-img{
+      padding-top: 90%;
+    }
     &__col-left {
       display: flex;
       flex-direction: column;

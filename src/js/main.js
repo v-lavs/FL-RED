@@ -65,15 +65,24 @@ $(document).ready(function () {
     $('.scheme-tabs__link').on('click', function (e) {
         $('.scheme-tabs__link').removeClass('active');
         $(this).addClass('active');
+
     });
 
     $('.fl-modal-toggle').on('click', function (e) {
         e.preventDefault();
         const modalID = $(this).data('modal');
         const modal = $(modalID).addClass('active');
+        jQuery('.backdrop').fadeIn();
+        $("body").addClass("modal-open");
     });
 
-    $('.fl-modal__close, .fl-modal__back').on('click', function (e) {
+    $('.fl-modal__close').on('click', function (e) {
+        e.preventDefault();
+        $('.fl-modal').removeClass('active');
+        jQuery('.backdrop').fadeOut();
+        $("body").removeClass("modal-open");
+    })
+    $('.fl-modal__back').on('click', function (e) {
         e.preventDefault();
         $(this).parents('.fl-modal').removeClass('active');
     })

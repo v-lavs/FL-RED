@@ -393,6 +393,11 @@ body {
   color: #194a21;
 }
 
+body.modal-open {
+  overflow: hidden;
+  height: 100%;
+}
+
 .wrapper {
   overflow: hidden;
 }
@@ -480,28 +485,32 @@ body {
   top: 0;
   bottom: 0;
   right: 65vw;
+  padding-top: 65%;
   height: 100%;
   width: 65vw;
 }
 
 .summary__img {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
 
 .summary__caption {
   position: absolute;
-  max-width: 622px;
+  max-width: 625px;
   padding: 12px 37px 4px;
   background-color: #ffffff;
   font-weight: 300;
   font-size: 48px;
   text-align: right;
   bottom: 104px;
-  left: -23px;
+  left: -18px;
 }
 
 .section {
@@ -622,21 +631,21 @@ body {
 
 .fl-modal {
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 1200px;
   background-color: #fff;
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
+  transform: translate(-50%, -200%);
   transition: transform 1s;
   max-height: 100%;
   overflow-y: auto;
   z-index: 1000;
+  height: 690px;
 }
 
 .fl-modal.active {
-  transform: translateY(0);
+  transform: translate(-50%, -50%);
 }
 
 .fl-modal__back,
@@ -678,30 +687,32 @@ body {
   font-weight: 400;
 }
 
-.floor-modal .appartment-content {
+.floor-modal .apartment-content {
   display: flex;
   flex-wrap: wrap;
 }
 
-.floor-modal .appartment-content .app-svg {
-  max-width: 260px;
+.floor-modal .apartment-content .app-img {
+  display: flex;
+  align-items: center;
+}
+
+.floor-modal .apartment-content .app-img .img {
+  display: block;
+  height: auto;
+  width: auto;
   margin: 0 auto;
 }
 
-.floor-modal .appartment-content .app-svg .svg {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.floor-modal .appartment-content .appatment-desc {
+.floor-modal .apartment-content .apartment-desc {
   width: 100%;
   max-width: 365px;
   margin: 0 auto;
 }
 
-.floor-modal .appartment-content .btn-download {
+.floor-modal .apartment-content .btn-download {
   margin-top: 65px;
+  text-align: center;
 }
 
 .floor-modal .content-part {
@@ -713,7 +724,7 @@ body {
   margin: 0 auto;
 }
 
-.floor-modal .appartment-circle {
+.floor-modal .apartment-circle {
   cursor: pointer;
 }
 
@@ -746,12 +757,12 @@ body {
   opacity: 1;
 }
 
-.appartment-desc {
+.apartment-desc {
   font-size: 20px;
   line-height: 1.2;
 }
 
-.appartment-desc__props {
+.apartment-desc__props {
   display: flex;
   align-items: center;
   margin-top: 30px;
@@ -760,12 +771,12 @@ body {
   font-weight: 400;
 }
 
-.appartment-desc__props .text-lg {
+.apartment-desc__props .text-lg {
   margin-top: 7px;
   font-size: 32px;
 }
 
-.appartment-desc__separator {
+.apartment-desc__separator {
   margin: 0 25px;
   height: 57px;
   width: 1px;
@@ -797,6 +808,87 @@ body {
   margin-right: 25px;
 }
 
+.contacts-modal {
+  padding: 0;
+}
+
+.contacts-modal .fl-modal__close {
+  z-index: 2;
+  right: 25px;
+  top: 25px;
+}
+
+.contacts-modal .modal-title {
+  margin-bottom: 80px;
+}
+
+.contacts-modal .info-expert {
+  position: relative;
+  z-index: 1;
+}
+
+.contacts-modal__content {
+  display: flex;
+  text-align: center;
+  height: 100%;
+}
+
+.contacts-modal__part {
+  width: 50%;
+}
+
+.contacts-modal__part.img-wrap {
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+  font-size: 28px;
+  padding-bottom: 110px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.contacts-modal__part.img-wrap:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 72.54%);
+  z-index: 1;
+}
+
+.contacts-modal__part.img-wrap .activity {
+  font-size: 20px;
+}
+
+.contacts-modal__img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.contacts-modal__bg {
+  background: url(../assets/img/modal-bg.png) center center no-repeat;
+  background-size: cover;
+  padding: 130px 80px 133px 54px;
+}
+
+.contacts-modal .form__col {
+  margin-bottom: 12px;
+}
+
+.contacts-modal .btn_main {
+  margin-top: 25px;
+}
+
 .gallery {
   width: 100%;
   display: flex;
@@ -812,7 +904,7 @@ body {
   display: inline-block;
   padding-top: 73.3%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
 }
 
@@ -1032,7 +1124,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: #000;
-  opacity: .2;
+  opacity: .6;
   z-index: 500;
 }
 
@@ -1187,7 +1279,7 @@ body {
 
 .design__img-banner {
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   background-size: cover;
   min-height: 593px;
   padding-top: 37.5%;
@@ -1283,6 +1375,10 @@ body {
   left: 22px;
   right: 100vw;
   width: 100vw;
+}
+
+.facilities .summary__wrap-img {
+  padding-top: 90%;
 }
 
 .facilities .summary__col-left {
@@ -1494,8 +1590,8 @@ body {
 }
 
 .map {
-  min-height: 708px;
   position: relative;
+  padding-top: 44%;
 }
 
 .map__img {

@@ -1,19 +1,26 @@
 .fl-modal {
   position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  //top: 0;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 1200px;
+  //bottom: 0;
+  //right: 0;
   background-color: #fff;
-  -webkit-transform: translateY(-100%);
-  transform: translateY(-100%);
+  //-webkit-transform: translateY(-100%);
+  //transform: translateY(-100%);
+
+  transform: translate(-50%, -200%);
   transition: transform 1s;
   max-height: 100%;
   overflow-y: auto;
   z-index: 1000;
+  height: 690px;
 
   &.active {
-    transform: translateY(0);
+    transform: translate(-50%, -50%);
+    //transform: translateY(0);
   }
 
   &__back,
@@ -56,21 +63,27 @@
     font-weight: 400;
   }
 
-  .appartment-content {
+  .apartment-content {
     display: flex;
     flex-wrap: wrap;
 
-    .app-svg {
-      max-width: 260px;
-      margin: 0 auto;
-      .svg  {
+    .app-img {
+      //max-width: 278px;
+      //height: auto;
+      //margin: 0 auto;
+      display: flex;
+      align-items: center;
+
+      .img {
         display: block;
-        width: 100%;
+        //width: 100%;
         height: auto;
+        width: auto;
+        margin: 0 auto;
       }
     }
 
-    .appatment-desc {
+    .apartment-desc {
       width: 100%;
       max-width: 365px;
       margin: 0 auto;
@@ -78,6 +91,7 @@
 
     .btn-download {
       margin-top: 65px;
+      text-align: center;
     }
   }
 
@@ -90,7 +104,7 @@
     margin: 0 auto;
   }
 
-  .appartment-circle {
+  .apartment-circle {
     cursor: pointer;
   }
 
@@ -124,7 +138,7 @@
   }
 }
 
-.appartment-desc {
+.apartment-desc {
   font-size: 20px;
   line-height: 1.2;
 
@@ -151,7 +165,7 @@
 
 }
 
-.manager-info  {
+.manager-info {
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -165,6 +179,7 @@
     background-size: 100% auto;
     margin-left: auto;
   }
+
   &__thumb {
     overflow: hidden;
     border-radius: 50%;
@@ -172,5 +187,86 @@
     width: 60px;
     height: 60px;
     margin-right: 25px;
+  }
+}
+
+
+.contacts-modal {
+  padding: 0;
+  .fl-modal__close{
+    z-index: 2;
+    right: 25px;
+    top: 25px;
+  }
+  .modal-title {
+    margin-bottom: 80px;
+  }
+
+  .info-expert {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__content {
+    display: flex;
+    text-align: center;
+    height: 100%;
+  }
+
+  &__part {
+    width: 50%;
+
+    &.img-wrap {
+      position: relative;
+      overflow: hidden;
+      color: #ffffff;
+      font-size: 28px;
+      padding-bottom: 110px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      &:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 72.54%);
+        z-index: 1;
+      }
+
+      .activity {
+        font-size: 20px;
+      }
+    }
+  }
+
+
+  &__img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  &__bg {
+    background: url(../assets/img/modal-bg.png) center center no-repeat;
+    background-size: cover;
+    padding: 130px 80px 133px 54px;
+  }
+
+  .form__col {
+    margin-bottom: 12px;
+  }
+
+  .btn_main {
+    margin-top: 25px;
   }
 }

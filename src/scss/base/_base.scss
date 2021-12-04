@@ -2,6 +2,11 @@ body {
   font: 400 16px/1.2 $main-font;
   background-color: #ffffff;
   color: #194a21;
+
+  &.modal-open {
+    overflow: hidden;
+    height: 100%;
+  }
 }
 
 .wrapper {
@@ -15,9 +20,11 @@ body {
 .danger-text {
   color: #ff0000;
 }
-.strong{
+
+.strong {
   font-weight: 900;
 }
+
 .hide {
   position: absolute;
   width: 1px;
@@ -90,32 +97,38 @@ body {
     top: 0;
     bottom: 0;
     right: 65vw;
-
+    padding-top: 65%;
     height: 100%;
     width: 65vw;
   }
-  &__img{
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
     height: 100%;
     width: 100%;
   }
-  &__caption{
+
+  &__caption {
     position: absolute;
-    max-width: 622px;
+    max-width: 625px;
     padding: 12px 37px 4px;
     background-color: #ffffff;
     font-weight: 300;
     font-size: 48px;
     text-align: right;
     bottom: 104px;
-    left:-23px;
+    left: -18px;
   }
 }
 
 .section {
   margin-bottom: 250px;
+
   &__header {
     text-align: center;
   }
@@ -156,16 +169,17 @@ body {
   }
 }
 
-@include respond-to($laptop-md){
-  .summary__caption{
+@include respond-to($laptop-md) {
+  .summary__caption {
     font-size: 40px;
   }
 }
 
-@include respond-to($sm){
-  .section{
+@include respond-to($sm) {
+  .section {
     margin-bottom: 50px;
-    &__title{
+
+    &__title {
       font-size: 32px;
     }
   }
