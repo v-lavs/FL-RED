@@ -194,6 +194,9 @@ body {
 }
 
 @include respond-to($lg) {
+  .section{
+    margin-bottom: 100px;
+  }
   .summary {
     &__row{
       position: relative;

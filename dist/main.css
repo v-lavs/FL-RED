@@ -893,6 +893,46 @@ body.modal-open {
   margin-top: 25px;
 }
 
+.custom-input {
+  position: relative;
+  color: #fff;
+  background-color: #163F2F;
+  font-size: 20px;
+  line-height: 1.25;
+  display: block;
+  width: 100%;
+}
+
+.custom-input.has-value .custom-input__placeholder {
+  display: none;
+}
+
+.custom-input__field {
+  display: block;
+  width: 100%;
+  min-height: 92px;
+  padding: 35px 30px;
+  border: none;
+  background-color: transparent;
+  appearance: none;
+  border-radius: 0;
+  font-size: inherit;
+}
+
+.custom-input__field[required] + .custom-input__placeholder:after {
+  display: inline-block;
+  content: '*';
+  color: #ffb800;
+  font-weight: 700;
+  margin-left: 3px;
+}
+
+.custom-input__placeholder {
+  position: absolute;
+  top: 35px;
+  left: 30px;
+}
+
 .gallery {
   width: 100%;
   display: flex;
@@ -1282,10 +1322,10 @@ body.modal-open {
 }
 
 .design__img-banner {
+  min-height: 312px;
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
-  min-height: 593px;
   padding-top: 37.5%;
 }
 
@@ -1545,7 +1585,7 @@ body.modal-open {
 
 .benefits-location__card:nth-child(even) .benefits-location__description {
   padding-left: 0;
-  padding-right: 57px;
+  padding-right: 35px;
 }
 
 .benefits-location__wrap-thumb {
@@ -1579,7 +1619,7 @@ body.modal-open {
 }
 
 .benefits-location__description {
-  padding-left: 57px;
+  padding-left: 35px;
   font-size: 32px;
   flex-grow: 1;
 }
@@ -1621,7 +1661,7 @@ body.modal-open {
   bottom: 0;
   background-image: url(../assets/img/bg-design.png);
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
   background-size: cover;
   max-width: 355px;
   width: 100%;
@@ -1643,46 +1683,6 @@ body.modal-open {
   font-weight: 300;
   margin-bottom: 26px;
   text-transform: capitalize;
-}
-
-.custom-input {
-  position: relative;
-  color: #fff;
-  background-color: #163F2F;
-  font-size: 20px;
-  line-height: 1.25;
-  display: block;
-  width: 100%;
-}
-
-.custom-input.has-value .custom-input__placeholder {
-  display: none;
-}
-
-.custom-input__field {
-  display: block;
-  width: 100%;
-  min-height: 92px;
-  padding: 35px 30px;
-  border: none;
-  background-color: transparent;
-  appearance: none;
-  border-radius: 0;
-  font-size: inherit;
-}
-
-.custom-input__field[required] + .custom-input__placeholder:after {
-  display: inline-block;
-  content: '*';
-  color: #ffb800;
-  font-weight: 700;
-  margin-left: 3px;
-}
-
-.custom-input__placeholder {
-  position: absolute;
-  top: 35px;
-  left: 30px;
 }
 
 .contacts {
@@ -1757,6 +1757,11 @@ body.modal-open {
   background: linear-gradient(268.18deg, #EEC65F -2.08%, #A76F2A 10.1%, #E2B855 21.09%, #F9F2B7 33.63%, #E2B855 48.61%, #8F5E21 82.97%, #E2B855 99.98%);
 }
 
+.contacts .logo {
+  display: inline-block;
+  max-width: 234px;
+}
+
 .contacts .address {
   text-align: right;
 }
@@ -1770,7 +1775,7 @@ body.modal-open {
   flex-wrap: wrap;
 }
 
-.residence-plan .residence-plan__content {
+.residence-plan__content {
   display: flex;
   flex-direction: column;
   padding-bottom: 64px;
@@ -1779,22 +1784,22 @@ body.modal-open {
   line-height: 1.28;
 }
 
-.residence-plan .residence-plan__content,
-.residence-plan .residence-plan__wrap-img {
+.residence-plan__content,
+.residence-plan__wrap-img {
   width: 50%;
 }
 
-.residence-plan .residence-plan__wrap-img {
+.residence-plan__wrap-img {
   padding-left: 50px;
 }
 
-.residence-plan .residence-plan__logo {
+.residence-plan__logo {
   display: block;
   width: 273px;
   margin-bottom: 45px;
 }
 
-.residence-plan .residence-plan__logo img {
+.residence-plan__logo img {
   max-width: 100%;
   height: auto;
 }
@@ -1844,14 +1849,6 @@ body.modal-open {
   .benefits-caption {
     font-size: 28px;
   }
-
-  .benefits-location__card:nth-child(even) .benefits-location__description {
-    padding-right: 40px;
-  }
-
-  .benefits-location__description {
-    padding-left: 40px;
-  }
 }
 
 @media only screen and (max-width: 1240px) {
@@ -1889,16 +1886,16 @@ body.modal-open {
     padding-bottom: 20px;
   }
 
-  .benefits-location__card .benefits-location__description {
-    font-size: 28px;
-  }
-
   .benefits-location__description {
-    padding-left: 40px;
+    font-size: 28px;
   }
 }
 
 @media only screen and (max-width: 992px) {
+  .section {
+    margin-bottom: 100px;
+  }
+
   .summary__row {
     position: relative;
     padding-top: 180px;
@@ -1937,6 +1934,15 @@ body.modal-open {
     padding: 16px 30px;
   }
 
+  .custom-input .custom-input__field {
+    min-height: 74px;
+    padding: 25px 30px;
+  }
+
+  .custom-input .custom-input__placeholder {
+    top: 26px;
+  }
+
   .card-list {
     margin-bottom: 150px;
   }
@@ -1954,7 +1960,11 @@ body.modal-open {
   }
 
   .container {
-    max-width: 960px;
+    max-width: 820px;
+  }
+
+  .description-residence__text {
+    margin-bottom: 100px;
   }
 
   .design .gallery_top {
@@ -1970,10 +1980,6 @@ body.modal-open {
   .features .section__bg {
     background-size: 120% 120%;
     background-position: top center;
-  }
-
-  .facilities {
-    margin-bottom: 150px;
   }
 
   .facilities .section__bg-inner {
@@ -2016,11 +2022,69 @@ body.modal-open {
     bottom: auto;
     width: 100%;
   }
+
+  .benefits .section__header {
+    min-height: 396px;
+  }
+
+  .benefits-location__wrap-thumb {
+    width: 70%;
+    padding-top: 29.2%;
+  }
+
+  .benefits-location__description {
+    font-size: 22px;
+  }
+
+  .benefits-caption {
+    font-size: 24px;
+  }
+
+  .benefits-list .col-12 .label,
+  .benefits-list .col-12 .benefits-caption {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 420px;
+  }
+
+  .section-map .container {
+    padding-top: 0;
+  }
+
+  .map {
+    padding-top: 48%;
+  }
+
+  .map__info {
+    position: static;
+    margin-top: -50px;
+  }
+
+  .contacts {
+    padding-top: 85px;
+    font-size: 20px;
+  }
+
+  .section__footer .logo {
+    max-width: 200px;
+  }
+
+  .contacts__left {
+    background-size: 110% 110%;
+  }
+
+  .residence-plan__content {
+    font-size: 28px;
+  }
+
+  .residence-plan__logo {
+    max-width: 240px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 620px;
   }
 }
 
@@ -2083,7 +2147,7 @@ body.modal-open {
   }
 
   .container {
-    max-width: 540px;
+    max-width: 520px;
     padding: 0 15px;
   }
 

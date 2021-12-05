@@ -55,23 +55,31 @@
   }
 }
 
+@include respond-to($lg) {
+  .description-residence__text {
+    margin-bottom: 100px;
+  }
+}
 
-@include respond-to($sm){
-  .facade-residence{
+@include respond-to($sm) {
+  .facade-residence {
     height: 328px;
     min-height: 0;
     background-attachment: inherit;
   }
-  .description-residence{
+  .description-residence {
     padding: 50px 0;
+
     &__text {
       font-size: 20px;
       margin-bottom: 74px;
-      p{
+
+      p {
         margin-bottom: 18px;
       }
     }
-    &__wrap-img{
+
+    &__wrap-img {
       max-width: 188px;
     }
   }

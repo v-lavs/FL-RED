@@ -32,7 +32,7 @@
     bottom: 0;
     background-image: url(../assets/img/bg-design.png);
     background-repeat: no-repeat;
-    background-position: 0 0;
+    background-position: center;
     background-size: cover;
     max-width: 355px;
     width: 100%;
@@ -53,5 +53,19 @@
     margin-bottom: 26px;
     text-transform: capitalize;
   }
+}
 
+@include respond-to($lg){
+  .section-map {
+    .container {
+      padding-top: 0;
+    }
+  }
+  .map{
+    padding-top: 48%;
+  }
+  .map__info{
+    position: static;
+    margin-top: -50px;
+  }
 }

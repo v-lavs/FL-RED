@@ -1,3 +1,52 @@
-.contact-form {
+.custom-input {
+  position: relative;
+  color: #fff;
+  background-color: #163F2F;
+  font-size: 20px;
+  line-height: 1.25;
+  display: block;
+  width: 100%;
 
+  &.has-value {
+    .custom-input__placeholder {
+      display: none;
+    }
+  }
+
+  &__field {
+    display: block;
+    width: 100%;
+    min-height: 92px;
+    padding: 35px 30px;
+    border: none;
+    background-color: transparent;
+    appearance: none;
+    border-radius: 0;
+    font-size: inherit;
+
+    &[required] + .custom-input__placeholder:after {
+      display: inline-block;
+      content: '*';
+      color: #ffb800;
+      font-weight: 700;
+      margin-left: 3px;
+    }
+  }
+
+  &__placeholder {
+    position: absolute;
+    top: 35px;
+    left: 30px;
+  }
+  @include respond-to($lg){
+    .custom-input{
+      &__field{
+        min-height: 74px;
+        padding: 25px 30px;
+      }
+      &__placeholder{
+        top: 26px;
+      }
+    }
+  }
 }

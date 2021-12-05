@@ -110,7 +110,7 @@
 
       .benefits-location__description {
         padding-left: 0;
-        padding-right: 57px;
+        padding-right: 35px;
       }
     }
   }
@@ -146,7 +146,7 @@
   }
 
   &__description {
-    padding-left: 57px;
+    padding-left: 35px;
     font-size: 32px;
     flex-grow: 1;
   }
@@ -161,31 +161,39 @@
   .benefits-caption {
     font-size: 28px;
   }
-  .benefits-location {
-    &__card {
-      &:nth-child(even) {
-        .benefits-location__description {
-          padding-right: 40px;
-        }
-      }
-    }
-
-    &__description {
-      padding-left: 40px;
-    }
-  }
 }
 
 @include respond-to($laptop) {
   .benefits-location {
-    &__card {
-      .benefits-location__description {
-        font-size: 28px;
-      }
+    &__description {
+      font-size: 28px;
+    }
+  }
+}
+
+@include respond-to($lg) {
+  .benefits {
+    .section__header {
+      min-height: 396px;
+    }
+  }
+  .benefits-location {
+    &__wrap-thumb {
+      width: 70%;
+      padding-top: 29.2%;
     }
 
     &__description {
-      padding-left: 40px;
+      font-size: 22px;
     }
+  }
+  .benefits-caption {
+    font-size: 24px;
+  }
+  .benefits-list .col-12 .label,
+  .benefits-list .col-12 .benefits-caption {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 420px
   }
 }
