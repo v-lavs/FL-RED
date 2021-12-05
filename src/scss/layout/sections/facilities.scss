@@ -174,5 +174,9 @@
       right: 50%;
       transform: translateX(50%);
     }
+    .card__thumb:before{
+      left: 0;
+      z-index: 2;
+    }
   }
 }

@@ -39,5 +39,9 @@
     .card__text-content{
       order: 1;
     }
+    .card__thumb:before{
+      right: 0;
+      z-index: 2;
+    }
   }
 }

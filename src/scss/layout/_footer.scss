@@ -15,6 +15,21 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@include respond-to($md){
+  .footer__copyright {
+    padding: 50px 0 40px;
+    &-text{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      &:last-child{
+        margin-bottom: 0;
+      }
     }
   }
 }

@@ -204,6 +204,12 @@
 }
 
 @include respond-to($md) {
+  .benefits{
+    &__img-banner{
+      padding-top: 66%;
+      min-height: 328px;
+    }
+  }
   .benefits-list {
     width: 80%;
     margin: -10% auto 75px;

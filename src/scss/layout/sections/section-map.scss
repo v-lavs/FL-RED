@@ -71,10 +71,15 @@
     margin-top: -50px;
   }
 }
-
+@include respond-to($md){
+  .map {
+    padding-top: 65%;
+    min-height: 290px;
+  }
+}
 @include respond-to($sm) {
   .map {
-    padding-top: 70%;
+    padding-top: 100%;
   }
   .section-map {
     .container{
