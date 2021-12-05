@@ -244,14 +244,26 @@ body {
     }
   }
   .summary {
+    .container{
+      padding: 0;
+    }
+    &__col-right {
+      padding-top: 85%;
+      margin: 0 -15px;
+    }
     &__caption {
       font-size: 28px;
+      max-width: 93%;
     }
   }
 }
 
 @include respond-to($sm) {
+.summary{
+  &__col-right{
 
+  }
+}
 }
 
 

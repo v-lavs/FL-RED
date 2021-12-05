@@ -1996,7 +1996,6 @@ body.modal-open {
   .features .summary__caption {
     align-items: center;
     margin-top: -63px;
-    max-width: 90%;
   }
 
   .features .section__bg {
@@ -2110,8 +2109,18 @@ body.modal-open {
     font-size: 34px;
   }
 
+  .summary .container {
+    padding: 0;
+  }
+
+  .summary__col-right {
+    padding-top: 85%;
+    margin: 0 -15px;
+  }
+
   .summary__caption {
     font-size: 28px;
+    max-width: 93%;
   }
 
   .gallery__item {
@@ -2291,6 +2300,10 @@ body.modal-open {
   .facilities .card__thumb:before {
     left: 0;
     z-index: 2;
+  }
+
+  .facilities .summary__caption {
+    width: 93%;
   }
 
   .benefits__img-banner {
