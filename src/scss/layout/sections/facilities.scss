@@ -52,13 +52,12 @@
   }
 
   .summary {
-    &__wrap-img{
+    &__wrap-img {
       padding-top: 90%;
     }
+
     &__col-left {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      padding-top: 80px;
     }
 
     &__col-right {
@@ -79,8 +78,9 @@
     }
 
     &__caption {
-      bottom: 50%;
+      position: relative;
       z-index: 2;
+      max-width: 150%;
     }
 
     .text-list {
@@ -91,6 +91,7 @@
       line-height: 34px;
       padding-right: 27px;
       padding-bottom: 78px;
+      margin-top: 95px;
 
       &__item {
         margin-bottom: 15px;
@@ -106,7 +107,51 @@
 @include respond-to($laptop) {
   .facilities {
     .summary .text-list {
+      font-size: 26px;
       padding-bottom: 20px;
+    }
+  }
+}
+
+@include respond-to($lg) {
+  .facilities {
+    margin-bottom: 150px;
+    .section__bg-inner {
+      background-size: 120% 125%;
+      background-position: top center;
+    }
+
+    .card__text-content {
+      padding-left: 20px;
+    }
+
+    .summary {
+      &__caption{
+        width: 80%;
+      }
+      .text-list {
+        width: 100%;
+        margin-top: 32px;
+        font-size: 24px;
+        text-align: center;
+        padding-right: 0;
+        padding-bottom: 50px;
+        &__item{
+          margin-bottom: 18px;
+        }
+      }
+      &__col-left{
+        padding: 0;
+      }
+      &__col-right {
+        padding-top: 90%;
+        &:before {
+          height: 14px;
+          right: 0;
+          bottom: auto;
+          width: 100%;
+        }
+      }
     }
   }
 }

@@ -109,6 +109,21 @@
   }
 }
 
+@include respond-to($lg){
+  .card-list{
+    margin-bottom: 150px;
+  }
+  .card{
+    font-size: 17px;
+    &__text-content {
+      padding-right: 20px;
+    }
+    &__title{
+      font-size: 18px;
+    }
+  }
+}
+
 @include respond-to($sm) {
   .card {
     flex-wrap: wrap;

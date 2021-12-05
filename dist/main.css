@@ -459,11 +459,12 @@ body.modal-open {
 
 .summary__wrap-logo {
   max-width: 273px;
+  margin-bottom: 41px;
 }
 
 .summary__row {
   display: flex;
-  position: relative;
+  flex-wrap: wrap;
 }
 
 .summary__col-left {
@@ -488,6 +489,7 @@ body.modal-open {
   padding-top: 65%;
   height: 100%;
   width: 65vw;
+  z-index: -1;
 }
 
 .summary__img {
@@ -502,15 +504,12 @@ body.modal-open {
 }
 
 .summary__caption {
-  position: absolute;
-  max-width: 625px;
-  padding: 12px 37px 4px;
+  max-width: 160%;
+  width: 100vw;
+  padding: 12px 37px 4px 0;
   background-color: #ffffff;
   font-weight: 300;
   font-size: 48px;
-  text-align: right;
-  bottom: 104px;
-  left: -18px;
 }
 
 .summary__caption span {
@@ -1332,6 +1331,12 @@ body.modal-open {
   margin-bottom: 68px;
 }
 
+.features .summary__caption {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .facilities .section__bg {
   position: relative;
 }
@@ -1387,9 +1392,7 @@ body.modal-open {
 }
 
 .facilities .summary__col-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding-top: 80px;
 }
 
 .facilities .summary__col-right {
@@ -1410,8 +1413,9 @@ body.modal-open {
 }
 
 .facilities .summary__caption {
-  bottom: 50%;
+  position: relative;
   z-index: 2;
+  max-width: 150%;
 }
 
 .facilities .summary .text-list {
@@ -1422,6 +1426,7 @@ body.modal-open {
   line-height: 34px;
   padding-right: 27px;
   padding-bottom: 78px;
+  margin-top: 95px;
 }
 
 .facilities .summary .text-list__item {
@@ -1827,6 +1832,10 @@ body.modal-open {
     font-size: 40px;
   }
 
+  .summary__caption span {
+    margin-left: 46px;
+  }
+
   .container {
     max-width: 1140px;
   }
@@ -1846,8 +1855,16 @@ body.modal-open {
 }
 
 @media only screen and (max-width: 1240px) {
+  .summary__caption {
+    font-size: 38px;
+  }
+
+  .summary__caption span {
+    margin-left: 28px;
+  }
+
   .design .gallery-room {
-    width: 90%;
+    width: 80%;
   }
 
   .gallery {
@@ -1868,13 +1885,136 @@ body.modal-open {
   }
 
   .facilities .summary .text-list {
+    font-size: 26px;
     padding-bottom: 20px;
+  }
+
+  .benefits-location__card .benefits-location__description {
+    font-size: 28px;
+  }
+
+  .benefits-location__description {
+    padding-left: 40px;
   }
 }
 
 @media only screen and (max-width: 992px) {
+  .summary__row {
+    position: relative;
+    padding-top: 180px;
+  }
+
+  .summary__wrap-logo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+  .summary__col-left,
+  .summary__col-right {
+    width: 100%;
+  }
+
+  .summary__col-right {
+    padding-top: 65%;
+  }
+
+  .summary__col-left {
+    order: 1;
+    padding: 0;
+  }
+
+  .summary__wrap-img {
+    right: 0;
+    width: 100%;
+  }
+
+  .summary__caption {
+    max-width: 80%;
+    margin: -36px auto 0;
+    text-align: center;
+    padding: 16px 30px;
+  }
+
+  .card-list {
+    margin-bottom: 150px;
+  }
+
+  .card {
+    font-size: 17px;
+  }
+
+  .card__text-content {
+    padding-right: 20px;
+  }
+
+  .card__title {
+    font-size: 18px;
+  }
+
   .container {
     max-width: 960px;
+  }
+
+  .design .gallery_top {
+    margin-top: -25%;
+  }
+
+  .features .summary__caption {
+    align-items: center;
+    margin-top: -63px;
+    max-width: 90%;
+  }
+
+  .features .section__bg {
+    background-size: 120% 120%;
+    background-position: top center;
+  }
+
+  .facilities {
+    margin-bottom: 150px;
+  }
+
+  .facilities .section__bg-inner {
+    background-size: 120% 125%;
+    background-position: top center;
+  }
+
+  .facilities .card__text-content {
+    padding-left: 20px;
+  }
+
+  .facilities .summary__caption {
+    width: 80%;
+  }
+
+  .facilities .summary .text-list {
+    width: 100%;
+    margin-top: 32px;
+    font-size: 24px;
+    text-align: center;
+    padding-right: 0;
+    padding-bottom: 50px;
+  }
+
+  .facilities .summary .text-list__item {
+    margin-bottom: 18px;
+  }
+
+  .facilities .summary__col-left {
+    padding: 0;
+  }
+
+  .facilities .summary__col-right {
+    padding-top: 90%;
+  }
+
+  .facilities .summary__col-right:before {
+    height: 14px;
+    right: 0;
+    bottom: auto;
+    width: 100%;
   }
 }
 

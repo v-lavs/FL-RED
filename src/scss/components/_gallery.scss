@@ -24,7 +24,7 @@
 
 @include respond-to($laptop) {
  .design  .gallery-room {
-    width: 90%;
+    width: 80%;
   }
   .gallery {
     flex-wrap: wrap;

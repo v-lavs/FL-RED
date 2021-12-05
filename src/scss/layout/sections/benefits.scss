@@ -89,6 +89,7 @@
     line-height: 1.06;
     text-align: center;
   }
+
 }
 
 .benefits-location {
@@ -166,6 +167,20 @@
         .benefits-location__description {
           padding-right: 40px;
         }
+      }
+    }
+
+    &__description {
+      padding-left: 40px;
+    }
+  }
+}
+
+@include respond-to($laptop) {
+  .benefits-location {
+    &__card {
+      .benefits-location__description {
+        font-size: 28px;
       }
     }
 

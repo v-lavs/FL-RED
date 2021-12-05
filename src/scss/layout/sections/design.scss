@@ -36,21 +36,32 @@
   }
 }
 
+@include respond-to($lg) {
+  .design {
+    .gallery_top {
+      margin-top: -25%;
+    }
+  }
+}
+
 @include respond-to($sm) {
   .design {
     .section__header {
       padding-top: 105px;
     }
-    &__img-banner{
+
+    &__img-banner {
       min-height: 312px;
     }
+
     .gallery_top {
       position: relative;
       margin-top: -60%;
     }
-    .gallery-room  .subtitle{
+
+    .gallery-room .subtitle {
       width: 90%;
-      margin:  0 auto 62px;
+      margin: 0 auto 62px;
     }
   }
 }
