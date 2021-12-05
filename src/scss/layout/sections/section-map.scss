@@ -23,7 +23,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    top:0;
+    top: 0;
   }
 
   &__info {
@@ -38,10 +38,12 @@
     width: 100%;
     color: #ffffff;
     padding: 43px 52px 43px 41px;
-    .btn_main{
+
+    .btn_main {
       min-width: 262px;
       text-align: center;
-      .btn-inner{
+
+      .btn-inner {
         padding: 14px;
       }
     }
@@ -55,17 +57,40 @@
   }
 }
 
-@include respond-to($lg){
+@include respond-to($lg) {
   .section-map {
     .container {
       padding-top: 0;
     }
   }
-  .map{
+  .map {
     padding-top: 48%;
   }
-  .map__info{
+  .map__info {
     position: static;
     margin-top: -50px;
+  }
+}
+
+@include respond-to($sm) {
+  .map {
+    padding-top: 70%;
+  }
+  .section-map {
+    .container{
+      padding: 0;
+      max-width: 100%;
+    }
+    &__title{
+      text-transform: uppercase;
+    }
+    .map__info {
+      max-width: 100%;
+      margin-top: 0;
+      padding: 22px 40px;
+      .btn_main{
+        max-width: 262px;
+      }
+    }
   }
 }

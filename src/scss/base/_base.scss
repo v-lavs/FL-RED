@@ -238,16 +238,20 @@ body {
 
 @include respond-to($md) {
   .section {
+    margin-bottom: 50px;
     &__title {
       font-size: 34px;
     }
   }
+  .summary {
+    &__caption {
+      font-size: 28px;
+    }
+  }
 }
 
-@include respond-to($md) {
-  .section {
-    margin-bottom: 50px;
-  }
+@include respond-to($sm) {
+
 }
 
 

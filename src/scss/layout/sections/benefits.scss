@@ -39,9 +39,9 @@
       .label {
         position: absolute;
         left: 50%;
-        z-index: 1;
         max-width: 504px;
         width: 100%;
+        z-index: 2;
       }
 
       .label {
@@ -67,6 +67,12 @@
     &__wrap-img {
       position: relative;
       padding-top: 67.4%;
+
+      &.overlay-bg {
+        &:before {
+          z-index: 0;
+        }
+      }
     }
 
     &__img {
@@ -187,13 +193,125 @@
       font-size: 22px;
     }
   }
-  .benefits-caption {
-    font-size: 24px;
-  }
+
   .benefits-list .col-12 .label,
   .benefits-list .col-12 .benefits-caption {
     padding-top: 15px;
     padding-bottom: 15px;
-    max-width: 420px
+    max-width: 420px;
+    font-size: 24px;
   }
 }
+
+@include respond-to($md) {
+  .benefits-list {
+    width: 80%;
+    margin: -10% auto 75px;
+
+    &__wrap-img {
+      &.overlay-bg {
+        &:before {
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0.125) 57%, rgba(0, 0, 0, 0.5) 100%);
+          z-index: 1;
+        }
+      }
+    }
+
+    .col-4 {
+      position: relative;
+      width: 100%;
+
+      .benefits-caption {
+        position: absolute;
+        color: #ffffff;
+        background-color: transparent;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+      }
+    }
+
+    .col-12 .label,
+    .col-12 .benefits-caption {
+      max-width: 320px;
+    }
+  }
+  .benefits-location {
+    &__card {
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+
+      &:nth-child(even) .benefits-location__description {
+        order: 1;
+        padding: 15px 15px 15px 40px;
+      }
+    }
+
+    &__description {
+      padding: 15px 15px 15px 40px;
+    }
+
+    &__wrap-thumb {
+      width: 100%;
+      padding-top: 41%;
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .benefits{
+    margin-bottom: 10px;
+    .section__header{
+      padding-top: 106px;
+      min-height: 328px;
+    }
+  }
+  .benefits-list {
+    width: 100%;
+    padding: 0 25px;
+    margin-top: -33%;
+    margin-bottom: 54px;
+
+    &__wrap-img {
+      padding-top: 79%;
+    }
+
+    .col-12 .label,
+    .col-12 .benefits-caption {
+      max-width: 230px;
+      font-size: 20px;
+    }
+
+    .col-12 .label {
+      padding-top: 10px;
+      padding-bottom: 11px;
+    }
+
+    .col-12 .benefits-caption {
+      padding-top: 12px;
+      padding-bottom: 13px;
+    }
+
+    .col-12 {
+      .benefits-list__wrap-img {
+        padding-top: 66.25%;
+      }
+    }
+
+    .col-4 .benefits-caption {
+      font-size: 24px;
+    }
+  }
+  .benefits-location {
+    margin: 0 -15px;
+
+    &__card {
+      margin-bottom: 25px;
+    }
+    &__description{
+      line-height: 1.15;
+    }
+  }
+}
+

@@ -162,6 +162,9 @@
 
 @include respond-to($md) {
   .facilities {
+    .section__header{
+      padding-top: 106px;
+    }
     .section__bg-inner {
       background-size: cover;
       background-position: 0 0;
