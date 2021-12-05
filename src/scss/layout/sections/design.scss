@@ -43,7 +43,7 @@
   }
 }
 
-@include respond-to($sm) {
+@include respond-to($md) {
   .design {
     .section__header {
       padding-top: 105px;
@@ -58,9 +58,23 @@
       margin-top: -60%;
     }
 
-    .gallery-room .subtitle {
+    .gallery-room {
+      width: 60%;
+
+      .subtitle {
+        span{
+          display: inline-block;
+        }
+        margin: 0 auto 62px;
+      }
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .design {
+    .gallery-room {
       width: 90%;
-      margin: 0 auto 62px;
     }
   }
 }

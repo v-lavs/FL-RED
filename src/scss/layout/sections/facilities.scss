@@ -125,9 +125,10 @@
     }
 
     .summary {
-      &__caption{
+      &__caption {
         width: 80%;
       }
+
       .text-list {
         width: 100%;
         margin-top: 32px;
@@ -135,15 +136,19 @@
         text-align: center;
         padding-right: 0;
         padding-bottom: 50px;
-        &__item{
+
+        &__item {
           margin-bottom: 18px;
         }
       }
-      &__col-left{
+
+      &__col-left {
         padding: 0;
       }
+
       &__col-right {
         padding-top: 90%;
+
         &:before {
           height: 14px;
           right: 0;
@@ -151,6 +156,20 @@
           width: 100%;
         }
       }
+    }
+  }
+}
+
+@include respond-to($md) {
+  .facilities {
+    .section__bg-inner {
+      background-size: cover;
+      background-position: 0 0;
+    }
+    .card__text-content:after{
+      left: auto;
+      right: 50%;
+      transform: translateX(50%);
     }
   }
 }

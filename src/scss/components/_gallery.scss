@@ -36,11 +36,10 @@
   }
 }
 
-@include respond-to($sm) {
+@include respond-to($md) {
   .gallery{
     &__item {
       width: 100%;
-      //max-width: 340px;
       margin-bottom: 16px;
     }
     &_top{

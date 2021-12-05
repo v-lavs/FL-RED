@@ -4,7 +4,6 @@
 
 //= include ../../node_modules/jquery/dist/jquery.js ;
 //= include ../../node_modules/waypoints/lib/jquery.waypoints.min.js ;
-//= include ../../node_modules/jquery-nice-select/js/jquery.nice-select.js
 //= include ../../node_modules/baguettebox.js/dist/baguetteBox.min.js ;
 
 

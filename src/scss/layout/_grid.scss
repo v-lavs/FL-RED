@@ -16,10 +16,10 @@
     max-width: 820px;
   }
   @include respond-to($md){
-    max-width: 620px;
+    max-width: 720px;
   }
   @include respond-to($sm){
-    max-width: 520px;
+    max-width: 540px;
     padding: 0 15px;
   }
 }

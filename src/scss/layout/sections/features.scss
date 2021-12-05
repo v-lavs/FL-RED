@@ -16,12 +16,6 @@
   }
 }
 
-@include respond-to($laptop){
-  .features {
-
-  }
-}
-
 @include respond-to($lg){
   .features {
     .summary__caption{
@@ -35,7 +29,7 @@
     }
   }
 }
-@include respond-to($sm){
+@include respond-to($md){
   .features {
     .section__bg {
       padding-top: 106px;

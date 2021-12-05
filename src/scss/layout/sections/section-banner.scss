@@ -71,7 +71,7 @@
   }
 }
 
-@include respond-to($sm) {
+@include respond-to($md) {
   .section-banner {
     &__slogan {
       font-size: 20px;

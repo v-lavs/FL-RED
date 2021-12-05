@@ -17,7 +17,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="lib/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./dist/main.css">
 
 </head>
@@ -90,9 +89,9 @@
         </section>
 
         <section class="about">
-            <div id="scroll" class="facade-residence facade-residence_parallax"
-                 style="background-image: url(assets/img/img-bl2.jpg);">
+            <div id="scroll" class="facade-residence facade-residence_parallax" style="background-image: url(assets/img/img-bl2.jpg);">
             </div>
+
             <div class="description-residence" id='about'>
                 <div class="container">
                     <div class="description-residence__wrap-img">
@@ -114,7 +113,11 @@
                     </button>
                 </div>
             </div>
-            <div class="facade-residence overlay-bg" style="background-image: url(assets/img/fl-facade.jpg)">
+
+            <div class="facade-residence">
+                <div class="facade-residence__wrap-img  overlay-bg">
+                    <img src="assets/img/fl-facade.jpg" alt="">
+                </div>
                 <div class="container">
                     <div class="capture text_lg">
                         Ready to Move In<br>
@@ -122,7 +125,10 @@
                     </div>
                 </div>
             </div>
-            <div class="facade-residence overlay-bg" style="background-image: url(assets/img/bg-photo.jpg)">
+            <div class="facade-residence">
+                <div class="facade-residence__wrap-img  overlay-bg">
+                    <img src="assets/img/bg-photo.jpg" alt="">
+                </div>
                 <div class="container">
                     <div class="capture text_lg">
                         Natural Travertine Stone Facade<br>
@@ -157,7 +163,7 @@
             </div>
         </section>
 
-        <section class="section design" id='ap-design'>
+        <section class="section design" id="ap-design">
             <div class="design__img-banner" style="background-image: url(assets/img/gallery-bg.jpg);"></div>
             <div class="section__header golden-line" style="background-image: url(assets/img/bg-design.png);">
                 <div class="container">
@@ -183,7 +189,7 @@
                            style="background-image: url(assets/img/gallery/4.jpg);"></a>
                     </li>
                 </ul>
-                <div class="subtitle">Contemporary Art Deco Style</div>
+                <div class="subtitle">Contemporary <span>Art Deco Style</span></div>
                 <ul class="gallery gallery_bottom">
                     <li class="gallery__item">
                         <a href="#" class="gallery__link"
@@ -1072,8 +1078,6 @@
     </div>
 </div>
 
-
-<script src="lib/swiper@7/swiper-bundle.min.js"></script>
 <script src="dist/main.js"></script>
 </body>
 </html>

@@ -37,8 +37,6 @@ body {
 }
 
 .overlay-bg {
-  position: relative;
-
   &:before {
     position: absolute;
     content: '';
@@ -48,7 +46,7 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 1;
   }
 }
 
@@ -194,36 +192,42 @@ body {
 }
 
 @include respond-to($lg) {
-  .section{
+  .section {
     margin-bottom: 100px;
   }
   .summary {
-    &__row{
+    &__row {
       position: relative;
       padding-top: 180px;
     }
-    &__wrap-logo{
+
+    &__wrap-logo {
       position: absolute;
       left: 50%;
       top: 0;
       transform: translateX(-50%);
     }
+
     &__col-left,
     &__col-right {
       width: 100%;
     }
-    &__col-right{
+
+    &__col-right {
       padding-top: 65%;
     }
-    &__col-left{
+
+    &__col-left {
       order: 1;
       padding: 0;
     }
+
     &__wrap-img {
       right: 0;
       width: 100%;
     }
-    &__caption{
+
+    &__caption {
       max-width: 80%;
       margin: -36px auto 0;
       text-align: center;
@@ -232,13 +236,17 @@ body {
   }
 }
 
-@include respond-to($sm) {
+@include respond-to($md) {
+  .section {
+    &__title {
+      font-size: 34px;
+    }
+  }
+}
+
+@include respond-to($md) {
   .section {
     margin-bottom: 50px;
-
-    &__title {
-      font-size: 32px;
-    }
   }
 }
 

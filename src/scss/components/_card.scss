@@ -124,12 +124,11 @@
   }
 }
 
-@include respond-to($sm) {
+@include respond-to($md) {
   .card {
     flex-wrap: wrap;
-    max-width: 340px;
-    width: 100%;
-    margin: 0 auto 40px;
+    width: 70%;
+    margin: 0 auto 60px;
 
     &__text-content,
     &__thumb {
@@ -137,7 +136,7 @@
     }
 
     &__text-content {
-      padding: 15px 15px 15px 0;
+      padding: 25px 15px 25px 0;
 
       &:after {
         left: 50%;
@@ -153,6 +152,17 @@
       &:after {
         display: none;
       }
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .card {
+    width: 70%;
+    margin: 0 auto 40px;
+
+    &__text-content {
+      padding: 15px 15px 15px 0;
     }
   }
 }
