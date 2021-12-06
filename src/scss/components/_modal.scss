@@ -27,18 +27,19 @@
     top: 40px;
     width: 54px;
     height: 54px;
-    background-size: 100% auto;
     z-index: 1;
   }
 
   &__close {
     right: 65px;
     background: url("../assets/img/svg/close-gold.svg") center center no-repeat;
+    background-size: 100% auto;
   }
 
   &__back {
     left: 65px;
     background: url("../assets/img/svg/arrow-left-gold.svg") center center no-repeat;
+    background-size: 100% auto;
   }
 }
 
@@ -69,6 +70,7 @@
       margin: 0 auto;
       display: flex;
       align-items: center;
+      justify-content: center;
 
       .img {
         display: block;
@@ -99,7 +101,7 @@
     width: 600px;
     margin: 0 auto;
 
-    img {
+    .scheme-tab__img {
       position: absolute;
       left: 0;
       right: 0;
@@ -331,11 +333,11 @@
 
     .apartment-content .app-img {
       transform: rotate(90deg);
-      //height: 210px;
-      img {
-
-      }
+      width: 50%;
     }
+  }
+  .manager-info {
+    padding: 0;
   }
   .contacts-modal {
     overflow-y: initial;
@@ -356,17 +358,45 @@
 }
 
 @include respond-to($sm) {
+  .floor-modal {
+    padding-top: 32px;
+  }
+  .fl-modal__back,
+  .fl-modal__close {
+    width: 48px;
+    height: 48px;
+    top: 24px;
+  }
+  .fl-modal__back {
+    left: 16px;
+  }
+  .fl-modal__close {
+    right: 16px;
+  }
   .contacts-modal {
     .fl-modal__close {
       top: -25px;
       right: 13px;
-      width: 48px;
-      height: 48px;
-      background-size: 100%;
     }
 
     &__part {
       padding: 82px 60px 100px;
+    }
+  }
+  .floor-modal {
+    .apartment-content {
+      .apartment-desc {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .btn-download {
+        margin: 62px auto 0;
+      }
+    }
+
+    .manager-info__contacts {
+      font-size: 18px;
     }
   }
 }
@@ -394,9 +424,33 @@
 @include respond-to($xs) {
   .contacts-modal {
     max-height: 510px;
-    .modal-title{
+
+    .modal-title {
       font-size: 28px;
       margin-bottom: 40px;
     }
+  }
+  .manager-info__thumb {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .floor-modal .manager-info__contacts {
+    font-size: 17px;
+  }
+  .floor-modal .modal-title {
+    font-size: 26px;
+  }
+  .apartment-desc__separator {
+    margin: 0 15px;
+  }
+  .apartment-desc__props {
+    font-size: 17px;
+  }
+  .fl-modal__back,
+  .fl-modal__close {
+    width: 33px;
+    height: 33px;
+    top: 32px;
   }
 }
