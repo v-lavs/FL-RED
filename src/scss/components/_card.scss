@@ -161,7 +161,7 @@
 
 @include respond-to($sm) {
   .card-list{
-    padding: 0 40px;
+    padding: 0 25px;
   }
   .card {
     width: 100%;
@@ -170,5 +170,11 @@
     &__text-content {
       padding: 15px 15px 15px 0;
     }
+  }
+}
+
+@include respond-to($xs) {
+  .card-list{
+    padding: 0 10px;
   }
 }

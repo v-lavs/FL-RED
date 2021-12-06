@@ -3,6 +3,7 @@
 * */
 
 //= include ../../node_modules/jquery/dist/jquery.js ;
+//= include ../../node_modules/jquery-zoom/jquery.zoom.min.js ;
 //= include ../../node_modules/waypoints/lib/jquery.waypoints.min.js ;
 //= include ../../node_modules/baguettebox.js/dist/baguetteBox.min.js ;
 
@@ -88,6 +89,16 @@ $(document).ready(function () {
 
     //GALLERY
     const gallery = baguetteBox.run('.gallery', {animation: 'fadeIn'});
+
+    //MAP ZOOM
+    if ($(window).width() <= 768) {
+        $('.map').zoom({
+            url: 'assets/img/map-loc7.png',
+            touch:	true,
+        });
+    } else{
+        $('#map').trigger('zoom.destroy');
+    }
 
     //    ANIMATION
 

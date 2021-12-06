@@ -696,14 +696,17 @@ body.modal-open {
 }
 
 .floor-modal .apartment-content .app-img {
+  max-width: 278px;
+  height: auto;
+  margin: 0 auto;
   display: flex;
   align-items: center;
 }
 
 .floor-modal .apartment-content .app-img .img {
   display: block;
+  width: 100%;
   height: auto;
-  width: auto;
   margin: 0 auto;
 }
 
@@ -746,16 +749,24 @@ body.modal-open {
   filter: grayscale(1);
 }
 
+.floor-modal .apartment-circle.disabled .sold {
+  display: block;
+}
+
 .floor-modal .apartment-circle.disabled .number {
   display: none;
 }
 
 .floor-modal .apartment-circle.disabled > .round-green {
-  stroke: #aaaaaa;
+  stroke: #aaaaaa !important;
 }
 
 .floor-modal .apartment-circle > .round-green {
   stroke: #194A21;
+}
+
+.floor-modal .apartment-circle .sold {
+  display: none;
 }
 
 .floor-modal .apartment-circle .icon-hover {
@@ -2248,6 +2259,10 @@ body.modal-open {
     transform: rotate(90deg);
   }
 
+  .contacts-modal {
+    overflow-y: initial;
+  }
+
   .contacts-modal__content {
     flex-wrap: wrap;
   }
@@ -2584,12 +2599,20 @@ body.modal-open {
     max-width: 252px;
   }
 
+  .contacts-modal .fl-modal__close {
+    top: -25px;
+    right: 13px;
+    width: 48px;
+    height: 48px;
+    background-size: 100%;
+  }
+
   .contacts-modal__part {
     padding: 82px 60px 100px;
   }
 
   .card-list {
-    padding: 0 40px;
+    padding: 0 25px;
   }
 
   .card {
@@ -2753,10 +2776,79 @@ body.modal-open {
   .contacts-modal {
     width: 90%;
     max-width: 380px;
+    max-height: 550px;
+  }
+
+  .contacts-modal .modal-title {
+    margin-bottom: 60px;
+    font-weight: 700;
   }
 
   .contacts-modal__part {
     padding-left: 18px;
     padding-right: 18px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .section__title {
+    font-size: 27px;
+  }
+
+  .summary__caption {
+    font-size: 27px;
+    margin-top: -20px;
+  }
+
+  .summary__caption span {
+    margin-left: 0;
+  }
+
+  .contacts-modal {
+    max-height: 510px;
+  }
+
+  .contacts-modal .modal-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .card-list {
+    padding: 0 10px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .section-banner__logo {
+    max-width: 210px;
+  }
+
+  .section-banner .decor-text {
+    font-size: 28px;
+  }
+
+  .section-banner__slogan {
+    font-size: 19px;
+  }
+
+  .section-banner .btn_scroll {
+    width: 56px;
+    height: 56px;
+    margin-left: -22px;
+  }
+
+  .section-banner .btn_scroll:before {
+    width: 56px;
+    height: 56px;
+  }
+
+  .facade-residence .text_lg {
+    font-size: 20px;
+  }
+
+  .design .section__header {
+    min-height: 380px;
   }
 }

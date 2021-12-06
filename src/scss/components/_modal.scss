@@ -64,17 +64,16 @@
     flex-wrap: wrap;
 
     .app-img {
-      //max-width: 278px;
-      //height: auto;
-      //margin: 0 auto;
+      max-width: 278px;
+      height: auto;
+      margin: 0 auto;
       display: flex;
       align-items: center;
 
       .img {
         display: block;
-        //width: 100%;
+        width: 100%;
         height: auto;
-        width: auto;
         margin: 0 auto;
       }
     }
@@ -116,6 +115,10 @@
     &.disabled {
       pointer-events: none;
 
+      .sold {
+        display: block;
+      }
+
       .number {
         display: none;
       }
@@ -123,13 +126,17 @@
       filter: grayscale(1);
 
       > .round-green {
-        stroke: #aaaaaa;
+        stroke: #aaaaaa !important;
       }
     }
 
     > .round-green {
       stroke: #194A21;
 
+    }
+
+    .sold {
+      display: none;
     }
 
     .icon-hover {
@@ -331,6 +338,8 @@
     }
   }
   .contacts-modal {
+    overflow-y: initial;
+
     &__content {
       flex-wrap: wrap;
     }
@@ -348,19 +357,46 @@
 
 @include respond-to($sm) {
   .contacts-modal {
-    &__part{
+    .fl-modal__close {
+      top: -25px;
+      right: 13px;
+      width: 48px;
+      height: 48px;
+      background-size: 100%;
+    }
+
+    &__part {
       padding: 82px 60px 100px;
     }
   }
 }
-@media screen  and (max-width: 420px){
+
+@media screen and (max-width: 420px) {
   .contacts-modal {
+
     width: 90%;
     max-width: 380px;
-    &__part{
+    max-height: 550px;
+
+    .modal-title {
+      margin-bottom: 60px;
+      font-weight: 700;
+    }
+
+    &__part {
 
       padding-left: 18px;
       padding-right: 18px;
+    }
+  }
+}
+
+@include respond-to($xs) {
+  .contacts-modal {
+    max-height: 510px;
+    .modal-title{
+      font-size: 28px;
+      margin-bottom: 40px;
     }
   }
 }

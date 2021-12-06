@@ -239,18 +239,21 @@ body {
 @include respond-to($md) {
   .section {
     margin-bottom: 50px;
+
     &__title {
       font-size: 34px;
     }
   }
   .summary {
-    .container{
+    .container {
       padding: 0;
     }
+
     &__col-right {
       padding-top: 85%;
       margin: 0 -15px;
     }
+
     &__caption {
       font-size: 28px;
       max-width: 93%;
@@ -258,12 +261,17 @@ body {
   }
 }
 
-@include respond-to($sm) {
-.summary{
-  &__col-right{
-
+@include respond-to($xs) {
+  .section__title {
+    font-size: 27px;
   }
-}
+  .summary__caption{
+    font-size: 27px;
+    margin-top: -20px;
+    span{
+      margin-left: 0;
+    }
+  }
 }
 
 

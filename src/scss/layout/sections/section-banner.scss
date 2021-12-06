@@ -87,3 +87,26 @@
     }
   }
 }
+
+@include respond-to($xs){
+  .section-banner{
+    &__logo{
+      max-width: 210px;
+    }
+    .decor-text {
+      font-size: 28px;
+    }
+    &__slogan {
+      font-size: 19px;
+    }
+    .btn_scroll{
+      width: 56px;
+      height: 56px;
+      margin-left: -22px;
+      &:before{
+        width: 56px;
+        height: 56px;
+      }
+    }
+  }
+}

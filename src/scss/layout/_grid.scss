@@ -22,4 +22,8 @@
     max-width: 540px;
     padding: 0 15px;
   }
+
+  @include respond-to($xs){
+    max-width: 100%;
+  }
 }
