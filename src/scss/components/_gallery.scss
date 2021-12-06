@@ -14,22 +14,20 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
-    //
-    //position: relative;
-    //box-sizing: border-box;
-    //
-    //$border: 5px;
-    //background-clip: padding-box; /* !importanté */
-    //border: solid $border transparent; /* !importanté */
-    //&:before {
-    //  content: '';
-    //  position: absolute;
-    //  top: 0; right: 0; bottom: 0; left: 0;
-    //  z-index: -1;
-    //  margin: -$border; /* !importanté */
-    //  border-radius: inherit; /* !importanté */
-    //  background: linear-gradient(to right, red, orange);
-    //}
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background: linear-gradient(189.85deg, #EEC65F -8.6%, #A76F2A 3.48%, #E2B855 14.37%, #F9F2B7 26.81%, #E2B855 41.66%, #8F5E21 75.74%, #E2B855 92.6%);
+            clip-path: polygon(0% 0%, 0% 100%, 6px 100%, 6px 6px, calc(100% - 6px) 6px, calc(100% - 6px) calc(100% - 6px), 6px calc(100% - 6px), 6px 100%, 100% 100%, 100% 0%);
+      opacity: 0;
+      transition: opacity .5s;
+
+    }
+    &:hover:before{
+      opacity: 1;
+    }
   }
 
   &_top {
