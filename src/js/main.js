@@ -86,6 +86,9 @@ $(document).ready(function () {
         $(this).parents('.fl-modal').removeClass('active');
     })
 
+    //GALLERY
+    const gallery = baguetteBox.run('.gallery', {animation: 'fadeIn'});
+
     //    ANIMATION
 
     // setTimeout(function () {
