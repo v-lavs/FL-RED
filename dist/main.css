@@ -983,6 +983,55 @@ body.modal-open {
   margin-bottom: 65px;
 }
 
+.baguetteBox-button {
+  background-color: transparent;
+}
+
+.baguetteBox-button:hover,
+.baguetteBox-button:focus {
+  background-color: transparent;
+}
+
+.baguetteBox-button#close-button:before {
+  width: 30px;
+  height: 30px;
+  background: url(../assets/img/svg/close.svg) center center no-repeat;
+}
+
+.baguetteBox-button#next-button,
+.baguetteBox-button#previous-button {
+  width: 40px;
+  height: 40px;
+}
+
+.baguetteBox-button#next-button:before,
+.baguetteBox-button#previous-button:before {
+  width: 40px;
+  height: 40px;
+  background: url(../assets/img/svg/arrow-left-gold.svg) center center no-repeat;
+}
+
+.baguetteBox-button#close-button:before,
+.baguetteBox-button#next-button:before,
+.baguetteBox-button#previous-button:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-size: 100% auto;
+  z-index: 1;
+}
+
+.baguetteBox-button#next-button {
+  transform: rotate(180deg);
+}
+
+.baguetteBox-button svg {
+  display: none;
+}
+
 .card-list {
   margin-bottom: 250px;
   position: relative;

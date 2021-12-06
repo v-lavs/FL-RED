@@ -41,6 +41,55 @@
   }
 }
 
+.baguetteBox-button {
+  background-color: transparent;
+  &:hover,
+  &:focus{
+    background-color: transparent;
+  }
+  &#close-button {
+    &:before {
+      width: 30px;
+      height: 30px;
+      background: url(../assets/img/svg/close.svg) center center no-repeat;
+    }
+  }
+
+  &#next-button,
+  &#previous-button {
+    width: 40px;
+    height: 40px;
+
+    &:before {
+      width: 40px;
+      height: 40px;
+      background: url(../assets/img/svg/arrow-left-gold.svg) center center no-repeat;
+    }
+  }
+
+  &#close-button,
+  &#next-button,
+  &#previous-button {
+    &:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background-size: 100% auto;
+      z-index: 1;
+    }
+  }
+  &#next-button{
+    transform: rotate(180deg);
+  }
+
+  svg {
+    display: none;
+  }
+}
+
 @include respond-to($laptop) {
   .design .gallery-room {
     width: 80%;
