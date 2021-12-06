@@ -13,6 +13,7 @@
   height: 690px;
   opacity: 0;
   visibility: hidden;
+
   &.active {
     opacity: 1;
     visibility: visible;
@@ -98,7 +99,8 @@
     position: relative;
     width: 600px;
     margin: 0 auto;
-    img{
+
+    img {
       position: absolute;
       left: 0;
       right: 0;
@@ -110,6 +112,39 @@
 
   .apartment-circle {
     cursor: pointer;
+
+    &.disabled {
+      pointer-events: none;
+
+      .number {
+        display: none;
+      }
+
+      filter: grayscale(1);
+
+      > .round-green {
+        stroke: #aaaaaa;
+      }
+    }
+
+    > .round-green {
+      stroke: #194A21;
+
+    }
+
+    .icon-hover {
+      opacity: 0;
+    }
+
+    &:hover {
+      .icon-hover {
+        opacity: 1;
+      }
+
+      .round-green {
+        stroke: transparent;
+      }
+    }
   }
 
   .scheme-tabs {
@@ -197,11 +232,13 @@
 
 .contacts-modal {
   padding: 0;
-  .fl-modal__close{
+
+  .fl-modal__close {
     z-index: 2;
     right: 25px;
     top: 25px;
   }
+
   .modal-title {
     margin-bottom: 80px;
   }
@@ -272,5 +309,58 @@
 
   .btn_main {
     margin-top: 25px;
+  }
+}
+
+@include respond-to($md) {
+  .floor-modal {
+    .content-part {
+      width: 100%;
+    }
+
+    .modal-header {
+      margin-bottom: 52px;
+    }
+
+    .apartment-content .app-img {
+      transform: rotate(90deg);
+      //height: 210px;
+      img {
+
+      }
+    }
+  }
+  .contacts-modal {
+    &__content {
+      flex-wrap: wrap;
+    }
+
+    &__part {
+      width: 100%;
+
+    }
+
+    .img-wrap {
+      display: none;
+    }
+  }
+}
+
+@include respond-to($sm) {
+  .contacts-modal {
+    &__part{
+      padding: 82px 60px 100px;
+    }
+  }
+}
+@media screen  and (max-width: 420px){
+  .contacts-modal {
+    width: 90%;
+    max-width: 380px;
+    &__part{
+
+      padding-left: 18px;
+      padding-right: 18px;
+    }
   }
 }

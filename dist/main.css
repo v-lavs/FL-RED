@@ -741,6 +741,35 @@ body.modal-open {
   cursor: pointer;
 }
 
+.floor-modal .apartment-circle.disabled {
+  pointer-events: none;
+  filter: grayscale(1);
+}
+
+.floor-modal .apartment-circle.disabled .number {
+  display: none;
+}
+
+.floor-modal .apartment-circle.disabled > .round-green {
+  stroke: #aaaaaa;
+}
+
+.floor-modal .apartment-circle > .round-green {
+  stroke: #194A21;
+}
+
+.floor-modal .apartment-circle .icon-hover {
+  opacity: 0;
+}
+
+.floor-modal .apartment-circle:hover .icon-hover {
+  opacity: 1;
+}
+
+.floor-modal .apartment-circle:hover .round-green {
+  stroke: transparent;
+}
+
 .floor-modal .scheme-tabs {
   display: flex;
   align-items: center;
@@ -983,55 +1012,6 @@ body.modal-open {
   margin-bottom: 65px;
 }
 
-.baguetteBox-button {
-  background-color: transparent;
-}
-
-.baguetteBox-button:hover,
-.baguetteBox-button:focus {
-  background-color: transparent;
-}
-
-.baguetteBox-button#close-button:before {
-  width: 30px;
-  height: 30px;
-  background: url(../assets/img/svg/close.svg) center center no-repeat;
-}
-
-.baguetteBox-button#next-button,
-.baguetteBox-button#previous-button {
-  width: 40px;
-  height: 40px;
-}
-
-.baguetteBox-button#next-button:before,
-.baguetteBox-button#previous-button:before {
-  width: 40px;
-  height: 40px;
-  background: url(../assets/img/svg/arrow-left-gold.svg) center center no-repeat;
-}
-
-.baguetteBox-button#close-button:before,
-.baguetteBox-button#next-button:before,
-.baguetteBox-button#previous-button:before {
-  position: absolute;
-  content: '';
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background-size: 100% auto;
-  z-index: 1;
-}
-
-.baguetteBox-button#next-button {
-  transform: rotate(180deg);
-}
-
-.baguetteBox-button svg {
-  display: none;
-}
-
 .card-list {
   margin-bottom: 250px;
   position: relative;
@@ -1131,6 +1111,59 @@ body.modal-open {
   line-height: 29px;
   text-transform: uppercase;
   color: #194a21;
+}
+
+#baguetteBox-overlay {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.baguetteBox-button {
+  background-color: transparent;
+}
+
+.baguetteBox-button:hover,
+.baguetteBox-button:focus {
+  background-color: transparent;
+}
+
+.baguetteBox-button#close-button:before {
+  width: 30px;
+  height: 30px;
+  background: url(../assets/img/svg/close.svg) center center no-repeat;
+}
+
+.baguetteBox-button#next-button,
+.baguetteBox-button#previous-button {
+  width: 40px;
+  height: 40px;
+}
+
+.baguetteBox-button#next-button:before,
+.baguetteBox-button#previous-button:before {
+  width: 40px;
+  height: 40px;
+  background: url(../assets/img/svg/arrow-left-gold.svg) center center no-repeat;
+}
+
+.baguetteBox-button#close-button:before,
+.baguetteBox-button#next-button:before,
+.baguetteBox-button#previous-button:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-size: 100% auto;
+  z-index: 1;
+}
+
+.baguetteBox-button#next-button {
+  transform: rotate(180deg);
+}
+
+.baguetteBox-button svg {
+  display: none;
 }
 
 .container {
@@ -2203,6 +2236,30 @@ body.modal-open {
     max-width: 93%;
   }
 
+  .floor-modal .content-part {
+    width: 100%;
+  }
+
+  .floor-modal .modal-header {
+    margin-bottom: 52px;
+  }
+
+  .floor-modal .apartment-content .app-img {
+    transform: rotate(90deg);
+  }
+
+  .contacts-modal__content {
+    flex-wrap: wrap;
+  }
+
+  .contacts-modal__part {
+    width: 100%;
+  }
+
+  .contacts-modal .img-wrap {
+    display: none;
+  }
+
   .gallery__item {
     width: 100%;
     margin-bottom: 16px;
@@ -2527,6 +2584,10 @@ body.modal-open {
     max-width: 252px;
   }
 
+  .contacts-modal__part {
+    padding: 82px 60px 100px;
+  }
+
   .card-list {
     padding: 0 40px;
   }
@@ -2685,5 +2746,17 @@ body.modal-open {
 
   .contacts .form__col_6 {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .contacts-modal {
+    width: 90%;
+    max-width: 380px;
+  }
+
+  .contacts-modal__part {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 }

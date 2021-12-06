@@ -84,7 +84,7 @@ $(document).ready(function () {
     $('.fl-modal__back').on('click', function (e) {
         e.preventDefault();
         $(this).parents('.fl-modal').removeClass('active');
-    })
+    });
 
     //GALLERY
     const gallery = baguetteBox.run('.gallery', {animation: 'fadeIn'});
