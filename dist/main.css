@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*!
  * baguetteBox.js
  * @author  feimosi
@@ -723,8 +725,18 @@ body.modal-open {
 }
 
 .floor-modal .svg-wrap {
+  position: relative;
   width: 600px;
   margin: 0 auto;
+}
+
+.floor-modal .svg-wrap img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .floor-modal .apartment-circle {
@@ -949,6 +961,27 @@ body.modal-open {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
+  position: relative;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  /* !importanté */
+  border: solid 5px transparent;
+  /* !importanté */
+}
+
+.gallery__link:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -5px;
+  /* !importanté */
+  border-radius: inherit;
+  /* !importanté */
+  background: linear-gradient(to right, red, orange);
 }
 
 .gallery_top {
