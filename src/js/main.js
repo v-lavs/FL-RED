@@ -91,14 +91,21 @@ $(document).ready(function () {
     const gallery = baguetteBox.run('.gallery', {animation: 'fadeIn'});
 
     //MAP ZOOM
-    if ($(window).width() <= 768) {
-        $('.map').zoom({
-            url: 'assets/img/map-loc7.png',
-            touch:	true,
-        });
-    } else{
-        $('#map').trigger('zoom.destroy');
+    function initZoom() {
+        if ($(window).width() <= 768) {
+            $('.map').zoom({
+                url: 'assets/img/map-loc7.png',
+                touch:	true,
+            });
+        } else{
+            $('#map').trigger('zoom.destroy');
+        }
     }
+    initZoom();
+    $(window).resize(function() {
+        initZoom();
+    });
+
 
     //    ANIMATION
 
