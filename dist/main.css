@@ -649,7 +649,6 @@ body.modal-open {
 .fl-modal.active {
   opacity: 1;
   visibility: visible;
-  transition: opacity 1s;
 }
 
 .fl-modal__back,
