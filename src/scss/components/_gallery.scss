@@ -15,17 +15,22 @@
     background-position: center bottom;
     background-size: cover;
     position: relative;
+
     &:before {
       content: '';
       position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
       background: linear-gradient(189.85deg, #EEC65F -8.6%, #A76F2A 3.48%, #E2B855 14.37%, #F9F2B7 26.81%, #E2B855 41.66%, #8F5E21 75.74%, #E2B855 92.6%);
-            clip-path: polygon(0% 0%, 0% 100%, 6px 100%, 6px 6px, calc(100% - 6px) 6px, calc(100% - 6px) calc(100% - 6px), 6px calc(100% - 6px), 6px 100%, 100% 100%, 100% 0%);
+      clip-path: polygon(0% 0%, 0% 100%, 6px 100%, 6px 6px, calc(100% - 6px) 6px, calc(100% - 6px) calc(100% - 6px), 6px calc(100% - 6px), 6px 100%, 100% 100%, 100% 0%);
       opacity: 0;
       transition: opacity .5s;
 
     }
-    &:hover:before{
+
+    &:hover:before {
       opacity: 1;
     }
   }
@@ -37,7 +42,7 @@
 }
 
 @include respond-to($laptop) {
- .design  .gallery-room {
+  .design .gallery-room {
     width: 80%;
   }
   .gallery {
@@ -51,12 +56,13 @@
 }
 
 @include respond-to($md) {
-  .gallery{
+  .gallery {
     &__item {
       width: 100%;
       margin-bottom: 16px;
     }
-    &_top{
+
+    &_top {
       margin-bottom: 62px;
     }
 
