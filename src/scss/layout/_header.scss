@@ -14,17 +14,82 @@
     justify-content: space-between;
   }
 
+  .right-bar {
+    position: relative;
+
+    &.open-bar {
+      .right-bar__content {
+        display: flex;
+      }
+
+      .right-bar__btn {
+        .right-bar__link-icon.icon_open {
+          background-image: url(../assets/img/svg/close-round.svg);
+          transition: .8s;
+        }
+      }
+    }
+
+    &__content {
+      display: none;
+
+      position: absolute;
+      color: #ffffff;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1;
+      min-width: 150px;
+      justify-content: center;
+      flex-direction: column;
+      padding: 29px 0;
+      top: 48px;
+      left: 0;
+    }
+
+    &__btn {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+
+    }
+
+    &__link {
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 29px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__link-icon {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin-right: 16px;
+
+      &.icon_open {
+        background-image: url(../assets/img/svg/phone-gold.svg);
+        transition: .8s;
+      }
+
+      &.icon_phone {
+        background-image: url(../assets/img/svg/phone.svg);
+      }
+
+      &.icon_chat {
+        background-image: url(../assets/img/svg/chat.svg);
+      }
+    }
+
+  }
+
   &__link {
     display: inline-block;
-  }
-  &__link-icon{
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    background-image: url(../assets/img/svg/phone-gold.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
   }
 
   &__nav {
@@ -75,8 +140,9 @@
 
   .btn_burger {
     position: relative;
+
     &:hover,
-    &:focus{
+    &:focus {
 
     }
   }

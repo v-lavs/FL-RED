@@ -59,6 +59,10 @@ $(document).ready(function () {
         }
     });
 
+    //HEADER RIGHT BAR
+    $('#openBar').click(function (e) {
+        $('.right-bar').toggleClass('open-bar');
+    });
 
     // MODAL
 
@@ -108,16 +112,6 @@ $(document).ready(function () {
 
 
     //    ANIMATION
-
-    // setTimeout(function () {
-    //     $('.facade-residence').addClass('anim_block');
-    // }, 500);
-
-    // var waypoints = $('.section_anim').waypoint(function (direction) {
-    //     $(this.element).addClass('section_in-view')
-    // }, {
-    //     offset: '100%'
-    // });
 
    let fadeInBlocks = $('.fade-in').waypoint(function (direction) {
         $(this.element).addClass('active')
