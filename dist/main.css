@@ -3083,8 +3083,8 @@ body.modal-open {
   }
 
   .floor-modal .svg-wrap {
-    width: 118%;
-    transform: rotate(90deg) translate(75px, 35px);
+    width: 120%;
+    transform: rotate(90deg) translate(75px, 40px);
   }
 
   .benefits .section__header {
