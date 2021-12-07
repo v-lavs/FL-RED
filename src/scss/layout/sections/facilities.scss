@@ -24,6 +24,12 @@
     padding-bottom: 67px;
   }
 
+  .card-list {
+    &:before {
+      left: 33.3%;
+    }
+  }
+
   .card {
     justify-content: flex-end;
     &__thumb {

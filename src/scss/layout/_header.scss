@@ -18,10 +18,6 @@
     position: relative;
 
     &.open-bar {
-      //.right-bar__content {
-      //  display: flex;
-      //}
-
       .right-bar__btn {
         .right-bar__link-icon.icon_open {
           background-image: url(../assets/img/svg/close-round.svg);
@@ -93,8 +89,6 @@
   }
 
   &__nav {
-    display: flex;
-    align-items: center;
     position: fixed;
     left: 0;
     top: 0;
@@ -104,10 +98,9 @@
     background-color: #1b382c;
     transition: transform .8s;
     transform: translateX(-100%);
-    z-index: 999;
-    padding: 110px 26px;
+    padding: 190px 26px 110px;
     overflow-y: auto;
-    height: 100vh;
+    z-index: 999;
 
     &.open {
       transform: translateX(0);
@@ -140,11 +133,6 @@
 
   .btn_burger {
     position: relative;
-
-    &:hover,
-    &:focus {
-
-    }
   }
 
   .btn_burger:before {
@@ -162,6 +150,7 @@
   }
 }
 
+
 .backdrop {
   display: none;
   position: fixed;
@@ -174,4 +163,11 @@
   z-index: 500;
 }
 
-
+@include respond-to($sm) {
+  .header {
+    &__nav {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+}

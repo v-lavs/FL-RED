@@ -668,8 +668,6 @@ body.modal-open {
 }
 
 .menu {
-  display: flex;
-  flex-direction: column;
   font-size: 20px;
   color: #ffffff;
   text-transform: uppercase;
@@ -973,7 +971,7 @@ body.modal-open {
   overflow: hidden;
   color: #ffffff;
   font-size: 28px;
-  padding-bottom: 110px;
+  padding-bottom: 30px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -1125,6 +1123,17 @@ body.modal-open {
 .card-list {
   margin-bottom: 250px;
   position: relative;
+}
+
+.card-list:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 110px;
+  bottom: 0;
+  width: 100vw;
+  background-color: #fff;
+  z-index: 1;
 }
 
 .card-list:after {
@@ -1368,8 +1377,6 @@ body.modal-open {
 }
 
 .header__nav {
-  display: flex;
-  align-items: center;
   position: fixed;
   left: 0;
   top: 0;
@@ -1379,10 +1386,9 @@ body.modal-open {
   background-color: #1b382c;
   transition: transform .8s;
   transform: translateX(-100%);
-  z-index: 999;
-  padding: 110px 26px;
+  padding: 190px 26px 110px;
   overflow-y: auto;
-  height: 100vh;
+  z-index: 999;
 }
 
 .header__nav.open {
@@ -1686,6 +1692,10 @@ body.modal-open {
   background-position: center center;
 }
 
+.features .card-list:before {
+  right: 33.3%;
+}
+
 .features .section__header {
   margin-bottom: 68px;
 }
@@ -1720,6 +1730,10 @@ body.modal-open {
   position: relative;
   padding-top: 150px;
   padding-bottom: 67px;
+}
+
+.facilities .card-list:before {
+  left: 33.3%;
 }
 
 .facilities .card {
@@ -2880,6 +2894,11 @@ body.modal-open {
   .container {
     max-width: 540px;
     padding: 0 15px;
+  }
+
+  .header__nav {
+    max-width: 100%;
+    text-align: center;
   }
 
   .facade-residence {
