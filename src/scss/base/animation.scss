@@ -1,0 +1,41 @@
+.fade-in {
+   opacity: 0;
+   display: inline-block;
+   $animation-speed: 1s;
+   transition: .35s;
+   animation-delay: .85s;
+   &.active {
+     animation: fadeIn linear $animation-speed forwards;
+   }
+ }
+.fade {
+  opacity: 0;
+  $animation-speed: 1.5s;
+  transition: .35s;
+  animation-delay: .5s;
+  &.active {
+    animation: fade ease-in $animation-speed forwards;
+  }
+}
+@keyframes fadeIn {
+  0% {opacity:0;
+    transform: scale(.5);}
+  100% {opacity:1;
+    transform: scale(1);}
+}
+@keyframes fade {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+.cls-1,
+.cls-2 {
+  animation: slideIn ease-in 2000ms infinite;
+
+  @for $i from 1 through 4 {
+    &:nth-of-type(#{$i}) {
+      animation-delay: #{$i * 1000}s;
+    }
+  }
+}

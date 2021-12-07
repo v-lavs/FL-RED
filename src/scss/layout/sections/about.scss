@@ -8,6 +8,16 @@
   font-weight: 400;
   text-align: center;
 
+  .overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
+    z-index: 1;
+  }
+
   &.facade-residence_parallax {
     background-repeat: no-repeat;
     background-position: center;
@@ -101,6 +111,7 @@
       padding-top: 66%;
       margin-bottom: 40px;
     }
+
     .text_lg {
       font-size: 28px;
       line-height: 1.5;
@@ -129,9 +140,11 @@
 @include respond-to($sm) {
   .facade-residence {
     min-height: 328px;
+
     &__wrap-img {
       margin-bottom: 20px;
     }
+
     .text_lg {
       font-size: 24px;
       margin-bottom: 20px;
@@ -142,7 +155,7 @@
   }
 }
 
-@include respond-to($xs){
+@include respond-to($xs) {
   .facade-residence .text_lg {
     font-size: 20px;
   }

@@ -270,7 +270,8 @@
     margin-bottom: 10px;
     .section__header{
       padding-top: 106px;
-      min-height: 328px;
+      min-height: 400px;
+
     }
   }
   .benefits-list {
@@ -317,6 +318,14 @@
     }
     &__description{
       line-height: 1.15;
+    }
+  }
+}
+
+@media screen and (max-width: 420px){
+  .benefits{
+    .section__header{
+      min-height: 328px;
     }
   }
 }

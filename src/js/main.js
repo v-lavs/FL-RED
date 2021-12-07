@@ -110,8 +110,27 @@ $(document).ready(function () {
     //    ANIMATION
 
     // setTimeout(function () {
-    //     $('.section-banner').addClass('anim_started');
+    //     $('.facade-residence').addClass('anim_block');
     // }, 500);
+
+    // var waypoints = $('.section_anim').waypoint(function (direction) {
+    //     $(this.element).addClass('section_in-view')
+    // }, {
+    //     offset: '100%'
+    // });
+
+   let fadeInBlocks = $('.fade-in').waypoint(function (direction) {
+        $(this.element).addClass('active')
+    }, {
+        offset: '98%'
+    });
+    let fadeBlocks = $('.fade').waypoint(function (direction) {
+        $(this.element).addClass('active')
+    }, {
+        offset: '98%'
+    });
+
+
 });
 
 
