@@ -445,6 +445,7 @@ body.modal-open {
   top: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
   z-index: 1;
+  opacity: 0;
 }
 
 .golden-line {
@@ -597,29 +598,50 @@ body.modal-open {
   }
 }
 
-.cls-1,
-.cls-2 {
-  animation: slideIn ease-in 2000ms infinite;
+.sl-right {
+  animation: slideInRight ease-in 2000ms infinite;
 }
 
-.cls-1:nth-of-type(1),
-.cls-2:nth-of-type(1) {
+.sl-right:nth-of-type(1) {
   animation-delay: 1000s;
 }
 
-.cls-1:nth-of-type(2),
-.cls-2:nth-of-type(2) {
+.sl-right:nth-of-type(2) {
   animation-delay: 2000s;
 }
 
-.cls-1:nth-of-type(3),
-.cls-2:nth-of-type(3) {
+.sl-right:nth-of-type(3) {
   animation-delay: 3000s;
 }
 
-.cls-1:nth-of-type(4),
-.cls-2:nth-of-type(4) {
+.sl-right:nth-of-type(4) {
   animation-delay: 4000s;
+}
+
+.sl-left {
+  animation: slideInLeft ease-in 2000ms infinite;
+}
+
+.sl-left:nth-of-type(1) {
+  animation-delay: 1000s;
+}
+
+.sl-left:nth-of-type(2) {
+  animation-delay: 2000s;
+}
+
+.sl-left:nth-of-type(3) {
+  animation-delay: 3000s;
+}
+
+.sl-left:nth-of-type(4) {
+  animation-delay: 4000s;
+}
+
+@keyframes slideInLeft {
+}
+
+@keyframes slideInRight {
 }
 
 .btn {

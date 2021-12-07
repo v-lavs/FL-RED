@@ -100,21 +100,22 @@ $(document).ready(function () {
         if ($(window).width() <= 768) {
             $('.map').zoom({
                 url: 'assets/img/map-loc7.png',
-                touch:	true,
+                touch: true,
             });
-        } else{
+        } else {
             $('#map').trigger('zoom.destroy');
         }
     }
+
     initZoom();
-    $(window).resize(function() {
+    $(window).resize(function () {
         initZoom();
     });
 
 
     //    ANIMATION
 
-   let fadeInBlocks = $('.fade-in').waypoint(function (direction) {
+    let fadeInBlocks = $('.fade-in').waypoint(function (direction) {
         $(this.element).addClass('active')
     }, {
         offset: '98%'
@@ -125,6 +126,25 @@ $(document).ready(function () {
         offset: '98%'
     });
 
+    let slBlocks = $('.card').waypoint(function (direction) {
+        $(this.element).addClass('anim-list')
+    }, {
+        offset: '98%'
+    });
+
+
+    $(window).scroll(function () {
+        let homeTop = $(window).scrollTop();
+        let opacity = 0;
+        $(".facade-residence").each(function () {
+           let height = $(this).height();
+           let offset = $(this).offset().top;
+            opacity = 2 * (homeTop - height + offset) / height;
+
+            $('.overlay').css("opacity", opacity);
+            ;
+        })
+    });
 });
 
 
