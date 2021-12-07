@@ -85,6 +85,13 @@
   }
 }
 
+@include respond-to($laptop-md){
+  .contacts__left{
+    padding-top: 41.5%;
+    background-size: cover;
+  }
+}
+
 @include respond-to($lg) {
   .contacts {
     padding-top: 85px;
