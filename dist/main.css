@@ -429,11 +429,21 @@ body.modal-open {
   position: absolute;
   content: '';
   display: block;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
   z-index: 1;
 }
 
@@ -558,7 +568,7 @@ body.modal-open {
 .fade {
   opacity: 0;
   transition: .35s;
-  animation-delay: .5s;
+  animation-delay: .85s;
 }
 
 .fade.active {
@@ -1446,7 +1456,7 @@ body.modal-open {
   right: 0;
   bottom: 0;
   background-color: #000;
-  opacity: .6;
+  opacity: .8;
   z-index: 500;
 }
 
@@ -1572,16 +1582,6 @@ body.modal-open {
   text-align: center;
 }
 
-.facade-residence .overlay {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
-  z-index: 1;
-}
-
 .facade-residence.facade-residence_parallax {
   background-repeat: no-repeat;
   background-position: center;
@@ -1688,7 +1688,7 @@ body.modal-open {
 .features .section__bg {
   padding-top: 135px;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center center;
 }
 
@@ -1709,21 +1709,9 @@ body.modal-open {
 
 .facilities .section__bg {
   position: relative;
-}
-
-.facilities .section__bg-inner {
-  position: absolute;
-  content: '';
-  display: block;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: left top;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  transform: scale(-1, 1);
-  z-index: 0;
+  background-size: cover;
+  background-position: center;
 }
 
 .facilities .section__header {
@@ -1818,6 +1806,7 @@ body.modal-open {
 }
 
 .benefits__img-banner {
+  position: relative;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2350,16 +2339,6 @@ body.modal-open {
     font-size: 38px;
   }
 
-  .features .section__bg {
-    background-size: 120% 120%;
-    background-position: top center;
-  }
-
-  .facilities .section__bg-inner {
-    background-size: 120% 125%;
-    background-position: top center;
-  }
-
   .facilities .card__text-content {
     padding-left: 20px;
   }
@@ -2382,6 +2361,7 @@ body.modal-open {
   }
 
   .facilities .summary__col-left {
+    width: 100%;
     padding: 0;
   }
 
@@ -2657,10 +2637,10 @@ body.modal-open {
     display: inline-block;
   }
 
-  .features .section__bg {
-    padding-top: 106px;
-    background-size: cover;
-    background-position: 0;
+  .features .card-list:before {
+    left: -50vw;
+    right: -50vw;
+    width: 150vw;
   }
 
   .features .card__text-content {
@@ -2672,13 +2652,14 @@ body.modal-open {
     z-index: 2;
   }
 
-  .facilities .section__header {
-    padding-top: 106px;
+  .facilities .card-list:before {
+    left: -50vw;
+    right: -50vw;
+    width: 150vw;
   }
 
-  .facilities .section__bg-inner {
-    background-size: cover;
-    background-position: 0 0;
+  .facilities .section__header {
+    padding-top: 106px;
   }
 
   .facilities .card__text-content:after {

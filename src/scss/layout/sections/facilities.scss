@@ -1,21 +1,23 @@
 .facilities {
   .section__bg {
     position: relative;
-
-    &-inner {
-      position: absolute;
-      content: '';
-      display: block;
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      background-position: left top;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      transform: scale(-1, 1);
-      z-index: 0;
-    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    //&-inner {
+    //  position: absolute;
+    //  content: '';
+    //  display: block;
+    //  background-repeat: no-repeat;
+    //  background-size: 100% 100%;
+    //  background-position: left top;
+    //  left: 0;
+    //  top: 0;
+    //  bottom: 0;
+    //  right: 0;
+    //  transform: scale(-1, 1);
+    //  z-index: 0;
+    //}
   }
 
   .section__header {
@@ -135,11 +137,6 @@
 
 @include respond-to($lg) {
   .facilities {
-    .section__bg-inner {
-      background-size: 120% 125%;
-      background-position: top center;
-    }
-
     .card__text-content {
       padding-left: 20px;
     }
@@ -163,6 +160,7 @@
       }
 
       &__col-left {
+        width: 100%;
         padding: 0;
       }
 
@@ -182,12 +180,15 @@
 
 @include respond-to($md) {
   .facilities {
+    .card-list {
+      &:before {
+        left: -50vw;
+        right: -50vw;
+        width: 150vw;
+      }
+    }
     .section__header{
       padding-top: 106px;
-    }
-    .section__bg-inner {
-      background-size: cover;
-      background-position: 0 0;
     }
     .card__text-content:after{
       left: auto;

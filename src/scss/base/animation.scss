@@ -12,7 +12,7 @@
   opacity: 0;
   $animation-speed: 1.5s;
   transition: .35s;
-  animation-delay: .5s;
+  animation-delay: .85s;
   &.active {
     animation: fade ease-in $animation-speed forwards;
   }

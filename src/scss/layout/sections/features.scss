@@ -4,7 +4,7 @@
   .section__bg {
     padding-top: 135px;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center center;
   }
 
@@ -49,20 +49,17 @@
       max-width: 80%;
       font-size: 38px;
     }
-
-    .section__bg {
-      background-size: 120% 120%;
-      background-position: top center;
-    }
   }
 }
 
 @include respond-to($md) {
   .features {
-    .section__bg {
-      padding-top: 106px;
-      background-size: cover;
-      background-position: 0;
+    .card-list {
+      &:before {
+        left: -50vw;
+        right: -50vw;
+        width: 150vw;
+      }
     }
 
     .card__text-content {
