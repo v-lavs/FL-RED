@@ -5,16 +5,27 @@
   &__item {
     width: 25%;
     padding: 0 8px;
+
   }
 
   &__link {
     width: 100%;
     display: inline-block;
-    padding-top: 73.3%;
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
+    padding-top: 72.3%;
     position: relative;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: .85s;
+    }
 
     &:before {
       content: '';
@@ -23,11 +34,22 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background: linear-gradient(189.85deg, #EEC65F -8.6%, #A76F2A 3.48%, #E2B855 14.37%, #F9F2B7 26.81%, #E2B855 41.66%, #8F5E21 75.74%, #E2B855 92.6%);
-      clip-path: polygon(0% 0%, 0% 100%, 6px 100%, 6px 6px, calc(100% - 6px) 6px, calc(100% - 6px) calc(100% - 6px), 6px calc(100% - 6px), 6px 100%, 100% 100%, 100% 0%);
+      background-image: url(../assets/img/stroke_hover.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
       opacity: 0;
       transition: opacity .5s;
+      z-index: 2;
+    }
 
+    &:hover, &:focus {
+      img {
+        transform: scale(1.05);
+        transition: .85s;
+      }
     }
 
     &:hover:before {

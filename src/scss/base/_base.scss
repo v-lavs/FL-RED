@@ -121,11 +121,6 @@ body {
     background-color: #ffffff;
     font-weight: 300;
     font-size: 48px;
-
-    span {
-      display: inline-block;
-      margin-left: 20px;
-    }
   }
 }
 
@@ -175,20 +170,12 @@ body {
 @include respond-to($laptop-md) {
   .summary__caption {
     font-size: 40px;
-
-    span {
-      margin-left: 46px;
-    }
   }
 }
 
 @include respond-to($laptop) {
   .summary__caption {
     font-size: 38px;
-
-    span {
-      margin-left: 28px;
-    }
   }
 }
 
@@ -269,9 +256,6 @@ body {
   .summary__caption{
     font-size: 27px;
     margin-top: -20px;
-    span{
-      margin-left: 0;
-    }
   }
 }
 

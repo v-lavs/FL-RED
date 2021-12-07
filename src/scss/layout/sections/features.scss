@@ -1,45 +1,69 @@
-.features{
+.features {
   position: relative;
- .section__bg{
-   padding-top: 135px;
-   background-repeat: no-repeat;
-   background-size: 100% 100%;
-   background-position: center center;
- }
-  .section__header{
+
+  .section__bg {
+    padding-top: 135px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+  }
+
+  .section__header {
     margin-bottom: 68px;
   }
-  .summary__caption{
+
+  .summary__caption {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    max-width: 146.5%;
+  }
+}
+@include respond-to($laptop-md) {
+  .features {
+    .summary__caption {
+      font-size: 42px;
+      width: 145.5%;
+    }
+  }
+}
+@include respond-to($laptop) {
+  .features {
+    .summary__caption {
+      font-size: 36px;
+    }
   }
 }
 
-@include respond-to($lg){
+@include respond-to($lg) {
   .features {
-    .summary__caption{
+    .summary__caption {
       align-items: center;
       margin-top: -63px;
-      //max-width: 90%;
+      max-width: 80%;
+      font-size: 38px;
     }
+
     .section__bg {
       background-size: 120% 120%;
       background-position: top center;
     }
   }
 }
-@include respond-to($md){
+
+@include respond-to($md) {
   .features {
     .section__bg {
       padding-top: 106px;
       background-size: cover;
       background-position: 0;
     }
-    .card__text-content{
+
+    .card__text-content {
       order: 1;
     }
-    .card__thumb:before{
+
+    .card__thumb:before {
       right: 0;
       z-index: 2;
     }

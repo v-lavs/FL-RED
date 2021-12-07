@@ -25,6 +25,7 @@
   }
 
   .card {
+    justify-content: flex-end;
     &__thumb {
       order: -1;
 
@@ -57,12 +58,13 @@
     }
 
     &__col-left {
+      width: 33.3%;
       padding-top: 80px;
     }
 
     &__col-right {
       position: relative;
-      padding-top: 59.5%;
+      padding-top: 60.2%;
 
       &:before {
         position: absolute;
@@ -79,6 +81,7 @@
 
     &__caption {
       position: relative;
+      width: 140%;
       z-index: 2;
       max-width: 150%;
     }
@@ -103,12 +106,23 @@
     }
   }
 }
-
+@include respond-to($laptop-md) {
+  .facilities {
+    .summary__caption {
+      font-size: 43px;
+    }
+  }
+}
 @include respond-to($laptop) {
   .facilities {
     .summary .text-list {
       font-size: 26px;
       padding-bottom: 20px;
+    }
+    .summary__caption{
+      font-size: 39px;
+      padding-right: 8px;
+      width: 140%;
     }
   }
 }
