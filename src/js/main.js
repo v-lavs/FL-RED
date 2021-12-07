@@ -145,6 +145,16 @@ $(document).ready(function () {
             ;
         })
     });
+
+
+
+    $(".scheme-tab").each(function() {
+        var $this = $(this),
+            child = $this.children(":first");
+        $this.css("minHeight", function() {
+            return child[0].getBoundingClientRect().height;
+        });
+    });
 });
 
 

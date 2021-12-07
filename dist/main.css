@@ -820,8 +820,9 @@ body.modal-open {
 
 .floor-modal .svg-wrap {
   position: relative;
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .floor-modal .svg-wrap .scheme-tab__img {
@@ -831,6 +832,12 @@ body.modal-open {
   bottom: 0;
   top: 0;
   z-index: -1;
+}
+
+.floor-modal .svg-wrap svg {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .floor-modal .apartment-circle {
@@ -912,6 +919,7 @@ body.modal-open {
   border: 2px solid #194A21;
   -webkit-transition: opacity .5s;
   transition: opacity .5s;
+  flex-shrink: 0;
 }
 
 .floor-modal .scheme-tabs__link:hover,
@@ -2497,7 +2505,7 @@ body.modal-open {
   }
 
   .svg-wrap {
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateX(75px);
   }
 
   .manager-info {
@@ -3072,6 +3080,11 @@ body.modal-open {
   .contacts-modal__part {
     padding-left: 18px;
     padding-right: 18px;
+  }
+
+  .floor-modal .svg-wrap {
+    width: 118%;
+    transform: rotate(90deg) translate(75px, 35px);
   }
 
   .benefits .section__header {
