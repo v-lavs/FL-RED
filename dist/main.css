@@ -829,27 +829,37 @@ body.modal-open {
   display: none;
 }
 
-.floor-modal .apartment-circle.disabled > .round-green {
-  stroke: #aaaaaa !important;
+.floor-modal .apartment-circle.disabled .stroke-green {
+  stroke: transparent;
 }
 
-.floor-modal .apartment-circle > .round-green {
-  stroke: #194A21;
+.floor-modal .apartment-circle.disabled .stroke-gray {
+  display: block;
+  opacity: 1;
 }
 
 .floor-modal .apartment-circle .sold {
   display: none;
 }
 
-.floor-modal .apartment-circle .icon-hover {
+.floor-modal .apartment-circle .number {
+  display: block;
+}
+
+.floor-modal .apartment-circle .stroke-gray {
+  display: none;
   opacity: 0;
 }
 
-.floor-modal .apartment-circle:hover .icon-hover {
-  opacity: 1;
+.floor-modal .apartment-circle .icon-hover {
+  display: none;
 }
 
-.floor-modal .apartment-circle:hover .round-green {
+.floor-modal .apartment-circle:hover .icon-hover {
+  display: block;
+}
+
+.floor-modal .apartment-circle:hover .stroke-green {
   stroke: transparent;
 }
 

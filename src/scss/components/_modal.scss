@@ -117,6 +117,7 @@
     &.disabled {
       pointer-events: none;
       cursor: none;
+      filter: grayscale(1);
 
       .sold {
         display: block;
@@ -126,32 +127,39 @@
         display: none;
       }
 
-      filter: grayscale(1);
-
-      > .round-green {
-        stroke: #aaaaaa !important;
+      .stroke-green {
+        stroke: transparent;
       }
-    }
 
-    > .round-green {
-      stroke: #194A21;
-
+      .stroke-gray {
+        display: block;
+        opacity: 1;
+      }
     }
 
     .sold {
       display: none;
     }
 
-    .icon-hover {
+    .number {
+      display: block;
+    }
+
+    .stroke-gray {
+      display: none;
       opacity: 0;
+    }
+
+    .icon-hover {
+      display: none;
     }
 
     &:hover {
       .icon-hover {
-        opacity: 1;
+        display: block;
       }
 
-      .round-green {
+      .stroke-green {
         stroke: transparent;
       }
     }
