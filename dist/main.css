@@ -1304,10 +1304,6 @@ body.modal-open {
   position: relative;
 }
 
-.header .right-bar.open-bar .right-bar__content {
-  display: flex;
-}
-
 .header .right-bar.open-bar .right-bar__btn .right-bar__link-icon.icon_open {
   background-image: url(../assets/img/svg/close-round.svg);
   transition: .8s;
