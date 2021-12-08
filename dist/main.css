@@ -1731,11 +1731,15 @@ body.modal-open {
   margin-bottom: 68px;
 }
 
+.features .summary__col-left {
+  width: 33.3%;
+}
+
 .features .summary__caption {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  max-width: 146.5%;
+  max-width: 155.5%;
 }
 
 .facilities .section__bg {
@@ -2215,7 +2219,7 @@ body.modal-open {
 
   .features .summary__caption {
     font-size: 42px;
-    width: 145.5%;
+    width: 153.5%;
   }
 
   .facilities .summary__caption {

@@ -17,19 +17,21 @@
   .section__header {
     margin-bottom: 68px;
   }
-
+.summary__col-left{
+  width: 33.3%;
+}
   .summary__caption {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    max-width: 146.5%;
+    max-width: 155.5%;
   }
 }
 @include respond-to($laptop-md) {
   .features {
     .summary__caption {
       font-size: 42px;
-      width: 145.5%;
+      width: 153.5%;
     }
   }
 }
