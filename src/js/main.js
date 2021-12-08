@@ -48,6 +48,7 @@ $(document).ready(function () {
 
     smoothScrollToAnchor('.btn_scroll');
     smoothScrollToAnchor('.menu__link');
+    smoothScrollToAnchor('.register');
 
     // Custom input
 
@@ -118,12 +119,12 @@ $(document).ready(function () {
     let fadeInBlocks = $('.fade-in').waypoint(function (direction) {
         $(this.element).addClass('active')
     }, {
-        offset: '98%'
+        offset: '100%'
     });
     let fadeBlocks = $('.fade').waypoint(function (direction) {
         $(this.element).addClass('active')
     }, {
-        offset: '98%'
+        offset: '100%'
     });
 
     let slBlocks = $('.card').waypoint(function (direction) {

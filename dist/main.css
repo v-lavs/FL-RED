@@ -569,17 +569,17 @@ body.modal-open {
 .fade {
   opacity: 0;
   transition: .35s;
-  animation-delay: .85s;
+  animation-delay: .8s;
 }
 
 .fade.active {
-  animation: fade ease-in 1.5s forwards;
+  animation: fade ease-in 1s forwards;
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: scale(0.5);
+    transform: scale(0.7);
   }
 
   100% {
@@ -599,7 +599,7 @@ body.modal-open {
 }
 
 .sl-right {
-  animation: slideInRight ease-in 2000ms infinite;
+  animation: slideInRight ease-in 0.5s forwards;
 }
 
 .sl-right:nth-of-type(1) {
@@ -619,7 +619,7 @@ body.modal-open {
 }
 
 .sl-left {
-  animation: slideInLeft ease-in 2000ms infinite;
+  animation: slideInLeft ease-in 0.5s forwards;
 }
 
 .sl-left:nth-of-type(1) {
@@ -639,9 +639,15 @@ body.modal-open {
 }
 
 @keyframes slideInLeft {
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 @keyframes slideInRight {
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .btn {
@@ -657,6 +663,7 @@ body.modal-open {
   padding: 3px;
   max-width: 366px;
   color: #ffce5a;
+  text-align: center;
 }
 
 .btn_full-width {

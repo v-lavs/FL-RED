@@ -12,9 +12,9 @@
 
 .fade {
   opacity: 0;
-  $animation-speed: 1.5s;
+  $animation-speed: 1s;
   transition: .35s;
-  animation-delay: .85s;
+  animation-delay: .8s;
 
   &.active {
     animation: fade ease-in $animation-speed forwards;
@@ -24,7 +24,7 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: scale(.5);
+    transform: scale(.7);
   }
   100% {
     opacity: 1;
@@ -43,7 +43,7 @@
 
 
 .sl-right{
-  animation: slideInRight ease-in 2000ms infinite;
+  animation: slideInRight ease-in 0.5s forwards;
 
   @for $i from 1 through 4 {
     &:nth-of-type(#{$i}) {
@@ -53,7 +53,7 @@
 }
 
 .sl-left{
-  animation: slideInLeft ease-in 2000ms infinite;
+  animation: slideInLeft ease-in 0.5s forwards;
 
   @for $i from 1 through 4 {
     &:nth-of-type(#{$i}) {
@@ -63,9 +63,9 @@
 }
 
 @keyframes slideInLeft {
-
+  100% { transform: translateX(0%); }
 }
 
 @keyframes slideInRight {
-
+  100% { transform: translateX(0%); }
 }
