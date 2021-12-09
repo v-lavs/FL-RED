@@ -122,6 +122,13 @@ $(document).ready(function () {
         offset: '80%'
     });
 
+    let animHeader = $('.header').waypoint(function (direction) {
+        $(this.element).addClass('active')
+    });
+    let animBanner = $('.section-banner').waypoint(function (direction) {
+        $(this.element).addClass('active')
+    });
+        // $('.section-banner').addClass('active');
 
     $(window).scroll(function () {
         let homeTop = $(window).scrollTop();

@@ -10,7 +10,59 @@
   }
 }
 
-.header
+.header {
+  opacity: 0;
+  transform: translateY(-30px);
+
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s;
+    transition-delay: 1.8s;
+  }
+}
+
+.section-banner {
+  .text-slide-in {
+    transform: translateY(50px);
+  }
+
+  .btn_scroll{
+    transform: scale(.95);
+    opacity: 0;
+  }
+  .section-banner__logo,
+  .decor-text {
+    opacity: 0;
+  }
+
+  .text-slide-in {
+    opacity: 0;
+  }
+
+  &.active {
+    .decor-text,
+    .section-banner__logo {
+      opacity: 1;
+      transition: 1.5s;
+      transition-delay: .3s;
+    }
+
+    .text-slide-in {
+      opacity: 1;
+      transform: translateY(0);
+      transition: 1s;
+      transition-delay: 1s;
+          }
+
+    .btn_scroll {
+      opacity: 1;
+      transition: 1s;
+      transition-delay: 1.8s;
+      transform: scale(1);
+    }
+  }
+}
 
 .fade-in {
   opacity: 0;

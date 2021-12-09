@@ -561,6 +561,57 @@ body.modal-open {
   animation: fade .2s linear .8s both;
 }
 
+.header {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.header.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
+  transition-delay: 1.8s;
+}
+
+.section-banner .text-slide-in {
+  transform: translateY(50px);
+}
+
+.section-banner .btn_scroll {
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+.section-banner .section-banner__logo,
+.section-banner .decor-text {
+  opacity: 0;
+}
+
+.section-banner .text-slide-in {
+  opacity: 0;
+}
+
+.section-banner.active .decor-text,
+.section-banner.active .section-banner__logo {
+  opacity: 1;
+  transition: 1.5s;
+  transition-delay: .3s;
+}
+
+.section-banner.active .text-slide-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
+  transition-delay: 1s;
+}
+
+.section-banner.active .btn_scroll {
+  opacity: 1;
+  transition: 1s;
+  transition-delay: 1.8s;
+  transform: scale(1);
+}
+
 .fade-in {
   opacity: 0;
   display: inline-block;
