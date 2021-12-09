@@ -555,36 +555,44 @@ body.modal-open {
   display: inline-block;
 }
 
+.facade-residence.active .fade-in {
+  animation: fadeIn .8s ease-in .8s both;
+}
+
+.facade-residence.active .fade {
+  animation: fade .2s linear .8s both;
+}
+
+.card.active .slideInLeft {
+  transition: 1s;
+  animation: slideInLeft linear 0.85s forwards;
+}
+
+.card.active .slideInRight {
+  transition: 1s;
+  animation: slideInRight linear 0.85s forwards;
+}
+
 .fade-in {
   opacity: 0;
   display: inline-block;
   transition: .35s;
-  animation-delay: .85s;
-}
-
-.fade-in.active {
-  animation: fadeIn linear 1s forwards;
 }
 
 .fade {
   opacity: 0;
   transition: .35s;
-  animation-delay: .8s;
-}
-
-.fade.active {
-  animation: fade ease-in 1s forwards;
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: scale(0.7);
+    transform: translateY(50px);
   }
 
   100% {
     opacity: 1;
-    transform: scale(1);
+    transform: translateY(0);
   }
 }
 
@@ -598,53 +606,53 @@ body.modal-open {
   }
 }
 
-.sl-right {
-  animation: slideInRight ease-in 0.5s forwards;
-}
-
-.sl-right:nth-of-type(1) {
+.slideInRight:nth-of-type(1) {
   animation-delay: 1000s;
 }
 
-.sl-right:nth-of-type(2) {
+.slideInRight:nth-of-type(2) {
   animation-delay: 2000s;
 }
 
-.sl-right:nth-of-type(3) {
+.slideInRight:nth-of-type(3) {
   animation-delay: 3000s;
 }
 
-.sl-right:nth-of-type(4) {
+.slideInRight:nth-of-type(4) {
   animation-delay: 4000s;
 }
 
-.sl-left {
-  animation: slideInLeft ease-in 0.5s forwards;
-}
-
-.sl-left:nth-of-type(1) {
-  animation-delay: 1000s;
-}
-
-.sl-left:nth-of-type(2) {
+.slideInLeft:nth-of-type(1) {
   animation-delay: 2000s;
 }
 
-.sl-left:nth-of-type(3) {
-  animation-delay: 3000s;
+.slideInLeft:nth-of-type(2) {
+  animation-delay: 4000s;
 }
 
-.sl-left:nth-of-type(4) {
-  animation-delay: 4000s;
+.slideInLeft:nth-of-type(3) {
+  animation-delay: 6000s;
+}
+
+.slideInLeft:nth-of-type(4) {
+  animation-delay: 8000s;
 }
 
 @keyframes slideInLeft {
+  0% {
+    transform: translateX(-100vw);
+  }
+
   100% {
     transform: translateX(0%);
   }
 }
 
 @keyframes slideInRight {
+  0% {
+    transform: translateX(100vw);
+  }
+
   100% {
     transform: translateX(0%);
   }
@@ -1734,6 +1742,14 @@ body.modal-open {
   right: 33.3%;
 }
 
+.features .card__thumb {
+  transform: translateX(100vw);
+}
+
+.features .card__text-content {
+  transform: translateX(-100vw);
+}
+
 .features .section__header {
   margin-bottom: 68px;
 }
@@ -1772,6 +1788,7 @@ body.modal-open {
 
 .facilities .card__thumb {
   order: -1;
+  transform: translateX(-100vw);
 }
 
 .facilities .card__thumb:before {
@@ -1787,6 +1804,7 @@ body.modal-open {
 .facilities .card__text-content {
   padding-left: 45px;
   padding-right: 0;
+  transform: translateX(100vw);
 }
 
 .facilities .card__text-content:after {
@@ -1934,12 +1952,21 @@ body.modal-open {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform .85s;
+  transition: transform .8s;
 }
 
 .benefits-list__item:hover .benefits-list__img {
-  transform: scale(1.05);
-  transition: transform .85s;
+  transform: scale(1.1);
+  transition: transform .8s;
+}
+
+.benefits .summary__col-right:hover {
+  overflow: hidden;
+}
+
+.benefits .summary__col-right:hover > .summary__img {
+  transform: scale(1.1, 1.1);
+  transition: transform .8s;
 }
 
 .benefits-caption {

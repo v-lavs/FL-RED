@@ -4,20 +4,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    //&-inner {
-    //  position: absolute;
-    //  content: '';
-    //  display: block;
-    //  background-repeat: no-repeat;
-    //  background-size: 100% 100%;
-    //  background-position: left top;
-    //  left: 0;
-    //  top: 0;
-    //  bottom: 0;
-    //  right: 0;
-    //  transform: scale(-1, 1);
-    //  z-index: 0;
-    //}
   }
 
   .section__header {
@@ -36,6 +22,7 @@
     justify-content: flex-end;
     &__thumb {
       order: -1;
+      transform: translateX(-100vw);
 
       &:before {
         left: -15px;
@@ -51,7 +38,7 @@
     &__text-content {
       padding-left: 45px;
       padding-right: 0;
-
+      transform: translateX(100vw);
       &:after {
         left: 22px;
         right: 100vw;

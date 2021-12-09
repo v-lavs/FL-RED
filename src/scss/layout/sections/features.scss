@@ -14,12 +14,23 @@
     }
   }
 
+
+  .card__thumb {
+    transform: translateX(100vw);
+  }
+
+  .card__text-content {
+    transform: translateX(-100vw);
+  }
+
   .section__header {
     margin-bottom: 68px;
   }
-.summary__col-left{
-  width: 33.3%;
-}
+
+  .summary__col-left {
+    width: 33.3%;
+  }
+
   .summary__caption {
     display: flex;
     flex-direction: column;
@@ -27,6 +38,7 @@
     max-width: 155.5%;
   }
 }
+
 @include respond-to($laptop-md) {
   .features {
     .summary__caption {
@@ -35,6 +47,7 @@
     }
   }
 }
+
 @include respond-to($laptop) {
   .features {
     .summary__caption {

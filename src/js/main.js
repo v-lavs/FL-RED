@@ -116,28 +116,22 @@ $(document).ready(function () {
 
     //    ANIMATION
 
-    let fadeInBlocks = $('.fade-in').waypoint(function (direction) {
+    let fadeInBlocks = $('.facade-residence').waypoint(function (direction) {
         $(this.element).addClass('active')
     }, {
-        offset: '100%'
+        offset: '80%'
     });
-    let fadeBlocks = $('.fade').waypoint(function (direction) {
+
+    let slideInBlocks = $('.card').waypoint(function (direction) {
         $(this.element).addClass('active')
     }, {
-        offset: '100%'
+        offset: '85%'
     });
-
-    let slBlocks = $('.card').waypoint(function (direction) {
-        $(this.element).addClass('anim-list')
-    }, {
-        offset: '98%'
-    });
-
 
     $(window).scroll(function () {
         let homeTop = $(window).scrollTop();
         let opacity = 0;
-        $(".facade-residence").each(function () {
+        $(".facade-residence_parallax").each(function () {
            let height = $(this).height();
            let offset = $(this).offset().top;
             opacity = 2 * (homeTop - height + offset) / height;
