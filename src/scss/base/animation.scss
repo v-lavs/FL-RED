@@ -14,12 +14,12 @@
   &.active {
     .slideInLeft {
       transition: 1s;
-      animation: slideInLeft linear 0.85s forwards;
+      animation: slideInLeft linear .8s forwards;
     }
 
     .slideInRight {
       transition: 1s;
-      animation: slideInRight linear 0.85s forwards;
+      animation: slideInRight linear .8s forwards;
     }
   }
 }

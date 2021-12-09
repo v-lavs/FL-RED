@@ -20,6 +20,7 @@
 
   .card {
     justify-content: flex-end;
+
     &__thumb {
       order: -1;
       transform: translateX(-100vw);
@@ -39,6 +40,7 @@
       padding-left: 45px;
       padding-right: 0;
       transform: translateX(100vw);
+
       &:after {
         left: 22px;
         right: 100vw;
@@ -48,6 +50,7 @@
   }
 
   .summary {
+
     &__wrap-img {
       padding-top: 90%;
     }
@@ -101,6 +104,7 @@
     }
   }
 }
+
 @include respond-to($laptop-md) {
   .facilities {
     .summary__caption {
@@ -108,13 +112,15 @@
     }
   }
 }
+
 @include respond-to($laptop) {
   .facilities {
     .summary .text-list {
       font-size: 26px;
       padding-bottom: 20px;
     }
-    .summary__caption{
+
+    .summary__caption {
       font-size: 39px;
       padding-right: 8px;
       width: 140%;
@@ -174,19 +180,23 @@
         width: 150vw;
       }
     }
-    .section__header{
+
+    .section__header {
       padding-top: 106px;
     }
-    .card__text-content:after{
+
+    .card__text-content:after {
       left: auto;
       right: 50%;
       transform: translateX(50%);
     }
-    .card__thumb:before{
+
+    .card__thumb:before {
       left: 0;
       z-index: 2;
     }
-    .summary__caption{
+
+    .summary__caption {
       width: 93%;
     }
   }

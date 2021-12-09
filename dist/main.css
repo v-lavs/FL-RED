@@ -565,12 +565,12 @@ body.modal-open {
 
 .card.active .slideInLeft {
   transition: 1s;
-  animation: slideInLeft linear 0.85s forwards;
+  animation: slideInLeft linear .8s forwards;
 }
 
 .card.active .slideInRight {
   transition: 1s;
-  animation: slideInRight linear 0.85s forwards;
+  animation: slideInRight linear .8s forwards;
 }
 
 .fade-in {
@@ -1957,15 +1957,6 @@ body.modal-open {
 
 .benefits-list__item:hover .benefits-list__img {
   transform: scale(1.1);
-  transition: transform .8s;
-}
-
-.benefits .summary__col-right:hover {
-  overflow: hidden;
-}
-
-.benefits .summary__col-right:hover > .summary__img {
-  transform: scale(1.1, 1.1);
   transition: transform .8s;
 }
 
