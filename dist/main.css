@@ -1360,11 +1360,18 @@ body.modal-open {
 
 .header .right-bar.open-bar .right-bar__btn .right-bar__link-icon.icon_open {
   background-image: url(../assets/img/svg/close-round.svg);
+  opacity: 1;
   transition: .8s;
 }
 
+.header .right-bar.open-bar .right-bar__content {
+  opacity: 1;
+  transition: 1s;
+}
+
 .header .right-bar__content {
-  display: none;
+  opacity: 0;
+  transition: 1s;
   position: absolute;
   color: #ffffff;
   font-weight: 400;
@@ -1530,6 +1537,18 @@ body.modal-open {
 .footer .social-bar .icon svg {
   width: 100%;
   height: auto;
+}
+
+.footer__copyright-text {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer__copyright-text img {
+  width: 78px;
+  height: 30px;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .section-banner {
@@ -2629,6 +2648,11 @@ body.modal-open {
   .footer .social-bar {
     order: -1;
     margin: 0 auto 20px;
+  }
+
+  .container {
+    justify-content: center;
+    align-items: center;
   }
 
   .footer__copyright {

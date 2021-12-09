@@ -63,7 +63,6 @@ $(document).ready(function () {
     //HEADER RIGHT BAR
     $('#openBar').click(function (e) {
         $('.right-bar').toggleClass('open-bar');
-        $(".right-bar__content").fadeToggle(500);
     });
 
     // MODAL

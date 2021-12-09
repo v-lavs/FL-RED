@@ -21,14 +21,19 @@
       .right-bar__btn {
         .right-bar__link-icon.icon_open {
           background-image: url(../assets/img/svg/close-round.svg);
+          opacity: 1;
           transition: .8s;
         }
+      }
+      .right-bar__content{
+        opacity: 1;
+        transition: 1s;
       }
     }
 
     &__content {
-      display: none;
-
+      opacity: 0;
+      transition: 1s;
       position: absolute;
       color: #ffffff;
       font-weight: 400;
