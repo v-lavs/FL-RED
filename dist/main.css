@@ -561,14 +561,16 @@ body.modal-open {
   animation: fade .2s linear .8s both;
 }
 
-.header {
+.header .right-bar,
+.header .btn_burger {
   opacity: 0;
-  top: -30px;
+  transform: translateY(-30px);
 }
 
-.header.active {
+.header.active .right-bar,
+.header.active .btn_burger {
   opacity: 1;
-  top: 0;
+  transform: translateY(0);
   transition: 2s;
   transition-delay: 1.8s;
 }

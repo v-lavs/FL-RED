@@ -11,14 +11,20 @@
 }
 
 .header {
-  opacity: 0;
-  top: -30px;
+  .right-bar,
+  .btn_burger {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
 
   &.active {
-    opacity: 1;
-    top: 0;
-    transition:2s;
-    transition-delay: 1.8s;
+    .right-bar,
+    .btn_burger {
+      opacity: 1;
+      transform: translateY(0);
+      transition: 2s;
+      transition-delay: 1.8s;
+    }
   }
 }
 
@@ -27,10 +33,11 @@
     transform: translateY(50px);
   }
 
-  .btn_scroll{
+  .btn_scroll {
     transform: scale(.95);
     opacity: 0;
   }
+
   .section-banner__logo,
   .decor-text {
     opacity: 0;
@@ -53,7 +60,7 @@
       transform: translateY(0);
       transition: 1.6s;
       transition-delay: 1s;
-          }
+    }
 
     .btn_scroll {
       opacity: 1;
