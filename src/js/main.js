@@ -196,11 +196,8 @@ $(document).ready(function () {
             opacity = 1.2 * (homeTop - height + offset) / height;
 
             $('.overlay').css("opacity", opacity);
-
         })
     });
-
-
 
     $(".scheme-tab").each(function() {
         var $this = $(this),

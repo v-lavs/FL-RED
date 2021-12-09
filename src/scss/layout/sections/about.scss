@@ -2,25 +2,21 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%;
-  min-height: 100vh;
+  //width: 100%;
+  //min-height: 100vh;
   color: #ffffff;
   font-weight: 400;
   text-align: center;
 
-
-  &.facade-residence_parallax {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 1;
-    background-attachment: fixed;
+  &__text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
   }
 
-  .capture {
-    position: relative;
-    z-index: 1;
-  }
   //&__wrap-img {
   //  position: absolute;
   //  left: 0;
@@ -42,6 +38,15 @@
   //}
 }
 
+.facade-residence_parallax {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+}
 
 .description-residence {
   background-color: #ffffff;
@@ -85,33 +90,32 @@
   .description-residence__text {
     margin-bottom: 100px;
   }
-  .facade-residence {
-    &.facade-residence_parallax {
-      background-attachment: scroll;
-    }
+  .facade-residence_parallax {
+    background-attachment: scroll;
+  }
+  .facade-residence .overlay{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
   }
 }
 
 @include respond-to($md) {
   .facade-residence {
     display: block;
-
     min-height: 0;
 
-    &.facade-residence_parallax {
-      padding-top: 66%;
-      min-height: 328px;
 
+    &__text {
+      position: static;
+      transform: none;
     }
 
-
-    //&__wrap-img {
-    //  position: relative;
-    //  width: 100%;
-    //  min-height: 328px;
-    //  padding-top: 66%;
-    //  margin-bottom: 40px;
-    //}
+    &__wrap-img {
+      position: relative;
+      //  width: 100%;
+      //  min-height: 328px;
+      //  padding-top: 66%;
+      margin-bottom: 40px;
+    }
 
     .text_lg {
       font-size: 28px;
@@ -119,6 +123,11 @@
       color: #194A21;
       margin-bottom: 40px;
     }
+  }
+  .facade-residence_parallax {
+    padding-top: 66%;
+    min-height: 328px;
+
   }
   .description-residence {
     padding: 90px 0;
@@ -142,9 +151,10 @@
   .facade-residence {
     min-height: 328px;
     margin-bottom: 20px;
-    //&__wrap-img {
-    //  margin-bottom: 20px;
-    //}
+
+    &__wrap-img {
+      margin-bottom: 20px;
+    }
 
     .text_lg {
       font-size: 24px;
