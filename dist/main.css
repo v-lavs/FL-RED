@@ -570,7 +570,7 @@ body.modal-open {
   opacity: 1;
   transform: translateY(0);
   transition: 2s;
-  transition-delay: 1.85s;
+  transition-delay: 2s;
 }
 
 .section-banner .text-slide-in {
@@ -601,14 +601,14 @@ body.modal-open {
 .section-banner.active .text-slide-in {
   opacity: 1;
   transform: translateY(0);
-  transition: 2s;
+  transition: 1.6s;
   transition-delay: 1.1s;
 }
 
 .section-banner.active .btn_scroll {
   opacity: 1;
   transition: 2.5s;
-  transition-delay: 1.85s;
+  transition-delay: 2s;
   transform: scale(1);
 }
 
