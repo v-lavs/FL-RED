@@ -211,10 +211,7 @@ $(document).ready(function () {
     });
 
 
-    // jQuery(window).scroll(function() {
-    //     var scrolledY = jQuery(window).scrollTop();
-    //     jQuery('.facade-residence_parallax').css('background-position', 'center ' + ((scrolledY)) + 'px');
-    // });
+
 });
 
 
