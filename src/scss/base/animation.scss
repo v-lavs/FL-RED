@@ -17,8 +17,8 @@
   &.active {
     opacity: 1;
     transform: translateY(0);
-    transition: 1s;
-    transition-delay: 1.8s;
+    transition: 2s;
+    transition-delay: 1.85s;
   }
 }
 
@@ -44,21 +44,21 @@
     .decor-text,
     .section-banner__logo {
       opacity: 1;
-      transition: 1.5s;
+      transition: 2.5s;
       transition-delay: .3s;
     }
 
     .text-slide-in {
       opacity: 1;
       transform: translateY(0);
-      transition: 1s;
-      transition-delay: 1s;
+      transition: 2s;
+      transition-delay: 1.2s;
           }
 
     .btn_scroll {
       opacity: 1;
-      transition: 1s;
-      transition-delay: 1.8s;
+      transition: 2.5s;
+      transition-delay: 1.85s;
       transform: scale(1);
     }
   }
