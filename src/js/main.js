@@ -10,7 +10,64 @@
 
 // CUSTOM SCRIPTS
 
+$.fn.positionOn = function (element, align) {
+    const target = $(this);
+    const circleDiameter = $(element).parents('.svg-wrap').width() / 12;
+    const position = element.position();
+
+    let x = position.left;
+    let y = position.top + circleDiameter;
+
+    if (align === 'right') {
+        x -= (target.outerWidth() - circleDiameter);
+    } else if (align === 'center') {
+        x -= target.outerWidth() / 2 - circleDiameter / 2;
+    }
+
+    target.css({
+        position: 'absolute',
+        top: y,
+        left: x
+    });
+};
+
 $(document).ready(function () {
+    const $popover = $('.plan-popover');
+    const anim_time = 200;
+
+    $('.apartment-circle').hover(function (e) {
+        const dataID = $(this).data('modal');
+        const content = $('[data-id="' + dataID + '"]').html();
+        $popover.html(content).positionOn($(this), 'center');
+        $popover.fadeIn(anim_time);
+    }, function (e) {
+        $popover.fadeOut(anim_time);
+        $popover.html('');
+    });
+
+    // Parallax
+
+    var controller = new ScrollMagic.Controller({
+        globalSceneOptions: {
+            triggerHook: 'onLeave',
+            duration: "200%" // this works just fine with duration 0 as well
+            // However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
+            // Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
+        }
+    });
+
+    // get all slides
+    var slides = document.querySelectorAll(".section");
+
+    // create scene for every slide
+    for (var i=0; i<slides.length; i++) {
+        new ScrollMagic.Scene({
+            triggerElement: slides[i]
+        })
+            .setPin(slides[i], {pushFollowers: false})
+            .addTo(controller);
+    }
+
 
     //MOBILE MENU
     const nav = $('.header__nav');
