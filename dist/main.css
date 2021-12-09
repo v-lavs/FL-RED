@@ -572,7 +572,7 @@ body.modal-open {
   opacity: 1;
   transform: translateY(0);
   transition: 2s;
-  transition-delay: 1.5s;
+  transition-delay: 1.7s;
 }
 
 .section-banner .text-slide-in {
@@ -610,7 +610,7 @@ body.modal-open {
 .section-banner.active .btn_scroll {
   opacity: 1;
   transition: 2s;
-  transition-delay: 1.5s;
+  transition-delay: 1.7s;
   transform: scale(1);
 }
 
@@ -1689,6 +1689,11 @@ body.modal-open {
   background-attachment: fixed;
 }
 
+.facade-residence .capture {
+  position: relative;
+  z-index: 1;
+}
+
 .description-residence {
   background-color: #ffffff;
   padding: 99px 0 120px;
@@ -2727,11 +2732,6 @@ body.modal-open {
   .facade-residence.facade-residence_parallax {
     padding-top: 66%;
     min-height: 328px;
-  }
-
-  .facade-residence .capture {
-    position: relative;
-    z-index: 1;
   }
 
   .facade-residence .text_lg {
