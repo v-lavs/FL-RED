@@ -128,7 +128,7 @@ $(document).ready(function () {
     let animBanner = $('.section-banner').waypoint(function (direction) {
         $(this.element).addClass('active')
     });
-        // $('.section-banner').addClass('active');
+
 
     $(window).scroll(function () {
         let homeTop = $(window).scrollTop();
@@ -139,7 +139,7 @@ $(document).ready(function () {
             opacity = 2 * (homeTop - height + offset) / height;
 
             $('.overlay').css("opacity", opacity);
-            ;
+
         })
     });
 
