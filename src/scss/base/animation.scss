@@ -10,19 +10,7 @@
   }
 }
 
-.card {
-  &.active {
-    .slideInLeft {
-      transition: 1s;
-      animation: slideInLeft linear .8s forwards;
-    }
 
-    .slideInRight {
-      transition: 1s;
-      animation: slideInRight linear .8s forwards;
-    }
-  }
-}
 
 .fade-in {
   opacity: 0;
@@ -52,40 +40,5 @@
   }
   100% {
     opacity: 1;
-  }
-}
-
-
-.slideInRight {
-  @for $i from 1 through 4 {
-    &:nth-of-type(#{$i}) {
-      animation-delay: #{$i * 1000}s;
-    }
-  }
-}
-
-.slideInLeft {
-  @for $i from 1 through 4 {
-    &:nth-of-type(#{$i}) {
-      animation-delay: #{$i * 2000}s;
-    }
-  }
-}
-
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100vw);
-  }
-  100% {
-    transform: translateX(0%);
-  }
-}
-
-@keyframes slideInRight {
-  0% {
-    transform: translateX(100vw);
-  }
-  100% {
-    transform: translateX(0%);
   }
 }

@@ -122,11 +122,6 @@ $(document).ready(function () {
         offset: '80%'
     });
 
-    let slideInBlocks = $('.card').waypoint(function (direction) {
-        $(this.element).addClass('active')
-    }, {
-        offset: '85%'
-    });
 
     $(window).scroll(function () {
         let homeTop = $(window).scrollTop();

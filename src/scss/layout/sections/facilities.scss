@@ -23,7 +23,6 @@
 
     &__thumb {
       order: -1;
-      transform: translateX(-100vw);
 
       &:before {
         left: -15px;
@@ -39,7 +38,6 @@
     &__text-content {
       padding-left: 45px;
       padding-right: 0;
-      transform: translateX(100vw);
 
       &:after {
         left: 22px;
