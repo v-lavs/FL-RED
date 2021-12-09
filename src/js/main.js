@@ -81,9 +81,10 @@ $(document).ready(function () {
         $("body").addClass("modal-open");
     });
 
-    $('.fl-modal__close').on('click', function (e) {
+    $('.fl-modal__close, .backdrop').on('click', function (e) {
         e.preventDefault();
         $('.fl-modal').removeClass('active');
+        $('.right-bar').removeClass('open-bar');
         jQuery('.backdrop').fadeOut();
         $("body").removeClass("modal-open");
     })

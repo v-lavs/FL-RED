@@ -572,7 +572,7 @@ body.modal-open {
   opacity: 1;
   transform: translateY(0);
   transition: 2s;
-  transition-delay: 1.8s;
+  transition-delay: 1.5s;
 }
 
 .section-banner .text-slide-in {
@@ -610,7 +610,7 @@ body.modal-open {
 .section-banner.active .btn_scroll {
   opacity: 1;
   transition: 2s;
-  transition-delay: 1.8s;
+  transition-delay: 1.5s;
   transform: scale(1);
 }
 
@@ -2662,7 +2662,9 @@ body.modal-open {
   .footer__copyright-text {
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: center;
   }
 
   .footer__copyright-text:last-child {
