@@ -17,25 +17,25 @@
     background-attachment: fixed;
   }
 
-  &__wrap-img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    z-index: -1;
-
-    img {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-  }
+  //&__wrap-img {
+  //  position: absolute;
+  //  left: 0;
+  //  right: 0;
+  //  bottom: 0;
+  //  top: 0;
+  //  z-index: -1;
+  //
+  //  img {
+  //    position: absolute;
+  //    left: 0;
+  //    right: 0;
+  //    bottom: 0;
+  //    top: 0;
+  //    height: 100%;
+  //    width: 100%;
+  //    object-fit: cover;
+  //  }
+  //}
 }
 
 
@@ -95,13 +95,18 @@
       min-height: 328px;
     }
 
-    &__wrap-img {
+    .capture {
       position: relative;
-      width: 100%;
-      min-height: 328px;
-      padding-top: 66%;
-      margin-bottom: 40px;
+      z-index: 1;
     }
+
+    //&__wrap-img {
+    //  position: relative;
+    //  width: 100%;
+    //  min-height: 328px;
+    //  padding-top: 66%;
+    //  margin-bottom: 40px;
+    //}
 
     .text_lg {
       font-size: 28px;
@@ -131,10 +136,10 @@
 @include respond-to($sm) {
   .facade-residence {
     min-height: 328px;
-
-    &__wrap-img {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
+    //&__wrap-img {
+    //  margin-bottom: 20px;
+    //}
 
     .text_lg {
       font-size: 24px;
