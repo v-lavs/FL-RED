@@ -209,11 +209,14 @@ $(document).ready(function () {
             return child[0].getBoundingClientRect().height;
         });
     });
+
+
+    // jQuery(window).scroll(function() {
+    //     var scrolledY = jQuery(window).scrollTop();
+    //     jQuery('.facade-residence_parallax').css('background-position', 'center ' + ((scrolledY)) + 'px');
+    // });
 });
 
-jQuery(window).scroll(function() {
-    var scrolledY = jQuery(window).scrollTop();
-    jQuery('.hero-featured').css('background-position', 'center ' + ((scrolledY)) + 'px');
-});
+
 
 

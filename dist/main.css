@@ -1912,6 +1912,10 @@ body.modal-open {
   margin-bottom: 0;
 }
 
+.benefits {
+  background-attachment: fixed;
+}
+
 .benefits__img-banner {
   position: relative;
   min-height: 100vh;
@@ -2434,6 +2438,10 @@ body.modal-open {
     margin-bottom: 100px;
   }
 
+  .facade-residence.facade-residence_parallax {
+    background-attachment: scroll;
+  }
+
   .design .gallery_top {
     margin-top: -25%;
   }
@@ -2717,7 +2725,6 @@ body.modal-open {
   }
 
   .facade-residence.facade-residence_parallax {
-    background-attachment: inherit;
     padding-top: 66%;
     min-height: 328px;
   }
