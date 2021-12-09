@@ -2725,7 +2725,6 @@ body.modal-open {
 
   .facade-residence {
     display: block;
-    position: static;
     min-height: 0;
   }
 

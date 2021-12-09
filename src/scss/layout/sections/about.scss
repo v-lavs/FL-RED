@@ -85,7 +85,7 @@
   .description-residence__text {
     margin-bottom: 100px;
   }
-  .facade-residence{
+  .facade-residence {
     &.facade-residence_parallax {
       background-attachment: scroll;
     }
@@ -95,13 +95,15 @@
 @include respond-to($md) {
   .facade-residence {
     display: block;
-    position: static;
+
     min-height: 0;
 
     &.facade-residence_parallax {
       padding-top: 66%;
       min-height: 328px;
+
     }
+
 
     //&__wrap-img {
     //  position: relative;
