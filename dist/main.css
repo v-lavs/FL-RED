@@ -476,8 +476,6 @@ body.modal-open {
 
 .summary__col-left {
   width: 35%;
-  padding-left: 18px;
-  padding-top: 51px;
 }
 
 .summary__col-right {
@@ -1684,15 +1682,38 @@ body.modal-open {
   margin-bottom: 68px;
 }
 
-.features .summary__col-left {
+.features .summary__col-right {
   width: 33.3%;
+  padding-left: 18px;
+  padding-top: 51px;
+  flex-grow: 1;
+}
+
+.features .summary__col-left {
+  width: 66.5%;
+  position: relative;
+  padding-top: 42%;
+}
+
+.features .summary__wrap-logo {
+  margin-left: 78px;
+  margin-bottom: 55px;
+}
+
+.features .summary__wrap-img {
+  left: auto;
+  right: 0;
 }
 
 .features .summary__caption {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  padding-left: 37px;
+  padding-right: 0;
   max-width: 155.5%;
+  transform: translateX(-44%);
+}
+
+.features .summary__caption span {
+  display: inline-block;
 }
 
 .facilities .section__bg {
@@ -1746,6 +1767,7 @@ body.modal-open {
 }
 
 .facilities .summary__col-left {
+  padding-left: 18px;
   width: 33.3%;
   padding-top: 80px;
 }
@@ -2263,7 +2285,6 @@ body.modal-open {
   }
 
   .summary__col-left {
-    order: 1;
     padding: 0;
   }
 
@@ -2321,10 +2342,29 @@ body.modal-open {
   }
 
   .features .summary__caption {
-    align-items: center;
-    margin-top: -63px;
     max-width: 80%;
-    font-size: 38px;
+    margin: -36px auto 0;
+    text-align: center;
+    padding: 16px 40px;
+    transform: translateX(0);
+  }
+
+  .features .summary__wrap-logo {
+    margin: 0;
+  }
+
+  .features .summary__col-left {
+    padding-top: 65%;
+  }
+
+  .features .summary__col-right {
+    position: static;
+    padding: 0;
+  }
+
+  .features .summary__col-right,
+  .features .summary__col-left {
+    width: 100%;
   }
 
   .facilities .card__text-content {
@@ -2351,6 +2391,7 @@ body.modal-open {
   .facilities .summary__col-left {
     width: 100%;
     padding: 0;
+    order: 1;
   }
 
   .facilities .summary__col-right {
@@ -2634,6 +2675,15 @@ body.modal-open {
     display: inline-block;
   }
 
+  .features .summary__caption {
+    width: 93%;
+    font-size: 34px;
+  }
+
+  .features .summary__caption span {
+    display: block;
+  }
+
   .features .card-list:before {
     left: -50vw;
     right: -50vw;
@@ -2900,6 +2950,13 @@ body.modal-open {
     width: 90%;
   }
 
+  .features .summary__caption {
+    width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 28px;
+  }
+
   .benefits {
     margin-bottom: 10px;
   }
@@ -3134,5 +3191,9 @@ body.modal-open {
 
   .design .section__header {
     min-height: 380px;
+  }
+
+  .features .summary__caption {
+    font-size: 27px;
   }
 }

@@ -54,6 +54,7 @@
     }
 
     &__col-left {
+      padding-left: 18px;
       width: 33.3%;
       padding-top: 80px;
     }
@@ -153,6 +154,7 @@
       &__col-left {
         width: 100%;
         padding: 0;
+        order: 1;
       }
 
       &__col-right {
