@@ -456,9 +456,10 @@
       transform: rotate(90deg) translate(75px, 0);
     }
   }
-  .scheme-tabs__content{
-    min-height: 400px;
+  .scheme-tabs__content {
+    height: 520px;
   }
+
 }
 
 @include respond-to($xs) {
@@ -492,5 +493,8 @@
     width: 33px;
     height: 33px;
     top: 32px;
+  }
+  .scheme-tabs__content{
+    min-height: 400px;
   }
 }

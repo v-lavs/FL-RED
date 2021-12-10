@@ -3261,7 +3261,7 @@ body.modal-open {
   }
 
   .scheme-tabs__content {
-    min-height: 400px;
+    height: 520px;
   }
 
   .benefits .section__header {
@@ -3315,6 +3315,10 @@ body.modal-open {
     width: 33px;
     height: 33px;
     top: 32px;
+  }
+
+  .scheme-tabs__content {
+    min-height: 400px;
   }
 
   .card-list {
