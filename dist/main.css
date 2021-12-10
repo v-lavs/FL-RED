@@ -1375,6 +1375,26 @@ body.modal-open {
   padding-top: 10px;
 }
 
+.scheme-tabs__content {
+  position: relative;
+  overflow: hidden;
+}
+
+.scheme-tabs__content .scheme-tab {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.scheme-tabs__content .scheme-tab.active {
+  position: relative;
+  opacity: 1;
+  transition: opacity .5s ease-in;
+  z-index: 2;
+}
+
 .container {
   width: 100%;
   max-width: 1240px;
