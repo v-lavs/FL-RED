@@ -365,6 +365,7 @@
   }
   .svg-wrap {
     transform: rotate(90deg) translateX(85px);
+    max-width: 520px;
   }
   .manager-info {
     padding: 0;
@@ -391,6 +392,7 @@
 @include respond-to($sm) {
   .floor-modal {
     padding-top: 32px;
+
   }
   .fl-modal__back,
   .fl-modal__close {
@@ -450,8 +452,8 @@
       padding-right: 18px;
     }
   }
-  .floor-modal{
-    .svg-wrap{
+  .floor-modal {
+    .svg-wrap {
       width: 100%;
       transform: rotate(90deg) translate(75px, 0);
     }
@@ -494,7 +496,7 @@
     height: 33px;
     top: 32px;
   }
-  .scheme-tabs__content{
+  .scheme-tabs__content {
     min-height: 400px;
   }
 }

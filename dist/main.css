@@ -2651,6 +2651,7 @@ body.modal-open {
 
   .svg-wrap {
     transform: rotate(90deg) translateX(85px);
+    max-width: 520px;
   }
 
   .manager-info {
