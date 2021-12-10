@@ -16,7 +16,13 @@
       z-index: 2;
     }
   }
-  @include respond-to($md){
+
+  @include respond-to($md) {
     height: 600px;
+  }
+
+  @media screen and (max-width: 420px) {
+
+      height: 408px;
   }
 }

@@ -3265,6 +3265,10 @@ body.modal-open {
     height: 520px;
   }
 
+  .scheme-tabs__content {
+    height: 408px;
+  }
+
   .benefits .section__header {
     min-height: 328px;
   }
@@ -3278,6 +3282,10 @@ body.modal-open {
   .summary__caption {
     font-size: 27px;
     margin-top: -20px;
+  }
+
+  .floor-modal .scheme-tabs__link {
+    margin: 0 10px;
   }
 
   .contacts-modal {

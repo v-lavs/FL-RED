@@ -465,6 +465,11 @@
 }
 
 @include respond-to($xs) {
+  .floor-modal{
+    .scheme-tabs__link {
+      margin: 0 10px;
+    }
+  }
   .contacts-modal {
     max-height: 510px;
 
