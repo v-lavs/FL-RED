@@ -361,12 +361,12 @@
     .modal-header {
       margin-bottom: 52px;
     }
+    .svg-wrap {
+      transform: rotate(90deg) translateX(87px);
+      max-width: 520px;
+    }
+  }
 
-  }
-  .svg-wrap {
-    transform: rotate(90deg) translateX(85px);
-    max-width: 520px;
-  }
   .manager-info {
     padding: 0;
   }

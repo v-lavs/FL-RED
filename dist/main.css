@@ -2649,8 +2649,8 @@ body.modal-open {
     margin-bottom: 52px;
   }
 
-  .svg-wrap {
-    transform: rotate(90deg) translateX(85px);
+  .floor-modal .svg-wrap {
+    transform: rotate(90deg) translateX(87px);
     max-width: 520px;
   }
 
