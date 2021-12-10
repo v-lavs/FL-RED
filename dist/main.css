@@ -1677,6 +1677,12 @@ body.modal-open {
   color: #ffffff;
   font-weight: 400;
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .facade-residence__text {
@@ -1688,14 +1694,17 @@ body.modal-open {
   z-index: 2;
 }
 
-.facade-residence_parallax {
+.facade-residence__wrap-img {
+  width: 100%;
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   z-index: 1;
+}
+
+.facade-residence_parallax {
   background-attachment: fixed;
-  width: 100%;
-  min-height: 100vh;
 }
 
 .description-residence {

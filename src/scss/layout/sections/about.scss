@@ -7,7 +7,13 @@
   color: #ffffff;
   font-weight: 400;
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
 
+  width: 100%;
+  min-height: 100vh;
   &__text {
     position: absolute;
     left: 0;
@@ -17,7 +23,14 @@
     z-index: 2;
   }
 
-  //&__wrap-img {
+  &__wrap-img {
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+
   //  position: absolute;
   //  left: 0;
   //  right: 0;
@@ -35,17 +48,11 @@
   //    width: 100%;
   //    object-fit: cover;
   //  }
-  //}
+  }
 }
 
 .facade-residence_parallax {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  z-index: 1;
   background-attachment: fixed;
-  width: 100%;
-  min-height: 100vh;
 }
 
 .description-residence {
