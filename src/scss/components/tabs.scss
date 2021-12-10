@@ -16,4 +16,7 @@
       z-index: 2;
     }
   }
+  @include respond-to($md){
+    height: 600px;
+  }
 }

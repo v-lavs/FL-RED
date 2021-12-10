@@ -824,7 +824,7 @@ body.modal-open {
 
 .floor-modal .svg-wrap {
   position: relative;
-  max-width: 600px;
+  max-width: 604px;
   margin: 0 auto;
   width: 100%;
 }
@@ -2650,7 +2650,7 @@ body.modal-open {
   }
 
   .svg-wrap {
-    transform: rotate(90deg) translateX(75px);
+    transform: rotate(90deg) translateX(85px);
   }
 
   .manager-info {
@@ -2714,6 +2714,10 @@ body.modal-open {
 
   .card-list {
     margin-bottom: 50px;
+  }
+
+  .scheme-tabs__content {
+    height: 600px;
   }
 
   .container {
@@ -3252,8 +3256,8 @@ body.modal-open {
   }
 
   .floor-modal .svg-wrap {
-    width: 120%;
-    transform: rotate(90deg) translate(75px, 40px);
+    width: 100%;
+    transform: rotate(90deg) translate(75px, 0);
   }
 
   .benefits .section__header {

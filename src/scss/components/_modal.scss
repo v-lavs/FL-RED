@@ -95,7 +95,7 @@
 
   .svg-wrap {
     position: relative;
-    max-width: 600px;
+    max-width: 604px;
     margin: 0 auto;
     width: 100%;
 
@@ -364,7 +364,7 @@
 
   }
   .svg-wrap {
-    transform: rotate(90deg) translateX(75px);
+    transform: rotate(90deg) translateX(85px);
   }
   .manager-info {
     padding: 0;
@@ -452,9 +452,12 @@
   }
   .floor-modal{
     .svg-wrap{
-      width: 120%;
-      transform: rotate(90deg) translate(75px, 40px);
+      width: 100%;
+      transform: rotate(90deg) translate(75px, 0);
     }
+  }
+  .scheme-tabs__content{
+    min-height: 400px;
   }
 }
 
