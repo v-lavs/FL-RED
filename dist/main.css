@@ -1378,6 +1378,7 @@ body.modal-open {
 .scheme-tabs__content {
   position: relative;
   overflow: hidden;
+  min-height: 400px;
 }
 
 .scheme-tabs__content .scheme-tab {
@@ -2283,6 +2284,15 @@ body.modal-open {
   padding-left: 50px;
 }
 
+.residence-plan__wrap-img img {
+  transition: transform .8s;
+}
+
+.residence-plan__wrap-img img:hover {
+  transform: scale(1.01);
+  transition: transform .8s;
+}
+
 .residence-plan__logo {
   display: block;
   width: 273px;
@@ -2631,6 +2641,10 @@ body.modal-open {
     max-width: 93%;
   }
 
+  .floor-modal {
+    height: auto;
+  }
+
   .floor-modal .content-part {
     width: 100%;
   }
@@ -2718,7 +2732,7 @@ body.modal-open {
   }
 
   .scheme-tabs__content {
-    height: 600px;
+    min-height: 510px;
   }
 
   .container {
@@ -3257,16 +3271,12 @@ body.modal-open {
   }
 
   .floor-modal .svg-wrap {
-    width: 100%;
-    transform: rotate(90deg) translate(75px, 0);
+    width: 120%;
+    transform: rotate(90deg) translate(75px, 40px);
   }
 
   .scheme-tabs__content {
-    height: 520px;
-  }
-
-  .scheme-tabs__content {
-    height: 408px;
+    height: 400px;
   }
 
   .benefits .section__header {
@@ -3282,6 +3292,11 @@ body.modal-open {
   .summary__caption {
     font-size: 27px;
     margin-top: -20px;
+  }
+
+  .floor-modal .svg-wrap {
+    width: 100%;
+    transform: rotate(90deg) translate(75px, 0);
   }
 
   .floor-modal .scheme-tabs__link {

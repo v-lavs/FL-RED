@@ -342,6 +342,8 @@
 
 @include respond-to($md) {
   .floor-modal {
+    height: auto;
+
     .content-part {
       width: 100%;
     }
@@ -361,6 +363,7 @@
     .modal-header {
       margin-bottom: 52px;
     }
+
     .svg-wrap {
       transform: rotate(90deg) translateX(87px);
       max-width: 520px;
@@ -436,7 +439,6 @@
 
 @media screen and (max-width: 420px) {
   .contacts-modal {
-
     width: 90%;
     max-width: 380px;
     max-height: 550px;
@@ -454,18 +456,19 @@
   }
   .floor-modal {
     .svg-wrap {
-      width: 100%;
-      transform: rotate(90deg) translate(75px, 0);
+      width: 120%;
+      transform: rotate(90deg) translate(75px, 40px);
     }
   }
-  .scheme-tabs__content {
-    height: 520px;
-  }
-
 }
 
 @include respond-to($xs) {
-  .floor-modal{
+  .floor-modal {
+    .svg-wrap {
+      width: 100%;
+      transform: rotate(90deg) translate(75px, 0);
+    }
+
     .scheme-tabs__link {
       margin: 0 10px;
     }

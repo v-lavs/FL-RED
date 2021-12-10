@@ -20,6 +20,13 @@
 
   &__wrap-img {
     padding-left: 50px;
+    img{
+      transition: transform .8s;
+    }
+    img:hover{
+      transform: scale(1.01);
+      transition: transform .8s;
+    }
   }
 
   &__logo {

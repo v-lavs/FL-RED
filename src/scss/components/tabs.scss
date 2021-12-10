@@ -1,6 +1,7 @@
 .scheme-tabs__content {
   position: relative;
   overflow: hidden;
+  min-height: 400px;
 
   .scheme-tab {
     position: absolute;
@@ -18,11 +19,10 @@
   }
 
   @include respond-to($md) {
-    height: 600px;
+      min-height: 510px;
   }
 
   @media screen and (max-width: 420px) {
-
-      height: 408px;
+      height: 400px;
   }
 }
