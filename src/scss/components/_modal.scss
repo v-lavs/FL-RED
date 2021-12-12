@@ -108,11 +108,18 @@
       z-index: -1;
     }
 
-    svg {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
+
+  }
+
+  .fl-btns_mob,
+  .fl-btns_desk {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .fl-btns_mob {
+    display: none;
   }
 
   .apartment-circle {
@@ -364,9 +371,21 @@
       margin-bottom: 52px;
     }
 
+    .fl-btns_desk {
+      display: none;
+    }
+
+    .fl-btns_mob {
+      display: block;
+    }
+
     .svg-wrap {
-      transform: rotate(90deg) translateX(87px);
-      max-width: 520px;
+      max-width: 350px;
+      width: 100%;
+    }
+    .fl-btns_mob{
+      width: 100%;
+      height: auto;
     }
   }
 
@@ -455,19 +474,19 @@
     }
   }
   .floor-modal {
-    .svg-wrap {
-      width: 120%;
-      transform: rotate(90deg) translate(75px, 40px);
-    }
+    //.svg-wrap {
+    //  width: 120%;
+    //  transform: rotate(90deg) translate(75px, 40px);
+    //}
   }
 }
 
 @include respond-to($xs) {
   .floor-modal {
-    .svg-wrap {
-      width: 100%;
-      transform: rotate(90deg) translate(75px, 0);
-    }
+    //.svg-wrap {
+    //  width: 100%;
+    //  transform: rotate(90deg) translate(75px, 0);
+    //}
 
     .scheme-tabs__link {
       margin: 0 10px;

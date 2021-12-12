@@ -148,12 +148,12 @@ $(document).ready(function () {
 
 
     //    ANIMATION
-
-    let fadeInBlocks = $('.facade-residence').waypoint(function (direction) {
+    let  fadeInBlocks = $('.facade-residence').waypoint(function (direction) {
         $(this.element).addClass('active')
     }, {
         offset: '80%'
     });
+
 
     let animHeader = $('.header').waypoint(function (direction) {
         $(this.element).addClass('active')

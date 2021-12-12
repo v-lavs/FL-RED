@@ -19,10 +19,10 @@
   }
 
   @include respond-to($md) {
-      min-height: 510px;
+      //min-height: 510px;
   }
 
   @media screen and (max-width: 420px) {
-      height: 400px;
+      //height: 400px;
   }
 }

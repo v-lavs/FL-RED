@@ -1,11 +1,8 @@
+
 .facade-residence {
   &.active {
     .fade-in {
-      animation: fadeIn .8s ease-in .8s both;
-    }
-
-    .fade {
-      animation: fade .2s linear .8s both;
+      animation: fadeIn .8s ease-in .8s forwards;
     }
   }
 }
@@ -21,7 +18,7 @@
     .right-bar,
     .btn_burger {
       opacity: 1;
-      transform: translateY(0);
+      transform: none;
       transition: 2s;
       transition-delay: 1.7s;
     }
@@ -99,5 +96,16 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@include respond-to($md) {
+  .facade-residence {
+    &.active {
+      .overlay {
+        opacity: 1;
+        transition: 1.2s;
+      }
+    }
   }
 }
