@@ -2679,6 +2679,7 @@ body.modal-open {
 
   .floor-modal .svg-wrap {
     max-width: 350px;
+    padding: 20px 20px 40px;
     width: 100%;
   }
 
