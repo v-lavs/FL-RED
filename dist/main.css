@@ -2420,6 +2420,23 @@ body.modal-open {
   }
 }
 
+@media screen and (max-width: 1080px) {
+  .contacts__left {
+    display: none;
+  }
+
+  .contacts__right {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .form {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .section {
     margin-bottom: 100px;
@@ -2612,6 +2629,10 @@ body.modal-open {
   .contacts {
     padding-top: 85px;
     font-size: 20px;
+  }
+
+  .contacts .form {
+    width: 100%;
   }
 
   .section__footer .logo {
@@ -2998,16 +3019,6 @@ body.modal-open {
 
   .contacts__row {
     flex-wrap: wrap;
-  }
-
-  .contacts__left {
-    display: none;
-  }
-
-  .contacts__right {
-    width: 100%;
-    max-width: 100%;
-    padding-left: 0;
   }
 
   .residence-plan {

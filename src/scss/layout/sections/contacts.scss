@@ -85,20 +85,39 @@
   }
 }
 
-@include respond-to($laptop-md){
-  .contacts__left{
+@include respond-to($laptop-md) {
+  .contacts__left {
     width: 40%;
     padding-top: 41.5%;
     background-size: cover;
   }
 }
-@include respond-to($laptop){
-  .contacts__left{
+
+@include respond-to($laptop) {
+  .contacts__left {
     padding-top: 35.5%;
     height: 100%;
   }
-  .contacts__right{
+  .contacts__right {
     width: 60%;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .contacts {
+    &__left {
+      display: none;
+    }
+
+    &__right {
+      width: 100%;
+      max-width: 100%;
+      padding-left: 0;
+    }
+  }
+  .form {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -106,15 +125,17 @@
   .contacts {
     padding-top: 85px;
     font-size: 20px;
+
+    .form {
+      width: 100%;
+    }
   }
   .section__footer {
     .logo {
       max-width: 200px;
     }
   }
-  .contacts__left {
-    //background-size: 110% 110%;
-  }
+
 }
 
 @include respond-to($md) {
@@ -140,15 +161,15 @@
       flex-wrap: wrap;
     }
 
-    &__left {
-      display: none;
-    }
-
-    &__right {
-      width: 100%;
-      max-width: 100%;
-      padding-left: 0;
-    }
+    //&__left {
+    //  display: none;
+    //}
+    //
+    //&__right {
+    //  width: 100%;
+    //  max-width: 100%;
+    //  padding-left: 0;
+    //}
   }
 }
 
