@@ -118,7 +118,11 @@
     font-size: 20px;
   }
 }
-
+@media screen and (max-width: 1080px) {
+  .card-list:before {
+    top: 60px;
+  }
+}
 @include respond-to($lg){
   .card-list{
     margin-bottom: 150px;
@@ -131,6 +135,9 @@
     &__title{
       font-size: 18px;
     }
+  }
+  .card-list:before {
+    top: 40px;
   }
 }
 
