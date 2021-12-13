@@ -3158,6 +3158,10 @@ body.modal-open {
     font-size: 18px;
   }
 
+  .contacts-modal {
+    padding: 0;
+  }
+
   .card-list {
     padding: 0 25px;
   }

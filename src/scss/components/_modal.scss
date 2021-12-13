@@ -266,7 +266,7 @@
 
 
 .contacts-modal {
-  padding: 0;
+   padding: 0;
 
   .fl-modal__close {
     z-index: 2;
@@ -457,6 +457,9 @@
     .manager-info__contacts {
       font-size: 18px;
     }
+  }
+  .contacts-modal{
+    padding: 0;
   }
 }
 
