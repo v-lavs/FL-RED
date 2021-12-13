@@ -2983,6 +2983,7 @@ body.modal-open {
   .facilities .summary__caption {
     width: 93%;
     font-size: 28px;
+    margin-top: -5px;
   }
 
   .benefits__img-banner {
@@ -3445,6 +3446,11 @@ body.modal-open {
 
   .facade-residence .text_lg {
     font-size: 20px;
+    max-width: 268px;
+  }
+
+  .facade-residence .text_lg br {
+    display: none;
   }
 
   .design .section__header {

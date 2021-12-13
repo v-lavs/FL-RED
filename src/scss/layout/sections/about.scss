@@ -182,5 +182,9 @@
 @include respond-to($xs) {
   .facade-residence .text_lg {
     font-size: 20px;
+    max-width: 268px;
+    br{
+      display: none;
+    }
   }
 }
