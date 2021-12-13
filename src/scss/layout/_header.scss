@@ -176,9 +176,24 @@
   .header .right-bar__link {
     font-size: 15px;
   }
-  .right-bar__content{
+  //.right-bar__content{
+  //  .right-bar__link-icon {
+  //    order: 2;
+  //    margin-left: 16px;
+  //  }
+  //}
+}
+
+@media screen and (max-width: 1180px){
+ .header .right-bar__content{
+    display: flex;
+    align-items: flex-end;
+    left: auto;
+    right: 0;
     .right-bar__link-icon {
       order: 2;
+      margin-left: 16px;
+      margin-right: 0;
     }
   }
 }

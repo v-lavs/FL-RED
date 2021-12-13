@@ -410,6 +410,9 @@
       display: none;
     }
   }
+  .plan-popover {
+    display: none!important
+  }
 }
 
 @include respond-to($sm) {

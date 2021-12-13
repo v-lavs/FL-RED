@@ -2349,10 +2349,6 @@ body.modal-open {
     font-size: 15px;
   }
 
-  .right-bar__content .right-bar__link-icon {
-    order: 2;
-  }
-
   .features .summary__caption {
     font-size: 42px;
     width: 153.5%;
@@ -2426,6 +2422,21 @@ body.modal-open {
 
   .contacts__right {
     width: 60%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .header .right-bar__content {
+    display: flex;
+    align-items: flex-end;
+    left: auto;
+    right: 0;
+  }
+
+  .header .right-bar__content .right-bar__link-icon {
+    order: 2;
+    margin-left: 16px;
+    margin-right: 0;
   }
 }
 
@@ -2754,6 +2765,10 @@ body.modal-open {
     display: none;
   }
 
+  .plan-popover {
+    display: none !important;
+  }
+
   .gallery__item {
     width: 100%;
     margin-bottom: 16px;
@@ -2930,7 +2945,6 @@ body.modal-open {
   }
 
   .features .card__thumb:before {
-    right: 0;
     z-index: 2;
   }
 
@@ -2957,6 +2971,7 @@ body.modal-open {
 
   .facilities .summary__caption {
     width: 93%;
+    font-size: 28px;
   }
 
   .benefits__img-banner {
