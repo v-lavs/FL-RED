@@ -3375,11 +3375,6 @@ body.modal-open {
 
   .facade-residence .text_lg {
     font-size: 24px;
-    max-width: 265px;
-  }
-
-  .facade-residence .text_lg br {
-    display: none;
   }
 }
 
