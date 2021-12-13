@@ -3373,10 +3373,6 @@ body.modal-open {
     margin-bottom: 46px;
   }
 
-  .container {
-    max-width: 100%;
-  }
-
   .facade-residence .text_lg {
     font-size: 24px;
     max-width: 265px;
@@ -3384,10 +3380,6 @@ body.modal-open {
 
   .facade-residence .text_lg br {
     display: none;
-  }
-
-  .features .summary__caption {
-    font-size: 27px;
   }
 }
 
@@ -3455,6 +3447,10 @@ body.modal-open {
     padding: 0 10px;
   }
 
+  .container {
+    max-width: 100%;
+  }
+
   .section-banner__logo {
     max-width: 210px;
   }
@@ -3480,5 +3476,9 @@ body.modal-open {
 
   .design .section__header {
     min-height: 380px;
+  }
+
+  .features .summary__caption {
+    font-size: 27px;
   }
 }

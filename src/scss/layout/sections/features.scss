@@ -108,7 +108,8 @@
     .summary__caption {
       width: 93%;
       font-size: 34px;
-      span{
+
+      span {
         display: block;
       }
     }
@@ -141,7 +142,8 @@
     }
   }
 }
-@include respond-to($xs) {
+
+@media screen and (max-width: 380px) {
   .features {
     .summary__caption {
       font-size: 27px;
