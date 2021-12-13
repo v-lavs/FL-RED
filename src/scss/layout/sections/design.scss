@@ -79,7 +79,7 @@
   }
 }
 
-@include respond-to($xs) {
+@media screen and (max-width: 380px) {
   .design{
     .section__header{
       min-height: 380px;

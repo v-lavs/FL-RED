@@ -190,7 +190,7 @@
   }
 }
 
-@include respond-to($xs) {
+@media screen and (max-width: 380px){
   .card-list{
     padding: 0 10px;
   }

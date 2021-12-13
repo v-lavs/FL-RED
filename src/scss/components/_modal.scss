@@ -482,7 +482,7 @@
   }
 }
 
-@include respond-to($xs) {
+@media screen and (max-width: 380px) {
   .floor-modal {
     .scheme-tabs__link {
       margin: 0 10px;

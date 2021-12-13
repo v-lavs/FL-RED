@@ -88,7 +88,7 @@
   }
 }
 
-@include respond-to($xs){
+@media screen and (max-width: 380px){
   .section-banner{
     &__logo{
       max-width: 210px;

@@ -90,3 +90,14 @@
     }
   }
 }
+
+@include respond-to($xs){
+.gallery{
+  max-width: 356px;
+  margin-left: auto;
+  margin-right: auto;
+  &_top{
+    margin-bottom: 46px;
+  }
+}
+}

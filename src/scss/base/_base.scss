@@ -238,7 +238,7 @@ body {
   }
 }
 
-@include respond-to($xs) {
+@media screen and (max-width: 380px) {
   .section__title {
     font-size: 27px;
   }
