@@ -480,21 +480,10 @@
       padding-right: 18px;
     }
   }
-  .floor-modal {
-    //.svg-wrap {
-    //  width: 120%;
-    //  transform: rotate(90deg) translate(75px, 40px);
-    //}
-  }
 }
 
 @include respond-to($xs) {
   .floor-modal {
-    //.svg-wrap {
-    //  width: 100%;
-    //  transform: rotate(90deg) translate(75px, 0);
-    //}
-
     .scheme-tabs__link {
       margin: 0 10px;
     }
