@@ -185,10 +185,13 @@
       padding-top: 106px;
     }
 
-    .card__text-content:after {
-      left: auto;
-      right: 50%;
-      transform: translateX(50%);
+    .card__text-content{
+      padding: 15px 0;
+      &:after {
+        left: auto;
+        right: 50%;
+        transform: translateX(50%);
+      }
     }
 
     .card__thumb:before {

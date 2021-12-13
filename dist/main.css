@@ -2857,13 +2857,19 @@ body.modal-open {
   }
 
   .facade-residence {
-    display: block;
+    display: flex;
+    flex-direction: column;
     min-height: 0;
+  }
+
+  .facade-residence .facade-residence__text.mob-hide {
+    display: none;
   }
 
   .facade-residence__text {
     position: static;
     transform: none;
+    order: -1;
   }
 
   .facade-residence__wrap-img {
@@ -2956,6 +2962,10 @@ body.modal-open {
 
   .facilities .section__header {
     padding-top: 106px;
+  }
+
+  .facilities .card__text-content {
+    padding: 15px 0;
   }
 
   .facilities .card__text-content:after {
@@ -3156,7 +3166,7 @@ body.modal-open {
   }
 
   .card__text-content {
-    padding: 15px 15px 15px 0;
+    padding: 15px 0;
   }
 
   .container {
@@ -3175,7 +3185,6 @@ body.modal-open {
 
   .facade-residence {
     min-height: 328px;
-    margin-bottom: 20px;
   }
 
   .facade-residence__wrap-img {
