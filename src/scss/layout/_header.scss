@@ -176,12 +176,6 @@
   .header .right-bar__link {
     font-size: 15px;
   }
-  //.right-bar__content{
-  //  .right-bar__link-icon {
-  //    order: 2;
-  //    margin-left: 16px;
-  //  }
-  //}
 }
 
 @media screen and (max-width: 1180px){
@@ -202,6 +196,11 @@
     &__nav {
       max-width: 100%;
       text-align: center;
+    }
+    .right-bar{
+      .text-link{
+        display: none;
+      }
     }
   }
 }
