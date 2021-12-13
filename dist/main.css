@@ -2231,7 +2231,6 @@ body.modal-open {
 
 .contacts__right {
   width: 50%;
-  max-width: 460px;
   flex-shrink: 0;
   padding-left: 40px;
   min-width: 0;
@@ -2360,6 +2359,7 @@ body.modal-open {
   }
 
   .contacts__left {
+    width: 40%;
     padding-top: 41.5%;
     background-size: cover;
   }
@@ -2408,6 +2408,15 @@ body.modal-open {
 
   .benefits-location__description {
     font-size: 28px;
+  }
+
+  .contacts__left {
+    padding-top: 35.5%;
+    height: 100%;
+  }
+
+  .contacts__right {
+    width: 60%;
   }
 }
 
@@ -2607,10 +2616,6 @@ body.modal-open {
 
   .section__footer .logo {
     max-width: 200px;
-  }
-
-  .contacts__left {
-    background-size: 110% 110%;
   }
 
   .residence-plan__content {

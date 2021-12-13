@@ -49,7 +49,7 @@
 
   &__right {
     width: 50%;
-    max-width: 460px;
+    //max-width: 460px;
     flex-shrink: 0;
     padding-left: 40px;
     min-width: 0;
@@ -87,8 +87,18 @@
 
 @include respond-to($laptop-md){
   .contacts__left{
+    width: 40%;
     padding-top: 41.5%;
     background-size: cover;
+  }
+}
+@include respond-to($laptop){
+  .contacts__left{
+    padding-top: 35.5%;
+    height: 100%;
+  }
+  .contacts__right{
+    width: 60%;
   }
 }
 
@@ -103,7 +113,7 @@
     }
   }
   .contacts__left {
-    background-size: 110% 110%;
+    //background-size: 110% 110%;
   }
 }
 
