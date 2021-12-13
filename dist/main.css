@@ -847,6 +847,7 @@ body.modal-open {
 
 .floor-modal .apartment-circle {
   cursor: pointer;
+  fill: #ffffff;
 }
 
 .floor-modal .apartment-circle.disabled {

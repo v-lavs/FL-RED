@@ -124,7 +124,7 @@
 
   .apartment-circle {
     cursor: pointer;
-
+    fill:#ffffff;
     &.disabled {
       pointer-events: none;
       cursor: none;
