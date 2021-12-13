@@ -60,7 +60,7 @@
     }
 
     &__link {
-      display: inline-flex;
+      display: flex;
       align-items: center;
       margin-bottom: 29px;
 
@@ -172,7 +172,16 @@
   opacity: .8;
   z-index: 500;
 }
-
+@include respond-to($laptop-md) {
+  .header .right-bar__link {
+    font-size: 15px;
+  }
+  .right-bar__content{
+    .right-bar__link-icon {
+      order: 2;
+    }
+  }
+}
 @include respond-to($sm) {
   .header {
     &__nav {

@@ -1463,7 +1463,7 @@ body.modal-open {
 }
 
 .header .right-bar__link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   margin-bottom: 29px;
 }
@@ -2343,6 +2343,14 @@ body.modal-open {
 
   .container {
     max-width: 1140px;
+  }
+
+  .header .right-bar__link {
+    font-size: 15px;
+  }
+
+  .right-bar__content .right-bar__link-icon {
+    order: 2;
   }
 
   .features .summary__caption {
