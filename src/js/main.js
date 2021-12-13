@@ -133,7 +133,7 @@ $(document).ready(function () {
     function initZoom() {
         if ($(window).width() <= 768) {
             $('.map').zoom({
-                url: 'assets/img/map-loc7.jpg',
+                url: 'assets/img/map-loc7.png',
                 touch: true,
             });
         } else {
