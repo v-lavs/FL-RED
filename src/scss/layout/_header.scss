@@ -23,7 +23,7 @@
         .right-bar__link-icon.icon_open {
           background-image: url(../assets/img/svg/close-round.svg);
           opacity: 1;
-          transition: .8s;
+          transition: 1s;
         }
       }
 
@@ -35,7 +35,6 @@
 
     &__content {
       opacity: 0;
-      transition: 1s;
       position: absolute;
       color: #ffffff;
       font-weight: 400;
@@ -47,6 +46,7 @@
       padding: 29px 0;
       top: 48px;
       left: 0;
+      transition: 1s;
     }
 
     &__btn {
@@ -80,7 +80,7 @@
 
       &.icon_open {
         background-image: url(../assets/img/svg/phone-gold.svg);
-        transition: .8s;
+        transition: 1s;
       }
 
       &.icon_phone {
