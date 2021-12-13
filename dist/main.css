@@ -1458,6 +1458,10 @@ body.modal-open {
   padding: 0;
 }
 
+.header .right-bar__btn .right-bar__link-icon {
+  margin-right: 0;
+}
+
 .header .right-bar__link {
   display: inline-flex;
   align-items: center;
@@ -2311,7 +2315,7 @@ body.modal-open {
 
 .residence-plan__desc li {
   position: relative;
-  padding-left: 46px;
+  padding-left: 26px;
 }
 
 .residence-plan__desc li:before {
@@ -2319,7 +2323,7 @@ body.modal-open {
   display: block;
   position: absolute;
   top: .5em;
-  left: 16px;
+  left: 0;
   background-color: #194A21;
   border-radius: 50%;
   overflow: hidden;
@@ -2330,7 +2334,6 @@ body.modal-open {
 
 .residence-plan__btn {
   margin-top: auto;
-  margin-left: 20px;
 }
 
 @media only screen and (max-width: 1440px) {

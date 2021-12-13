@@ -17,6 +17,7 @@
   .right-bar {
     position: relative;
 
+
     &.open-bar {
       .right-bar__btn {
         .right-bar__link-icon.icon_open {
@@ -25,7 +26,8 @@
           transition: .8s;
         }
       }
-      .right-bar__content{
+
+      .right-bar__content {
         opacity: 1;
         transition: 1s;
       }
@@ -52,6 +54,9 @@
       border: none;
       padding: 0;
 
+      .right-bar__link-icon {
+        margin-right: 0;
+      }
     }
 
     &__link {
