@@ -2589,6 +2589,7 @@ body.modal-open {
 
   .facilities .summary__caption {
     width: 80%;
+    padding-left: 8px;
   }
 
   .facilities .summary .text-list {
