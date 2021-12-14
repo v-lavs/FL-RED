@@ -112,6 +112,10 @@
     flex-direction: column;
     min-height: 0;
 
+    .overlay {
+      display: none;
+    }
+
     .facade-residence__text.mob-hide {
       display: none;
     }
@@ -181,7 +185,8 @@
 @include respond-to($xs) {
   .facade-residence .text_lg {
     font-size: 24px;
-    br{
+
+    br {
       display: none;
     }
   }

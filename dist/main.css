@@ -2337,7 +2337,7 @@ body.modal-open {
   margin-top: auto;
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1610px) {
   .benefits__img-banner {
     padding-top: 68%;
     min-height: 100vh;
@@ -2869,6 +2869,10 @@ body.modal-open {
     display: flex;
     flex-direction: column;
     min-height: 0;
+  }
+
+  .facade-residence .overlay {
+    display: none;
   }
 
   .facade-residence .facade-residence__text.mob-hide {

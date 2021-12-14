@@ -175,6 +175,13 @@
   }
 }
 
+@media screen and (min-width: 1610px) {
+  .benefits__img-banner {
+    padding-top: 68%;
+    min-height: 100vh;
+  }
+}
+
 @include respond-to($laptop-md) {
   .benefits-list .col-12 .label,
   .benefits-caption {
@@ -275,13 +282,6 @@
       width: 100%;
       padding-top: 41%;
     }
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .benefits__img-banner {
-    padding-top: 68%;
-    min-height: 100vh;
   }
 }
 
