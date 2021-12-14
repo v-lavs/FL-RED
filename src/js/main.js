@@ -10,27 +10,6 @@
 
 // CUSTOM SCRIPTS
 
-$.fn.positionOn = function (element, align) {
-    const target = $(this);
-    const circleDiameter = $(element).parents('.svg-wrap').width() / 12;
-    const position = element.position();
-
-    let x = position.left;
-    let y = position.top + circleDiameter;
-
-    if (align === 'right') {
-        x -= (target.outerWidth() - circleDiameter);
-    } else if (align === 'center') {
-        x -= target.outerWidth() / 2 - circleDiameter / 2;
-    }
-
-    target.css({
-        position: 'absolute',
-        top: y,
-        left: x
-    });
-};
-
 $(document).ready(function () {
     const $popover = $('.plan-popover');
     const anim_time = 200;
@@ -148,7 +127,7 @@ $(document).ready(function () {
 
 
     //    ANIMATION
-    let  fadeInBlocks = $('.facade-residence').waypoint(function (direction) {
+    let fadeInBlocks = $('.facade-residence').waypoint(function (direction) {
         $(this.element).addClass('active')
     }, {
         offset: '80%'
@@ -167,8 +146,8 @@ $(document).ready(function () {
         let homeTop = $(window).scrollTop();
         let opacity = 0;
         $(".facade-residence_parallax").each(function () {
-           let height = $(this).height();
-           let offset = $(this).offset().top;
+            let height = $(this).height();
+            let offset = $(this).offset().top;
             opacity = 1.2 * (homeTop - height + offset) / height;
 
             $('.overlay').css("opacity", opacity);
@@ -177,10 +156,10 @@ $(document).ready(function () {
 
     //TABS
 
-    $(".scheme-tab").each(function() {
+    $(".scheme-tab").each(function () {
         var $this = $(this),
             child = $this.children(":first");
-        $this.css("minHeight", function() {
+        $this.css("minHeight", function () {
             return child[0].getBoundingClientRect().height;
         });
     });
@@ -193,6 +172,7 @@ $(document).ready(function () {
         $(e.target).addClass('active');
         $($(e.currentTarget).attr('href')).addClass('active');
     });
+
 });
 
 

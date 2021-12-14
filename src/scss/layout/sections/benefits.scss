@@ -1,5 +1,6 @@
 .benefits {
   background-attachment: fixed;
+
   &__img-banner {
     position: relative;
     min-height: 100vh;
@@ -274,6 +275,13 @@
       width: 100%;
       padding-top: 41%;
     }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .benefits__img-banner {
+    padding-top: 68%;
+    min-height: 100vh;
   }
 }
 

@@ -2337,6 +2337,13 @@ body.modal-open {
   margin-top: auto;
 }
 
+@media screen and (min-width: 1600px) {
+  .benefits__img-banner {
+    padding-top: 68%;
+    min-height: 100vh;
+  }
+}
+
 @media only screen and (max-width: 1440px) {
   .summary__caption {
     font-size: 40px;
@@ -3375,6 +3382,10 @@ body.modal-open {
 
   .facade-residence .text_lg {
     font-size: 24px;
+  }
+
+  .facade-residence .text_lg br {
+    display: none;
   }
 }
 

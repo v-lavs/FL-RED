@@ -181,5 +181,8 @@
 @include respond-to($xs) {
   .facade-residence .text_lg {
     font-size: 24px;
+    br{
+      display: none;
+    }
   }
 }
