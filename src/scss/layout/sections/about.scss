@@ -167,10 +167,11 @@
       display: none;
     }
   }
+}
+
+@media screen and (max-width: 380px){
   .facade-residence_parallax,
   .facade-residence{
     min-height: 100%;
   }
 }
-
-@media screen and (max-width: 380px){}
