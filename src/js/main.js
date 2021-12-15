@@ -112,7 +112,7 @@ $(document).ready(function () {
     function initZoom() {
         if ($(window).width() <= 768) {
             $('.map').zoom({
-                url: 'assets/img/map-loc7.png',
+                url: 'assets/img/map-loc9.jpg',
                 touch: true,
             });
         } else {
