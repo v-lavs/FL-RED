@@ -3387,11 +3387,6 @@ body.modal-open {
   .facade-residence .text_lg br {
     display: none;
   }
-
-  .facade-residence_parallax,
-  .facade-residence {
-    min-height: 100%;
-  }
 }
 
 @media screen and (max-width: 380px) {
@@ -3483,6 +3478,11 @@ body.modal-open {
   .section-banner .btn_scroll:before {
     width: 56px;
     height: 56px;
+  }
+
+  .facade-residence_parallax,
+  .facade-residence {
+    min-height: 100%;
   }
 
   .design .section__header {
