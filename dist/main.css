@@ -2708,11 +2708,6 @@ body.modal-open {
     max-width: 93%;
   }
 
-  .facade-residence.active .overlay {
-    opacity: 1;
-    transition: 1.2s;
-  }
-
   .floor-modal {
     height: auto;
   }

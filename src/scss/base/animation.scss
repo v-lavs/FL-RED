@@ -98,14 +98,3 @@
     opacity: 1;
   }
 }
-
-@include respond-to($md) {
-  .facade-residence {
-    &.active {
-      .overlay {
-        opacity: 1;
-        transition: 1.2s;
-      }
-    }
-  }
-}

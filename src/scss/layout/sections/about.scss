@@ -2,8 +2,6 @@
   position: relative;
   display: flex;
   align-items: center;
-  //width: 100%;
-  //min-height: 100vh;
   color: #ffffff;
   font-weight: 400;
   text-align: center;
@@ -31,24 +29,6 @@
     background-position: center;
     background-size: cover;
     z-index: 1;
-
-    //  position: absolute;
-    //  left: 0;
-    //  right: 0;
-    //  bottom: 0;
-    //  top: 0;
-    //  z-index: -1;
-    //
-    //  img {
-    //    position: absolute;
-    //    left: 0;
-    //    right: 0;
-    //    bottom: 0;
-    //    top: 0;
-    //    height: 100%;
-    //    width: 100%;
-    //    object-fit: cover;
-    //  }
   }
 }
 
@@ -128,9 +108,6 @@
 
     &__wrap-img {
       position: relative;
-      //  width: 100%;
-      //  min-height: 328px;
-      //  padding-top: 66%;
       margin-bottom: 40px;
     }
 
