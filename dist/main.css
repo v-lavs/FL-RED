@@ -3387,6 +3387,11 @@ body.modal-open {
   .facade-residence .text_lg br {
     display: none;
   }
+
+  .facade-residence_parallax,
+  .facade-residence {
+    min-height: 100%;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -3486,5 +3491,10 @@ body.modal-open {
 
   .features .summary__caption {
     font-size: 27px;
+  }
+
+  .section-map .map__info {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
