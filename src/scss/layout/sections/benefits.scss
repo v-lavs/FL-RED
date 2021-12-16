@@ -4,10 +4,12 @@
   &__img-banner {
     position: relative;
     min-height: 100vh;
-    padding-top: 60%;
+    width: 100%;
+    //padding-top: 60%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
+    background-attachment: fixed;
   }
 
   .section__header {
@@ -202,6 +204,9 @@
   .benefits {
     .section__header {
       min-height: 396px;
+    }
+    &__img-banner{
+      background-attachment: scroll;
     }
   }
   .benefits-location {

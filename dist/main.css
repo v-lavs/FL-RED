@@ -1963,10 +1963,11 @@ body.modal-open {
 .benefits__img-banner {
   position: relative;
   min-height: 100vh;
-  padding-top: 60%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
+  background-attachment: fixed;
 }
 
 .benefits .section__header {
@@ -2295,7 +2296,7 @@ body.modal-open {
 }
 
 .residence-plan__wrap-img img:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
   transition: transform .8s;
 }
 
@@ -2631,6 +2632,10 @@ body.modal-open {
 
   .benefits .section__header {
     min-height: 396px;
+  }
+
+  .benefits__img-banner {
+    background-attachment: scroll;
   }
 
   .benefits-location__wrap-thumb {

@@ -170,7 +170,7 @@ $(document).ready(function () {
         $(".facade-residence_parallax").each(function () {
             let height = $(this).height();
             let offset = $(this).offset().top;
-            opacity =  (homeTop - height + offset) /3 * height;
+            opacity =  (homeTop - height + offset) / 2 * height;
 
             $('.overlay').css("opacity", opacity);
         })
