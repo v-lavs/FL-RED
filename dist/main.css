@@ -554,7 +554,7 @@ body.modal-open {
 }
 
 .facade-residence.active .fade-in {
-  animation: fadeIn .8s ease-in-out .8s forwards;
+  animation: fadeIn .8s ease-in-out .75s forwards;
 }
 
 .facade-residence.active .overlay {
