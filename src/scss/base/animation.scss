@@ -2,7 +2,11 @@
 .facade-residence {
   &.active {
     .fade-in {
-      animation: fadeIn .8s ease-in .8s forwards;
+      animation: fadeIn .8s ease-in-out .8s forwards;
+    }
+    .overlay{
+      opacity: 1;
+      transition:opacity .6s;
     }
   }
 }
