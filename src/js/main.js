@@ -11,6 +11,28 @@
 // CUSTOM SCRIPTS
 
 $(document).ready(function () {
+
+    $.fn.positionOn = function (element, align) {
+        const target = $(this);
+        const circleDiameter = $(element).parents('.svg-wrap').width() / 12;
+        const position = element.position();
+
+        let x = position.left;
+        let y = position.top + circleDiameter;
+
+        if (align === 'right') {
+            x -= (target.outerWidth() - circleDiameter);
+        } else if (align === 'center') {
+            x -= target.outerWidth() / 2 - circleDiameter / 2;
+        }
+
+        target.css({
+            position: 'absolute',
+            top: y,
+            left: x
+        });
+    };
+
     const $popover = $('.plan-popover');
     const anim_time = 200;
 
@@ -148,7 +170,7 @@ $(document).ready(function () {
         $(".facade-residence_parallax").each(function () {
             let height = $(this).height();
             let offset = $(this).offset().top;
-            opacity = 1.2 * (homeTop - height + offset) / height;
+            opacity =  (homeTop - height + offset) /3 * height;
 
             $('.overlay').css("opacity", opacity);
         })

@@ -648,7 +648,6 @@ body.modal-open {
   align-items: center;
   cursor: pointer;
   line-height: 1;
-  transition: .35s;
   background-color: transparent;
   border: none;
   font-weight: 400;
@@ -791,7 +790,7 @@ body.modal-open {
 }
 
 .floor-modal .apartment-content .app-img {
-  max-width: 278px;
+  max-width: 450px;
   height: auto;
   margin: 0 auto;
 }
@@ -1155,7 +1154,7 @@ body.modal-open {
 
 .gallery__link:hover img,
 .gallery__link:focus img {
-  transform: scale(1.05);
+  transform: scale(1.1);
   transition: .85s;
 }
 
@@ -1346,7 +1345,7 @@ body.modal-open {
   pointer-events: none;
   margin-top: 5px;
   overflow: hidden;
-  z-index: 99999;
+  z-index: 1000;
 }
 
 .plan-popover .popover-content {
