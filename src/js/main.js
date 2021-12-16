@@ -164,17 +164,18 @@ $(document).ready(function () {
     });
 
 
-    $(window).scroll(function () {
-        let homeTop = $(window).scrollTop();
-        let opacity = 0;
-        $(".facade-residence_parallax").each(function () {
-            let height = $(this).height();
-            let offset = $(this).offset().top;
-            opacity =  (homeTop - height + offset) / 2 * height;
 
-            $('.overlay').css("opacity", opacity);
-        })
-    });
+    // $(window).scroll(function () {
+    //     let homeTop = $(window).scrollTop();
+    //     let opacity = 0;
+    //     $(".facade-residence_parallax").each(function () {
+    //         let height = $(this).height();
+    //         let offset = $(this).offset().top;
+    //         opacity =  (homeTop - height + offset) / 2 * height;
+    //
+    //         $('.overlay').css("opacity", opacity);
+    //     })
+    // });
 
     //TABS
 
