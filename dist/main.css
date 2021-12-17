@@ -671,7 +671,6 @@ body.modal-open {
   position: relative;
   overflow: hidden;
   width: 100%;
-  transition: .35s;
 }
 
 .btn_main.transparent .btn-inner {
@@ -710,7 +709,7 @@ body.modal-open {
 .btn_main:hover,
 .btn_main:focus {
   transform: scale(1.05);
-  transition: .35s;
+  transition: transform .35s;
 }
 
 .menu {
@@ -1976,7 +1975,7 @@ body.modal-open {
 
 .benefits__img-banner {
   position: relative;
-  height: 100vh;
+  height: 98vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;

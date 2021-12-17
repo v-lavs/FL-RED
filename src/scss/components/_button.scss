@@ -22,7 +22,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    transition: .35s;
+    //transition: transform .35s;
     &.transparent {
       .btn-inner {
         background-image: none;
@@ -61,7 +61,8 @@
     &:hover,
     &:focus{
       transform: scale(1.05);
-      transition: .35s;
+      transition: transform .35s;
+
     }
   }
   @include respond-to($sm){
