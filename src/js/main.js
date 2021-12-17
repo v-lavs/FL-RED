@@ -152,7 +152,7 @@ $(document).ready(function () {
     let fadeInBlocks = $('.facade-residence').waypoint(function (direction) {
         $(this.element).addClass('active')
     }, {
-        offset: '80%'
+        offset: '100%'
     });
 
 
@@ -163,19 +163,6 @@ $(document).ready(function () {
         $(this.element).addClass('active')
     });
 
-
-
-    // $(window).scroll(function () {
-    //     let homeTop = $(window).scrollTop();
-    //     let opacity = 0;
-    //     $(".facade-residence_parallax").each(function () {
-    //         let height = $(this).height();
-    //         let offset = $(this).offset().top;
-    //         opacity =  (homeTop - height + offset) / 2 * height;
-    //
-    //         $('.overlay').css("opacity", opacity);
-    //     })
-    // });
 
     //TABS
 
