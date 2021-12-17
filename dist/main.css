@@ -671,6 +671,7 @@ body.modal-open {
   position: relative;
   overflow: hidden;
   width: 100%;
+  transition: .35s;
 }
 
 .btn_main.transparent .btn-inner {
@@ -688,12 +689,14 @@ body.modal-open {
   background: linear-gradient(269.83deg, #EEC65F -33.35%, #A76F2A -9.64%, #E2B855 11.74%, #F9F2B7 36.15%, #E2B855 65.29%, #8F5E21 132.17%, #E2B855 165.27%);
   clip-path: polygon(0% 0%, 0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%);
   z-index: 1;
+  transition: .6s;
 }
 
 .btn_main .btn-inner {
   position: relative;
   display: block;
-  padding: 22px;
+  padding: 15px 22px 19px;
+  line-height: 1.5;
   width: 100%;
   height: 100%;
   background-image: url(../assets/img/bg-btn.png);
@@ -701,6 +704,13 @@ body.modal-open {
   background-position: center;
   background-size: cover;
   overflow: hidden;
+  transition: .6s;
+}
+
+.btn_main:hover,
+.btn_main:focus {
+  transform: scale(1.05);
+  transition: .35s;
 }
 
 .menu {
