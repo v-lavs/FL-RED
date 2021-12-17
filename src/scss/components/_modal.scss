@@ -1,20 +1,28 @@
 .fl-modal {
+
   position: fixed;
-  top: 50%;
-  left: 50%;
+  //top: 50%;
+  //left: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   background-color: #fff;
-  transform: translate(-50%, -50%);
+  //transform: translate(-50%, -50%);
   transition: opacity 1s;
   max-height: 100%;
   overflow-y: auto;
   z-index: 1000;
   height: 693px;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  //opacity: 0;
+  //visibility: hidden;
+
+  background: wheat;
   .container {
     position: relative;
   }
+
   &.active {
     opacity: 1;
     visibility: visible;
@@ -25,50 +33,32 @@
     text-decoration: none;
     display: block;
     position: absolute;
-    top: -80px;
+    //top: 40px;
+    top: 0;
     width: 54px;
     height: 54px;
     z-index: 1;
   }
 
   &__close {
-    right: 0;
+    right: 20px;
     background: url("../assets/img/svg/close-gold.svg") center center no-repeat;
     background-size: 100% auto;
   }
 
   &__back {
-    left: 0;
+    left: 20px;
     background: url("../assets/img/svg/arrow-left-gold.svg") center center no-repeat;
     background-size: 100% auto;
   }
 }
 
-.scheme-modal {
-
-  .fl-modal__content {
-    display: flex;
-    align-items: center;
-  }
-
-  .modal-header {
-
-    width: 20%;
-    margin-bottom: 0;
-
-    .modal-title {
-      text-align: left;
-    }
-  }
-
-  .scheme-tabs__content {
-    width: 80%;
-  }
-
+body {
+  background-color: #000000 !important;
 }
 
 .floor-modal {
-  padding: 120px 0 60px;
+  padding: 58px 0 60px;
 
   .modal-header {
     margin-bottom: 45px;
@@ -86,9 +76,19 @@
   .apartment-content {
     display: flex;
     flex-wrap: wrap;
+    .content-part_left {
+      width: 70%;
+      background: royalblue;
+    }
 
+    .content-part_right {
+      width: 30%;
+      background: rosybrown;
+    }
     .app-img {
-      max-width: 430px;
+      //max-width: 430px;
+      max-width: 680px;
+
       height: auto;
       margin: 0 auto;
 
@@ -129,7 +129,6 @@
       top: 0;
       z-index: -1;
     }
-
 
   }
 
@@ -239,6 +238,36 @@
   }
 }
 
+
+.scheme-modal {
+  padding-top: 120px;
+
+  .fl-modal__content {
+    display: flex;
+    align-items: center;
+  }
+
+  .modal-header {
+
+    width: 20%;
+    margin-bottom: 0;
+
+    .modal-title {
+      text-align: left;
+    }
+  }
+
+  .scheme-tabs__content {
+    width: 80%;
+  }
+
+  .fl-modal__close {
+    top: -80px;
+    right: 0;
+  }
+}
+
+
 .apartment-desc {
   font-size: 20px;
   line-height: 1.2;
@@ -246,6 +275,7 @@
   &__props {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 30px;
     font-size: 18px;
     line-height: 21px;
@@ -269,7 +299,6 @@
 .manager-info {
   display: flex;
   align-items: center;
-  padding: 0 20px;
   margin-top: 50px;
 
   &__tel-btn {
@@ -384,7 +413,7 @@
 }
 
 @include respond-to($md) {
-  .fl-modal__close{
+  .scheme-modal .fl-modal__close {
     top: -10px;
     right: 30px;
   }
@@ -468,6 +497,7 @@
   }
   .scheme-modal {
     padding-top: 80px;
+
     .fl-modal__content {
       flex-direction: column;
     }
@@ -589,7 +619,7 @@
   .fl-modal__close {
     width: 33px;
     height: 33px;
-    top: -4px;
+    top: 32px;
   }
   .scheme-tabs__content {
     min-height: 400px;
@@ -598,5 +628,8 @@
     .fl-modal__close {
       top: -16px;
     }
+  }
+  .scheme-modal .fl-modal__close {
+    top: -4px;
   }
 }
