@@ -747,8 +747,8 @@ body.modal-open {
   overflow-y: auto;
   z-index: 1000;
   height: 693px;
-  opacity: 1;
-  background: wheat;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .fl-modal .container {
@@ -783,10 +783,6 @@ body.modal-open {
   background-size: 100% auto;
 }
 
-body {
-  background-color: #000000 !important;
-}
-
 .floor-modal {
   padding: 58px 0 60px;
 }
@@ -802,45 +798,6 @@ body {
   color: #194A21;
   text-align: center;
   font-weight: 400;
-}
-
-.floor-modal .apartment-content {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.floor-modal .apartment-content .content-part_left {
-  width: 70%;
-  background: royalblue;
-}
-
-.floor-modal .apartment-content .content-part_right {
-  width: 30%;
-  background: rosybrown;
-}
-
-.floor-modal .apartment-content .app-img {
-  max-width: 680px;
-  height: auto;
-  margin: 0 auto;
-}
-
-.floor-modal .apartment-content .app-img .img {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-.floor-modal .apartment-content .apartment-desc {
-  width: 100%;
-  max-width: 365px;
-  margin: 0 auto;
-}
-
-.floor-modal .apartment-content .btn-download {
-  margin-top: 65px;
-  text-align: center;
 }
 
 .floor-modal .content-part {
@@ -963,6 +920,43 @@ body {
 .floor-modal .scheme-tabs__link:hover,
 .floor-modal .scheme-tabs__link.active {
   opacity: 1;
+}
+
+.apartment-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.apartment-content .content-part_left {
+  width: 70%;
+}
+
+.apartment-content .content-part_right {
+  width: 30%;
+}
+
+.apartment-content .app-img {
+  max-width: 680px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.apartment-content .app-img .img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.apartment-content .apartment-desc {
+  width: 100%;
+  max-width: 365px;
+  margin: 0 auto;
+}
+
+.apartment-content .btn-download {
+  margin-top: 65px;
+  text-align: center;
 }
 
 .scheme-modal {
@@ -2438,6 +2432,14 @@ body {
     font-size: 38px;
   }
 
+  .apartment-content .app-img {
+    max-width: 620px;
+  }
+
+  .apartment-desc__props .text-lg {
+    font-size: 28px;
+  }
+
   .design .gallery-room {
     width: 80%;
   }
@@ -2569,6 +2571,14 @@ body {
   .scheme-tabs__content .scheme-tab {
     display: flex;
     align-items: center;
+  }
+
+  .apartment-content .content-part_right {
+    width: 40%;
+  }
+
+  .apartment-content .content-part_left {
+    width: 60%;
   }
 
   .custom-input .custom-input__field {
