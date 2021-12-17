@@ -554,12 +554,14 @@ body.modal-open {
 }
 
 .facade-residence.active .fade-in {
-  animation: fadeIn .8s ease-in-out .75s forwards;
+  animation: fadeIn ease-in-out .75s forwards;
+  animation-delay: 1.2s;
 }
 
 .facade-residence.active .overlay {
   opacity: 1;
-  transition: .7s opacity .6s;
+  transition: opacity .6s;
+  transition-delay: .7s;
 }
 
 .header .right-bar,
@@ -1038,6 +1040,9 @@ body.modal-open {
 }
 
 .contacts-modal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 1014px;
   padding: 0;
 }
