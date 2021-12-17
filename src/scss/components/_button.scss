@@ -22,7 +22,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    //transition: transform .35s;
+    transition: transform .15s;
     &.transparent {
       .btn-inner {
         background-image: none;
@@ -41,7 +41,6 @@
       background: linear-gradient(269.83deg, #EEC65F -33.35%, #A76F2A -9.64%, #E2B855 11.74%, #F9F2B7 36.15%, #E2B855 65.29%, #8F5E21 132.17%, #E2B855 165.27%);
       clip-path: polygon(0% 0%, 0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%);
       z-index: 1;
-      transition: .6s;
     }
 
     .btn-inner {
@@ -56,12 +55,11 @@
       background-position: center;
       background-size: cover;
       overflow: hidden;
-      transition: .6s;
     }
     &:hover,
     &:focus{
       transform: scale(1.05);
-      transition: transform .35s;
+      transition: transform .3s;
 
     }
   }

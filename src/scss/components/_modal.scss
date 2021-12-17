@@ -3,17 +3,18 @@
   top: 50%;
   left: 50%;
   width: 100%;
-  max-width: 1200px;
   background-color: #fff;
   transform: translate(-50%, -50%);
   transition: opacity 1s;
   max-height: 100%;
   overflow-y: auto;
   z-index: 1000;
-  height: 690px;
+  height: 693px;
   opacity: 0;
   visibility: hidden;
-
+  .container {
+    position: relative;
+  }
   &.active {
     opacity: 1;
     visibility: visible;
@@ -24,28 +25,51 @@
     text-decoration: none;
     display: block;
     position: absolute;
-    top: 40px;
+    top: -80px;
     width: 54px;
     height: 54px;
     z-index: 1;
   }
 
   &__close {
-    right: 65px;
+    right: 0;
     background: url("../assets/img/svg/close-gold.svg") center center no-repeat;
     background-size: 100% auto;
   }
 
   &__back {
-    left: 65px;
+    left: 0;
     background: url("../assets/img/svg/arrow-left-gold.svg") center center no-repeat;
     background-size: 100% auto;
   }
 }
 
+.scheme-modal {
+
+
+  .fl-modal__content {
+    display: flex;
+    align-items: center;
+  }
+
+  .modal-header {
+
+    width: 20%;
+    margin-bottom: 0;
+
+    .modal-title {
+      text-align: left;
+    }
+  }
+
+  .scheme-tabs__content {
+    width: 80%;
+  }
+
+}
 
 .floor-modal {
-  padding: 55px 0 60px;
+  padding: 120px 0 60px;
 
   .modal-header {
     margin-bottom: 45px;
@@ -95,8 +119,7 @@
 
   .svg-wrap {
     position: relative;
-    max-width: 604px;
-    margin: 0 auto;
+    max-width: 726px;
     width: 100%;
 
     .scheme-tab__img {
@@ -124,7 +147,8 @@
 
   .apartment-circle {
     cursor: pointer;
-    fill:#ffffff;
+    fill: #ffffff;
+
     &.disabled {
       pointer-events: none;
       cursor: none;
@@ -182,8 +206,8 @@
 
   .scheme-tabs {
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     &__link {
       text-decoration: none;
@@ -196,13 +220,17 @@
       justify-content: center;
       width: 48px;
       height: 48px;
-      margin: 0 23px;
+      margin: 0 0 20px;
       color: #194A21;
       opacity: .5;
       border: 2px solid #194A21;
       -webkit-transition: opacity .5s;
       transition: opacity .5s;
       flex-shrink: 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       &:hover,
       &.active {
@@ -266,7 +294,8 @@
 
 
 .contacts-modal {
-   padding: 0;
+  max-width: 1014px;
+  padding: 0;
 
   .fl-modal__close {
     z-index: 2;
@@ -290,9 +319,10 @@
   }
 
   &__part {
-    width: 50%;
+    width: 54%;
 
     &.img-wrap {
+      width: 46%;
       position: relative;
       overflow: hidden;
       color: #ffffff;
@@ -347,9 +377,32 @@
   }
 }
 
+@include respond-to($lg) {
+  .scheme-tabs__content .scheme-tab {
+    display: flex;
+    align-items: center;
+  }
+}
+
 @include respond-to($md) {
+  .fl-modal__close{
+    top: -10px;
+    right: 30px;
+  }
   .floor-modal {
     height: auto;
+
+    .scheme-tabs {
+      flex-direction: row;
+
+      &__link {
+        margin: 0 23px;
+      }
+    }
+
+    .svg-wrap {
+      margin: 0 auto;
+    }
 
     .content-part {
       width: 100%;
@@ -384,7 +437,8 @@
       padding: 20px 20px 40px;
       width: 100%;
     }
-    .fl-btns_mob{
+
+    .fl-btns_mob {
       width: 100%;
       height: auto;
     }
@@ -411,7 +465,25 @@
     }
   }
   .plan-popover {
-    display: none!important
+    display: none !important
+  }
+  .scheme-modal {
+    padding-top: 80px;
+    .fl-modal__content {
+      flex-direction: column;
+    }
+
+    .modal-header,
+    .scheme-tabs__content {
+      width: 100%;
+    }
+
+    .modal-header {
+
+      .modal-title {
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -431,6 +503,7 @@
   }
   .fl-modal__close {
     right: 16px;
+    top: -8px;
   }
   .contacts-modal {
     .fl-modal__close {
@@ -458,7 +531,7 @@
       font-size: 18px;
     }
   }
-  .contacts-modal{
+  .contacts-modal {
     padding: 0;
   }
 }
@@ -517,13 +590,13 @@
   .fl-modal__close {
     width: 33px;
     height: 33px;
-    top: 32px;
+    top: -4px;
   }
   .scheme-tabs__content {
     min-height: 400px;
   }
-  .contacts-modal{
-    .fl-modal__close{
+  .contacts-modal {
+    .fl-modal__close {
       top: -16px;
     }
   }
