@@ -3,7 +3,7 @@
 
   &__img-banner {
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -174,13 +174,6 @@
 
   .title {
     margin-bottom: 7px;
-  }
-}
-
-@media screen and (min-width: 1610px) {
-  .benefits__img-banner {
-    padding-top: 68%;
-    height: 100vh;
   }
 }
 
