@@ -71,7 +71,7 @@ $(document).ready(function () {
 
                 $('html, body').animate({
                     scrollTop: $($.attr(this, 'href')).offset().top
-                }, 2000);
+                }, 1000);
                 nav.removeClass('open');
                 jQuery('.backdrop').fadeOut();
                 $('body').removeClass('modal_open');

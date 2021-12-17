@@ -21,15 +21,16 @@
     margin: 0 auto;
 
     .subtitle {
+      width: 100%;
       font-size: 32px;
       line-height: 1.187;
+      padding-top: 65px;
       margin-bottom: 60px;
       color: #194a21;
       text-align: center;
     }
   }
-
-  .gallery_top {
+  .gallery {
     position: relative;
     margin-top: -15%;
   }
@@ -37,7 +38,7 @@
 
 @include respond-to($lg) {
   .design {
-    .gallery_top {
+    .gallery{
       margin-top: -25%;
     }
   }
@@ -53,7 +54,7 @@
       min-height: 312px;
     }
 
-    .gallery_top {
+    .gallery {
       position: relative;
       margin-top: -60%;
     }
@@ -62,6 +63,7 @@
       width: 60%;
 
       .subtitle {
+        padding-top: 62px;
         span{
           display: inline-block;
         }
