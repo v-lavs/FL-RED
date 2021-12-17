@@ -748,7 +748,7 @@ body.modal-open {
   max-height: 100%;
   overflow-y: auto;
   z-index: 1000;
-  height: 693px;
+  height: 740px;
   opacity: 0;
   visibility: hidden;
 }
@@ -926,7 +926,6 @@ body.modal-open {
 
 .apartment-content {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .apartment-content .content-part_left {
@@ -1054,7 +1053,7 @@ body.modal-open {
 }
 
 .contacts-modal .modal-title {
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 .contacts-modal .info-expert {
@@ -1078,7 +1077,7 @@ body.modal-open {
   overflow: hidden;
   color: #ffffff;
   font-size: 28px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -1099,6 +1098,10 @@ body.modal-open {
   font-size: 20px;
 }
 
+.contacts-modal__part.img-wrap .name {
+  font-weight: 700;
+}
+
 .contacts-modal__img {
   position: absolute;
   left: 0;
@@ -1114,7 +1117,7 @@ body.modal-open {
 .contacts-modal__bg {
   background: url(../assets/img/modal-bg.png) center center no-repeat;
   background-size: cover;
-  padding: 130px 80px 133px 54px;
+  padding: 98px 37px;
 }
 
 .contacts-modal .form__col {
@@ -2578,12 +2581,95 @@ body.modal-open {
     align-items: center;
   }
 
-  .apartment-content .content-part_right {
-    width: 40%;
+  .scheme-modal .fl-modal__close {
+    top: -10px;
+    right: 30px;
   }
 
-  .apartment-content .content-part_left {
-    width: 60%;
+  .floor-modal {
+    height: auto;
+  }
+
+  .floor-modal .scheme-tabs {
+    flex-direction: row;
+  }
+
+  .floor-modal .scheme-tabs__link {
+    margin: 0 23px;
+  }
+
+  .floor-modal .svg-wrap {
+    margin: 0 auto;
+  }
+
+  .floor-modal .content-part {
+    width: 100%;
+  }
+
+  .floor-modal .apartment-content {
+    flex-wrap: wrap;
+  }
+
+  .floor-modal .apartment-content .btn-download {
+    margin-top: 50px;
+  }
+
+  .floor-modal .apartment-content .app-img {
+    max-width: 354px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .floor-modal .modal-header {
+    margin-bottom: 52px;
+  }
+
+  .floor-modal .fl-btns_desk {
+    display: none;
+  }
+
+  .floor-modal .fl-btns_mob {
+    display: block;
+  }
+
+  .floor-modal .svg-wrap {
+    max-width: 350px;
+    padding: 20px 20px 40px;
+    width: 100%;
+  }
+
+  .floor-modal .fl-btns_mob {
+    width: 100%;
+    height: auto;
+  }
+
+  .manager-info {
+    padding: 0;
+  }
+
+  .plan-popover {
+    display: none !important;
+  }
+
+  .scheme-modal {
+    padding-top: 80px;
+  }
+
+  .scheme-modal .fl-modal__content {
+    flex-direction: column;
+  }
+
+  .scheme-modal .modal-header,
+  .scheme-modal .scheme-tabs__content {
+    width: 100%;
+  }
+
+  .scheme-modal .modal-header .modal-title {
+    text-align: center;
+  }
+
+  .contacts-modal {
+    height: 75%;
   }
 
   .custom-input .custom-input__field {
@@ -2787,70 +2873,13 @@ body.modal-open {
     max-width: 93%;
   }
 
-  .scheme-modal .fl-modal__close {
-    top: -10px;
-    right: 30px;
-  }
-
-  .floor-modal {
-    height: auto;
-  }
-
-  .floor-modal .scheme-tabs {
-    flex-direction: row;
-  }
-
-  .floor-modal .scheme-tabs__link {
-    margin: 0 23px;
-  }
-
-  .floor-modal .svg-wrap {
-    margin: 0 auto;
-  }
-
-  .floor-modal .content-part {
-    width: 100%;
-  }
-
-  .floor-modal .apartment-content .btn-download {
-    margin-top: 50px;
-  }
-
-  .floor-modal .apartment-content .app-img {
-    max-width: 354px;
-    width: 100%;
-    margin-bottom: 50px;
-  }
-
-  .floor-modal .modal-header {
-    margin-bottom: 52px;
-  }
-
-  .floor-modal .fl-btns_desk {
-    display: none;
-  }
-
-  .floor-modal .fl-btns_mob {
-    display: block;
-  }
-
-  .floor-modal .svg-wrap {
-    max-width: 350px;
-    padding: 20px 20px 40px;
-    width: 100%;
-  }
-
-  .floor-modal .fl-btns_mob {
-    width: 100%;
-    height: auto;
-  }
-
-  .manager-info {
-    padding: 0;
-  }
-
   .contacts-modal {
     overflow-y: initial;
+  }
+
+  .contacts-modal .form-contacts {
+    max-width: 540px;
+    margin: 0 auto;
   }
 
   .contacts-modal__content {
@@ -2863,27 +2892,6 @@ body.modal-open {
 
   .contacts-modal .img-wrap {
     display: none;
-  }
-
-  .plan-popover {
-    display: none !important;
-  }
-
-  .scheme-modal {
-    padding-top: 80px;
-  }
-
-  .scheme-modal .fl-modal__content {
-    flex-direction: column;
-  }
-
-  .scheme-modal .modal-header,
-  .scheme-modal .scheme-tabs__content {
-    width: 100%;
-  }
-
-  .scheme-modal .modal-header .modal-title {
-    text-align: center;
   }
 
   .gallery__item {
@@ -3242,7 +3250,7 @@ body.modal-open {
   .fl-modal__close {
     width: 48px;
     height: 48px;
-    top: 24px;
+    top: -8px;
   }
 
   .fl-modal__back {
@@ -3251,7 +3259,6 @@ body.modal-open {
 
   .fl-modal__close {
     right: 16px;
-    top: -8px;
   }
 
   .contacts-modal .fl-modal__close {
@@ -3260,7 +3267,7 @@ body.modal-open {
   }
 
   .contacts-modal__part {
-    padding: 82px 60px 100px;
+    padding: 82px 37px 100px;
   }
 
   .floor-modal .apartment-content .apartment-desc {
@@ -3548,7 +3555,7 @@ body.modal-open {
   .fl-modal__close {
     width: 33px;
     height: 33px;
-    top: 32px;
+    top: -2px;
   }
 
   .scheme-tabs__content {
