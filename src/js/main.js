@@ -189,7 +189,7 @@ $(document).ready(function () {
     $('.map').waypoint(function() {
         video[0].play();
     }, {
-        offset: '90%',
+        offset: '80%',
         triggerOnce: true ,
     });
 });
