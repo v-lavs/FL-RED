@@ -2034,7 +2034,7 @@ body.modal-open {
 
 .benefits__img-banner {
   position: relative;
-  height: 98vh;
+  min-height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3634,6 +3634,10 @@ body.modal-open {
 
   .features .summary__caption {
     font-size: 27px;
+  }
+
+  .benefits__img-banner {
+    min-height: 100%;
   }
 
   .section-map .map__info {
