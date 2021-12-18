@@ -14,8 +14,11 @@
 .map {
   position: relative;
   padding-top: 44%;
+.video{
 
+}
   &__img {
+    display: none;
     width: 100%;
     height: 100%;
     position: absolute;
