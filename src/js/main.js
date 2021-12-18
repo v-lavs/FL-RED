@@ -155,6 +155,12 @@ $(document).ready(function () {
         offset: '100%'
     });
 
+    let fadeInBlocks2 = $('.description-residence').waypoint(function (direction) {
+        $(this.element).addClass('active')
+    }, {
+        offset: '60%'
+    });
+
 
     let animHeader = $('.header').waypoint(function (direction) {
         $(this.element).addClass('active')
