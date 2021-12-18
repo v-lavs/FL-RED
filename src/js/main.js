@@ -183,6 +183,15 @@ $(document).ready(function () {
         $($(e.currentTarget).attr('href')).addClass('active');
     });
 
+    // MAP ANIMATION VIDEO
+    const video = document.getElementsByClassName("video");
+
+    $('.map').waypoint(function() {
+        video[0].play();
+    }, {
+        offset: '90%',
+        triggerOnce: true ,
+    });
 });
 
 
