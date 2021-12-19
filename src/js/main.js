@@ -82,7 +82,6 @@ $(document).ready(function () {
 
     smoothScrollToAnchor('.btn_scroll');
     smoothScrollToAnchor('.menu__link');
-    smoothScrollToAnchor('.register');
 
     // Custom input
 
@@ -110,6 +109,7 @@ $(document).ready(function () {
     $('.fl-modal-toggle').on('click', function (e) {
         e.preventDefault();
         const modalID = $(this).data('modal');
+        console.log(this);
         const modal = $(modalID).addClass('active');
         jQuery('.backdrop').fadeIn();
         $("body").addClass("modal-open");
