@@ -130,9 +130,26 @@ $(document).ready(function () {
     //GALLERY
     const gallery = baguetteBox.run('.gallery', {animation: 'fadeIn'});
 
+    // MAP ANIMATION VIDEO
+    window.onload = function () {
+        if (window.innerWidth >= 576)
+            document.getElementById('video-container').innerHTML = '<video class="video" width="1583" height="697" muted><source src="assets/video/Location%20Map%208_1.mp4" type="video/mp4"></video>'
+        animMap();
+    };
+
+    function animMap() {
+        const video = document.getElementsByClassName("video");
+        $('.map').waypoint(function () {
+            video[0].play();
+        }, {
+            offset: '80%',
+            triggerOnce: true,
+        });
+    }
+
     //MAP ZOOM
     function initZoom() {
-        if ($(window).width() <= 768) {
+        if ($(window).width() <= 576) {
             $('.map').zoom({
                 url: 'assets/img/map-loc9.jpg',
                 touch: true,
@@ -189,15 +206,6 @@ $(document).ready(function () {
         $($(e.currentTarget).attr('href')).addClass('active');
     });
 
-    // MAP ANIMATION VIDEO
-    const video = document.getElementsByClassName("video");
-
-    $('.map').waypoint(function() {
-        video[0].play();
-    }, {
-        offset: '80%',
-        triggerOnce: true ,
-    });
 });
 
 
