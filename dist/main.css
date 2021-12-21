@@ -555,7 +555,7 @@ body.modal-open {
 
 .benefits.active .fade-in {
   animation: fadeIn ease-in-out .75s forwards;
-  animation-delay: 1.2s;
+  animation-delay: .35s;
 }
 
 .facade-residence.active .fade-in {
