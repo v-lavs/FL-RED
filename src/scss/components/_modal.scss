@@ -9,7 +9,7 @@
   transition: opacity 1s;
   max-height: 100%;
   overflow-y: auto;
-  z-index: 1000;
+  z-index: 1100;
   height: 740px;
   opacity: 0;
   visibility: hidden;
@@ -46,7 +46,9 @@
     background-size: 100% auto;
   }
 }
-
+.scheme-modal{
+  z-index: 1000;
+}
 .floor-modal {
   padding: 58px 0 60px;
 
@@ -192,6 +194,8 @@
 
 .apartment-content {
   display: flex;
+  position: relative;
+  z-index: 1010;
 
   .content-part_left {
     width: 70%;
