@@ -1,6 +1,10 @@
 .benefits {
   background-attachment: fixed;
 
+  &__section-text {
+    display: none;
+  }
+
   &__img-banner {
     position: relative;
     min-height: 100vh;
@@ -197,8 +201,18 @@
     .section__header {
       min-height: 396px;
     }
-    &__img-banner{
+
+    &__img-banner {
       background-attachment: scroll;
+    }
+
+    &__section-text {
+      display: block;
+      max-width: 705px;
+      font-size: 48px;
+      text-align: center;
+      color: #194A21;
+      margin: 124px auto;
     }
   }
   .benefits-location {
@@ -226,6 +240,14 @@
     &__img-banner {
       padding-top: 66%;
       min-height: 328px;
+    }
+
+    &__section-text {
+      font-size: 28px;
+      line-height: 1.5;
+      margin-top: 40px;
+      margin-bottom: 40px;
+
     }
   }
   .benefits-list {
@@ -286,6 +308,12 @@
 @include respond-to($sm) {
   .benefits {
     margin-bottom: 10px;
+
+    &__section-text {
+      font-size: 24px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
 
     .section__header {
       padding-top: 106px;
@@ -351,7 +379,7 @@
 }
 
 @media screen and (max-width: 380px) {
-  .benefits__img-banner{
+  .benefits__img-banner {
     min-height: 100%;
   }
 }

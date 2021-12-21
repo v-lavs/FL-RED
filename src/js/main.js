@@ -178,6 +178,12 @@ $(document).ready(function () {
         offset: '60%'
     });
 
+    let fadeInBlocks3 = $('.benefits').waypoint(function (direction) {
+        $(this.element).addClass('active')
+    }, {
+        offset: '50%'
+    });
+
 
     let animHeader = $('.header').waypoint(function (direction) {
         $(this.element).addClass('active')
