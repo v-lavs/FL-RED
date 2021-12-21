@@ -133,7 +133,7 @@ $(document).ready(function () {
     // MAP ANIMATION VIDEO
     window.onload = function () {
         if (window.innerWidth >= 576)
-            document.getElementById('video-container').innerHTML = '<video class="video" width="1583" height="697" muted><source src="assets/video/Location%20Map%208_1.mp4" type="video/mp4"></video>'
+            document.getElementById('video-container').innerHTML = '<video class="video" width="1583" height="697" muted><source src="assets/video/Location%20Map%208_1a.mp4" type="video/mp4"></video>'
         animMap();
     };
 
